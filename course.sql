@@ -1,14 +1,6 @@
 -- Issue 14
--- Lengthen keyword column in table 'course' to minimum required (1,000 chars)
+-- Lengthen keyword column in table 'course_metdata_info' to minimum required (1,000 chars)
 
-ALTER TABLE `course` 
-  CHANGE `keyword` 
-    `keyword` 
-    VARCHAR( 1000 ) 
-    CHARACTER SET utf8 
-    COLLATE utf8_general_ci 
-    NULL
-    DEFAULT NULL;
 
 -- Issue 18
 -- Add default empty values for columns
@@ -22,6 +14,13 @@ ALTER TABLE `course`
 -- over the entire dataset.
 
 ALTER TABLE `course` 
+  CHANGE `keyword` 
+    `keyword` 
+    VARCHAR( 1000 ) 
+    CHARACTER SET utf8 
+    COLLATE utf8_general_ci 
+    NULL
+    DEFAULT NULL,
   CHANGE `c_description` 
     `c_description` 
     VARCHAR(255) 

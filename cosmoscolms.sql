@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 50.63.229.116
--- Generation Time: Jan 25, 2012 at 01:14 PM
+-- Generation Time: Jan 26, 2012 at 11:39 PM
 -- Server version: 5.0.92
 -- PHP Version: 5.1.6
 
@@ -26,61 +26,31 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 
 DROP TABLE IF EXISTS `abs_events`;
-CREATE TABLE `abs_events` (
-  `id` int(32) unsigned NOT NULL auto_increment,
-  `title` varchar(255) NOT NULL,
-  `description` longtext NOT NULL,
-  `location` varchar(255) NOT NULL,
-  `date_added` date NOT NULL,
-  `end_date` date NOT NULL,
-  `time1` varchar(255) default NULL,
-  `time2` varchar(255) default NULL,
-  `seats` int(25) NOT NULL,
-  `address` text NOT NULL,
-  `maximum` int(25) NOT NULL,
-  `phone` varchar(25) NOT NULL,
-  `fax` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `facility_phone` varchar(255) NOT NULL,
-  `abrevationLoc` varchar(255) NOT NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=31 ;
+CREATE TABLE "abs_events" (
+  "id" int(32) unsigned NOT NULL auto_increment,
+  "title" varchar(255) NOT NULL,
+  "description" longtext NOT NULL,
+  "location" varchar(255) NOT NULL,
+  "date_added" date NOT NULL,
+  "end_date" date NOT NULL,
+  "time1" varchar(255) default NULL,
+  "time2" varchar(255) default NULL,
+  "seats" int(25) NOT NULL,
+  "address" text NOT NULL,
+  "maximum" int(25) NOT NULL,
+  "phone" varchar(25) NOT NULL,
+  "fax" varchar(255) NOT NULL,
+  "email" varchar(255) NOT NULL,
+  "facility_phone" varchar(255) NOT NULL,
+  "abrevationLoc" varchar(255) NOT NULL,
+  PRIMARY KEY  ("id")
+) AUTO_INCREMENT=31 ;
 
 --
 -- Dumping data for table `abs_events`
 --
 
-INSERT INTO `abs_events` (`id`, `title`, `description`, `location`, `date_added`, `end_date`, `time1`, `time2`, `seats`, `address`, `maximum`, `phone`, `fax`, `email`, `facility_phone`, `abrevationLoc`) VALUES
-(1, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;&lt;br /&gt;\r\n&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'PHOENIX, AZ', '2009-11-10', '2009-11-10', '8:00 am', '5:00 pm', 44, 'New Horizons\r\n9200 East Pima Center Parkway, Suite 160 \r\nScottsdale AZ 85258', 44, '(813) 383-1530 ext 3278', '', 'AWilliams@NHSanDiego.com', '480-736-9300', 'PHXAZ'),
-(2, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;&lt;br /&gt;\r\n&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'PHOENIX, AZ', '2009-11-11', '2009-11-11', '8:00 am', '5:00 pm', 44, 'New Horizons\r\n9200 East Pima Center Parkway, Suite 160 \r\nScottsdale AZ 85258', 44, '(813) 383-1530 ext 3278', '', 'AWilliams@NHSanDiego.com', '480-736-9300', 'PHXAZ'),
-(3, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;&lt;br /&gt;\r\n&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'PHOENIX, AZ', '2009-11-12', '2009-11-12', '8:00 am', '5:00 pm', 44, 'New Horizons\r\n9200 East Pima Center Parkway, Suite 160 \r\nScottsdale AZ 85258', 44, '(813) 383-1530 ext 3278', '', 'AWilliams@NHSanDiego.com', '480-736-9300', 'PHXAZ'),
-(4, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'NEW YORK CITY, NY', '2009-11-10', '2009-11-10', '8:00 am', '5:00 pm', 44, 'New Horizons\r\n43 West 42nd Street, Street Level\r\nNew York City, NY&nbsp; 10036', 50, '(813) 383-1530 ext 3278', '', 'jleonard@nhny.com', '646-695-5700', 'NYCNY'),
-(5, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'NEW YORK CITY, NY', '2009-11-11', '2009-11-11', '8:00 am', '5:00 pm', 46, 'New Horizons\r\n43 West 42nd Street, Street Level\r\nNew York City, NY&nbsp; 10036', 50, '(813) 383-1530 ext 3278', '', 'jleonard@nhny.com', '646-695-5700', 'NYCNY'),
-(6, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'NEW YORK CITY, NY', '2009-11-12', '2009-11-12', '8:00 am', '5:00 pm', 47, 'New Horizons\r\n43 West 42nd Street, Street Level\r\nNew York City, NY&nbsp; 10036', 50, '(813) 383-1530 ext 3278', '', 'jleonard@nhny.com', '646-695-5700', 'NYCNY'),
-(7, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Hello summy text.&lt;/p&gt;', 'SAN FRANCISCO, CA', '2009-11-03', '2009-11-03', '8:00 am', '5:00 pm', 46, 'Learn IT\r\n33 New Montgomery, Ste 300\r\nSan Francisco, CA 94105\r\n', 50, '(813) 383-1530 ext 3278', '', 'Matt@LearnIT.com', '415-693-0250', 'SFCA'),
-(8, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Hello summy text.&lt;/p&gt;', 'SAN FRANCISCO, CA', '2009-11-04', '2009-11-04', '8:00 am', '5:00 pm', 50, 'Learn IT\r\n33 New Montgomery, Ste 300\r\nSan Francisco, CA 94105\r\n', 50, '(813) 383-1530 ext 3278', '', 'Matt@LearnIT.com', '415-693-0250', 'SFCA'),
-(9, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Hello summy text.&lt;/p&gt;', 'SAN FRANCISCO, CA', '2009-11-05', '2009-11-05', '8:00 am', '5:00 pm', 46, 'Learn IT\r\n33 New Montgomery, Ste 300\r\nSan Francisco, CA 94105\r\n', 50, '(813) 383-1530 ext 3278', '', 'Matt@LearnIT.com', '415-693-0250', 'SFCA'),
-(10, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Hello plz ignore.&lt;/p&gt;', 'PHILADELPHIA, PA', '2009-11-03', '2009-11-03', '8:00 am', '5:00 pm', 45, 'Exceed Education Services\r\nParkview Tower, 1150 First Avenue, Suite 200\r\nKing of Prussia, PA  19406\r\n', 50, '(813) 383-1530 ext 3278', '', 'DJamison@eXceedEducation.com', '610-337-2434', 'PHILPA'),
-(11, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Hello plz ignore.&lt;/p&gt;', 'PHILADELPHIA, PA', '2009-11-04', '2009-11-04', '7:00 am', '9:00 am', 48, 'Exceed Education Services\r\nParkview Tower, 1150 First Avenue, Suite 200\r\nKing of Prussia, PA  19406\r\n', 50, '(813) 383-1530 ext 3278', '', 'DJamison@eXceedEducation.com', '610-337-2434', 'PHILPA'),
-(12, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Hello plz ignore.&lt;/p&gt;', 'PHILADELPHIA, PA', '2009-11-05', '2009-11-05', '7:00 am', '9:00 am', 46, 'Exceed Education Services\r\nParkview Tower, 1150 First Avenue, Suite 200\r\nKing of Prussia, PA  19406\r\n', 50, '(813) 383-1530 ext 3278', '', 'DJamison@eXceedEducation.com', '610-337-2434', 'PHILPA'),
-(13, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy text&lt;/p&gt;\r\n&lt;p&gt;&lt;br /&gt;\r\n&amp;nbsp;&lt;/p&gt;', 'MIAMI, FL', '2009-11-03', '2009-11-03', '8:00 am', '5:00 pm', 48, 'New Horizons\r\n100 S Pine Island Rd, Ste 200\r\nPlantation, FL 33324\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhmiami', '954-572-8600', 'MIAFL'),
-(14, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy text&lt;/p&gt;\r\n&lt;p&gt;&lt;br /&gt;\r\n&amp;nbsp;&lt;/p&gt;', 'MIAMI, FL', '2009-11-04', '2009-11-04', '8:00 am', '5:00 pm', 50, 'New Horizons\r\n100 S Pine Island Rd, Ste 200\r\nPlantation, FL 33324\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhmiami', '954-572-8600', 'MIAFL'),
-(15, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy text&lt;/p&gt;\r\n&lt;p&gt;&lt;br /&gt;\r\n&amp;nbsp;&lt;/p&gt;', 'MIAMI, FL', '2009-11-05', '2009-11-05', '8:00 am', '5:00 pm', 50, 'New Horizons\r\n100 S Pine Island Rd, Ste 200\r\nPlantation, FL 33324\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhmiami', '954-572-8600', 'MIAFL'),
-(16, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy&lt;/p&gt;', 'ATLANTA, GA', '2009-11-03', '2009-11-03', '8:00 am', '5:00 pm', 48, 'New Horizons\r\n211 Perimeter Cr Pkwy  200\r\nAtlanta GA 30306\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhatlanta1', '770-270-2000', 'ATLGA'),
-(17, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy&lt;/p&gt;', 'ATLANTA, GA', '2009-11-04', '2009-11-04', '8:00 am', '5:00 pm', 50, 'New Horizons\r\n211 Perimeter Cr Pkwy  200\r\nAtlanta GA 30306\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhatlanta1', '770-270-2000', 'ATLGA'),
-(18, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy&lt;/p&gt;', 'ATLANTA, GA', '2009-11-05', '2009-11-05', '4:30 pm', '5:00 pm', 50, 'New Horizons\r\n211 Perimeter Cr Pkwy  200\r\nAtlanta GA 30306\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhatlanta1', '770-270-2000', 'ATLGA'),
-(19, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy&lt;/p&gt;', 'LOS ANGELES, CA', '2009-10-13', '2009-10-13', '8:00 am', '5:00 pm', 47, 'New Horizons\r\n1900 S. State College Blvd, Suite 100\r\nAnaheim CA 92806\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhlosangeles', '714-221-3100', 'LACA'),
-(20, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy&lt;/p&gt;', 'LOS ANGELES, CA', '2009-10-14', '2009-10-14', '8:00 am', '5:00 pm', 50, 'New Horizons\r\n1900 S. State College Blvd, Suite 100\r\nAnaheim CA 92806\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhlosangeles', '714-221-3100', 'LACA'),
-(21, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy&lt;/p&gt;', 'LOS ANGELES, CA', '2009-10-15', '2009-10-15', '8:00 am', '5:00 pm', 36, 'New Horizons\r\n1900 S. State College Blvd, Suite 100\r\nAnaheim CA 92806\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhlosangeles', '714-221-3100', 'LACA'),
-(22, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;hii&lt;/p&gt;', 'WASHINGTON D.C.', '2009-10-13', '2009-10-13', '8:00 am', '5:00 pm', 50, 'Gestalt Partners\r\n1325 G Street NW, Ste 1020\r\nWashington, DC 20005\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhwashingtondc', '877-838-5062', 'WADC'),
-(23, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;hii&lt;/p&gt;', 'WASHINGTON D.C.', '2009-10-14', '2009-10-14', '8:00 am', '5:00 pm', 48, 'Gestalt Partners\r\n1325 G Street NW, Ste 1020\r\nWashington, DC 20005\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhwashingtondc', '877-838-5062', 'WADC'),
-(24, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;hii&lt;/p&gt;', 'WASHINGTON D.C.', '2009-10-15', '2009-10-15', '8:00 am', '5:00 pm', 50, 'Gestalt Partners\r\n1325 G Street NW, Ste 1020\r\nWashington, DC 20005\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhwashingtondc', '877-838-5062', 'WADC'),
-(25, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;nope&lt;/p&gt;', 'HOUSTON, TX', '2009-10-06', '2009-10-06', '8:00 am', '5:00 pm', 40, 'RAC Houston\r\n1880 S. Dairy Ashford\r\nBldg II Suite 220 (Ashford Crossing II)\r\nHouston, TX 77077', 50, '(813) 383-1530 ext 3278', '', 'Gauri@RACHouston.com', '281-957-8238', 'HOUTX'),
-(26, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;nope&lt;/p&gt;', 'HOUSTON, TX', '2009-10-07', '2009-10-07', '8:00 am', '5:00 pm', 50, 'RAC Houston\r\n1880 S. Dairy Ashford\r\nBldg II Suite 220 (Ashford Crossing II)\r\nHouston, TX 77077', 50, '(813) 383-1530 ext 3278', '', 'Gauri@RACHouston.com', '281-957-8238', 'HOUTX'),
-(27, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;nope&lt;/p&gt;', 'HOUSTON, TX', '2009-10-08', '2009-10-08', '8:00 am', '5:00 pm', 50, 'RAC Houston\r\n1880 S. Dairy Ashford\r\nBldg II Suite 220 (Ashford Crossing II)\r\nHouston, TX 77077', 50, '(813) 383-1530 ext 3278', '', 'Gauri@RACHouston.com', '281-957-8238', 'HOUTX'),
-(28, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Test Demotest&lt;/p&gt;', 'CHICAGO, IL', '2009-10-06', '2009-10-06', '8:00 am', '5:00 pm', 46, 'PCCTI\r\n216 W. Jackson Suite 900\r\nChicago, IL 60606', 50, '(813) 383-1530 ext 3278', '', 'CompuLearningCenter@Yahoo.com', '312-962-1949', 'CHIL'),
-(29, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Test Demotest&lt;/p&gt;', 'CHICAGO, IL', '2009-10-07', '2009-10-07', '8:00 am', '5:00 pm', 47, 'PCCTI\r\n216 W. Jackson Suite 900\r\nChicago, IL 60606', 50, '(813) 383-1530 ext 3278', '', 'CompuLearningCenter@Yahoo.com', '312-962-1949', 'CHIL'),
-(30, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Test Demotest&lt;/p&gt;', 'CHICAGO, IL', '2009-10-08', '2009-10-08', '8:00 am', '5:00 pm', 48, 'PCCTI\r\n216 W. Jackson Suite 900\r\nChicago, IL 60606', 50, '(813) 383-1530 ext 3278', '', 'CompuLearningCenter@Yahoo.com', '312-962-1949', 'CHIL');
+INSERT INTO `abs_events` VALUES(1, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;&lt;br /&gt;\r\n&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'PHOENIX, AZ', '2009-11-10', '2009-11-10', '8:00 am', '5:00 pm', 44, 'New Horizons\r\n9200 East Pima Center Parkway, Suite 160 \r\nScottsdale AZ 85258', 44, '(813) 383-1530 ext 3278', '', 'AWilliams@NHSanDiego.com', '480-736-9300', 'PHXAZ'), (2, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;&lt;br /&gt;\r\n&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'PHOENIX, AZ', '2009-11-11', '2009-11-11', '8:00 am', '5:00 pm', 44, 'New Horizons\r\n9200 East Pima Center Parkway, Suite 160 \r\nScottsdale AZ 85258', 44, '(813) 383-1530 ext 3278', '', 'AWilliams@NHSanDiego.com', '480-736-9300', 'PHXAZ'), (3, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;&lt;br /&gt;\r\n&amp;nbsp;&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'PHOENIX, AZ', '2009-11-12', '2009-11-12', '8:00 am', '5:00 pm', 44, 'New Horizons\r\n9200 East Pima Center Parkway, Suite 160 \r\nScottsdale AZ 85258', 44, '(813) 383-1530 ext 3278', '', 'AWilliams@NHSanDiego.com', '480-736-9300', 'PHXAZ'), (4, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'NEW YORK CITY, NY', '2009-11-10', '2009-11-10', '8:00 am', '5:00 pm', 44, 'New Horizons\r\n43 West 42nd Street, Street Level\r\nNew York City, NY&nbsp; 10036', 50, '(813) 383-1530 ext 3278', '', 'jleonard@nhny.com', '646-695-5700', 'NYCNY'), (5, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'NEW YORK CITY, NY', '2009-11-11', '2009-11-11', '8:00 am', '5:00 pm', 46, 'New Horizons\r\n43 West 42nd Street, Street Level\r\nNew York City, NY&nbsp; 10036', 50, '(813) 383-1530 ext 3278', '', 'jleonard@nhny.com', '646-695-5700', 'NYCNY'), (6, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;This is the description of the event. The details of the event go here. This is some details of the event. Let\\&#039;s see, if it works.&lt;/p&gt;\r\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;', 'NEW YORK CITY, NY', '2009-11-12', '2009-11-12', '8:00 am', '5:00 pm', 47, 'New Horizons\r\n43 West 42nd Street, Street Level\r\nNew York City, NY&nbsp; 10036', 50, '(813) 383-1530 ext 3278', '', 'jleonard@nhny.com', '646-695-5700', 'NYCNY'), (7, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Hello summy text.&lt;/p&gt;', 'SAN FRANCISCO, CA', '2009-11-03', '2009-11-03', '8:00 am', '5:00 pm', 46, 'Learn IT\r\n33 New Montgomery, Ste 300\r\nSan Francisco, CA 94105\r\n', 50, '(813) 383-1530 ext 3278', '', 'Matt@LearnIT.com', '415-693-0250', 'SFCA'), (8, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Hello summy text.&lt;/p&gt;', 'SAN FRANCISCO, CA', '2009-11-04', '2009-11-04', '8:00 am', '5:00 pm', 50, 'Learn IT\r\n33 New Montgomery, Ste 300\r\nSan Francisco, CA 94105\r\n', 50, '(813) 383-1530 ext 3278', '', 'Matt@LearnIT.com', '415-693-0250', 'SFCA'), (9, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Hello summy text.&lt;/p&gt;', 'SAN FRANCISCO, CA', '2009-11-05', '2009-11-05', '8:00 am', '5:00 pm', 46, 'Learn IT\r\n33 New Montgomery, Ste 300\r\nSan Francisco, CA 94105\r\n', 50, '(813) 383-1530 ext 3278', '', 'Matt@LearnIT.com', '415-693-0250', 'SFCA'), (10, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Hello plz ignore.&lt;/p&gt;', 'PHILADELPHIA, PA', '2009-11-03', '2009-11-03', '8:00 am', '5:00 pm', 45, 'Exceed Education Services\r\nParkview Tower, 1150 First Avenue, Suite 200\r\nKing of Prussia, PA  19406\r\n', 50, '(813) 383-1530 ext 3278', '', 'DJamison@eXceedEducation.com', '610-337-2434', 'PHILPA'), (11, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Hello plz ignore.&lt;/p&gt;', 'PHILADELPHIA, PA', '2009-11-04', '2009-11-04', '7:00 am', '9:00 am', 48, 'Exceed Education Services\r\nParkview Tower, 1150 First Avenue, Suite 200\r\nKing of Prussia, PA  19406\r\n', 50, '(813) 383-1530 ext 3278', '', 'DJamison@eXceedEducation.com', '610-337-2434', 'PHILPA'), (12, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Hello plz ignore.&lt;/p&gt;', 'PHILADELPHIA, PA', '2009-11-05', '2009-11-05', '7:00 am', '9:00 am', 46, 'Exceed Education Services\r\nParkview Tower, 1150 First Avenue, Suite 200\r\nKing of Prussia, PA  19406\r\n', 50, '(813) 383-1530 ext 3278', '', 'DJamison@eXceedEducation.com', '610-337-2434', 'PHILPA'), (13, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy text&lt;/p&gt;\r\n&lt;p&gt;&lt;br /&gt;\r\n&amp;nbsp;&lt;/p&gt;', 'MIAMI, FL', '2009-11-03', '2009-11-03', '8:00 am', '5:00 pm', 48, 'New Horizons\r\n100 S Pine Island Rd, Ste 200\r\nPlantation, FL 33324\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhmiami', '954-572-8600', 'MIAFL'), (14, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy text&lt;/p&gt;\r\n&lt;p&gt;&lt;br /&gt;\r\n&amp;nbsp;&lt;/p&gt;', 'MIAMI, FL', '2009-11-04', '2009-11-04', '8:00 am', '5:00 pm', 50, 'New Horizons\r\n100 S Pine Island Rd, Ste 200\r\nPlantation, FL 33324\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhmiami', '954-572-8600', 'MIAFL'), (15, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy text&lt;/p&gt;\r\n&lt;p&gt;&lt;br /&gt;\r\n&amp;nbsp;&lt;/p&gt;', 'MIAMI, FL', '2009-11-05', '2009-11-05', '8:00 am', '5:00 pm', 50, 'New Horizons\r\n100 S Pine Island Rd, Ste 200\r\nPlantation, FL 33324\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhmiami', '954-572-8600', 'MIAFL'), (16, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy&lt;/p&gt;', 'ATLANTA, GA', '2009-11-03', '2009-11-03', '8:00 am', '5:00 pm', 48, 'New Horizons\r\n211 Perimeter Cr Pkwy  200\r\nAtlanta GA 30306\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhatlanta1', '770-270-2000', 'ATLGA'), (17, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy&lt;/p&gt;', 'ATLANTA, GA', '2009-11-04', '2009-11-04', '8:00 am', '5:00 pm', 50, 'New Horizons\r\n211 Perimeter Cr Pkwy  200\r\nAtlanta GA 30306\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhatlanta1', '770-270-2000', 'ATLGA'), (18, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy&lt;/p&gt;', 'ATLANTA, GA', '2009-11-05', '2009-11-05', '4:30 pm', '5:00 pm', 50, 'New Horizons\r\n211 Perimeter Cr Pkwy  200\r\nAtlanta GA 30306\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhatlanta1', '770-270-2000', 'ATLGA'), (19, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy&lt;/p&gt;', 'LOS ANGELES, CA', '2009-10-13', '2009-10-13', '8:00 am', '5:00 pm', 47, 'New Horizons\r\n1900 S. State College Blvd, Suite 100\r\nAnaheim CA 92806\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhlosangeles', '714-221-3100', 'LACA'), (20, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy&lt;/p&gt;', 'LOS ANGELES, CA', '2009-10-14', '2009-10-14', '8:00 am', '5:00 pm', 50, 'New Horizons\r\n1900 S. State College Blvd, Suite 100\r\nAnaheim CA 92806\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhlosangeles', '714-221-3100', 'LACA'), (21, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Dummy&lt;/p&gt;', 'LOS ANGELES, CA', '2009-10-15', '2009-10-15', '8:00 am', '5:00 pm', 36, 'New Horizons\r\n1900 S. State College Blvd, Suite 100\r\nAnaheim CA 92806\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhlosangeles', '714-221-3100', 'LACA'), (22, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;hii&lt;/p&gt;', 'WASHINGTON D.C.', '2009-10-13', '2009-10-13', '8:00 am', '5:00 pm', 50, 'Gestalt Partners\r\n1325 G Street NW, Ste 1020\r\nWashington, DC 20005\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhwashingtondc', '877-838-5062', 'WADC'), (23, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;hii&lt;/p&gt;', 'WASHINGTON D.C.', '2009-10-14', '2009-10-14', '8:00 am', '5:00 pm', 48, 'Gestalt Partners\r\n1325 G Street NW, Ste 1020\r\nWashington, DC 20005\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhwashingtondc', '877-838-5062', 'WADC'), (24, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;hii&lt;/p&gt;', 'WASHINGTON D.C.', '2009-10-15', '2009-10-15', '8:00 am', '5:00 pm', 50, 'Gestalt Partners\r\n1325 G Street NW, Ste 1020\r\nWashington, DC 20005\r\n', 50, '(813) 383-1530 ext 3278', '', 'http://tinyurl.com/nhwashingtondc', '877-838-5062', 'WADC'), (25, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;nope&lt;/p&gt;', 'HOUSTON, TX', '2009-10-06', '2009-10-06', '8:00 am', '5:00 pm', 40, 'RAC Houston\r\n1880 S. Dairy Ashford\r\nBldg II Suite 220 (Ashford Crossing II)\r\nHouston, TX 77077', 50, '(813) 383-1530 ext 3278', '', 'Gauri@RACHouston.com', '281-957-8238', 'HOUTX'), (26, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;nope&lt;/p&gt;', 'HOUSTON, TX', '2009-10-07', '2009-10-07', '8:00 am', '5:00 pm', 50, 'RAC Houston\r\n1880 S. Dairy Ashford\r\nBldg II Suite 220 (Ashford Crossing II)\r\nHouston, TX 77077', 50, '(813) 383-1530 ext 3278', '', 'Gauri@RACHouston.com', '281-957-8238', 'HOUTX'), (27, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;nope&lt;/p&gt;', 'HOUSTON, TX', '2009-10-08', '2009-10-08', '8:00 am', '5:00 pm', 50, 'RAC Houston\r\n1880 S. Dairy Ashford\r\nBldg II Suite 220 (Ashford Crossing II)\r\nHouston, TX 77077', 50, '(813) 383-1530 ext 3278', '', 'Gauri@RACHouston.com', '281-957-8238', 'HOUTX'), (28, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Test Demotest&lt;/p&gt;', 'CHICAGO, IL', '2009-10-06', '2009-10-06', '8:00 am', '5:00 pm', 46, 'PCCTI\r\n216 W. Jackson Suite 900\r\nChicago, IL 60606', 50, '(813) 383-1530 ext 3278', '', 'CompuLearningCenter@Yahoo.com', '312-962-1949', 'CHIL'), (29, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Test Demotest&lt;/p&gt;', 'CHICAGO, IL', '2009-10-07', '2009-10-07', '8:00 am', '5:00 pm', 47, 'PCCTI\r\n216 W. Jackson Suite 900\r\nChicago, IL 60606', 50, '(813) 383-1530 ext 3278', '', 'CompuLearningCenter@Yahoo.com', '312-962-1949', 'CHIL'), (30, 'CROWNWeb/QIPS Instructor-Led Training', '&lt;p&gt;Test Demotest&lt;/p&gt;', 'CHICAGO, IL', '2009-10-08', '2009-10-08', '8:00 am', '5:00 pm', 48, 'PCCTI\r\n216 W. Jackson Suite 900\r\nChicago, IL 60606', 50, '(813) 383-1530 ext 3278', '', 'CompuLearningCenter@Yahoo.com', '312-962-1949', 'CHIL');
 
 -- --------------------------------------------------------
 
@@ -89,28 +59,27 @@ INSERT INTO `abs_events` (`id`, `title`, `description`, `location`, `date_added`
 --
 
 DROP TABLE IF EXISTS `bow_hrsurvey_questions`;
-CREATE TABLE `bow_hrsurvey_questions` (
-  `ID` int(11) NOT NULL auto_increment,
-  `user_ID` int(11) default '1',
-  `question` int(2) default '1',
-  `answer` text,
-  `fecha` datetime default NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+CREATE TABLE "bow_hrsurvey_questions" (
+  "ID" int(11) NOT NULL auto_increment,
+  "user_ID" int(11) default '1',
+  "question" int(2) default '1',
+  "answer" text,
+  "fecha" datetime default NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `bow_hrsurvey_questions`
 --
 
-INSERT INTO `bow_hrsurvey_questions` (`ID`, `user_ID`, `question`, `answer`, `fecha`) VALUES
-(1, 12, 1, 'thanks\r\n', '2007-03-12 00:27:24'),
-(2, 12, 7, 'afasfasf', '2007-03-12 00:28:12'),
-(3, 12, 8, 'asfasf', '2007-03-12 00:28:12'),
-(4, 12, 2, 'asdasf', '2007-03-12 00:30:07'),
-(5, 12, 3, 'asfasf', '2007-03-12 00:30:08'),
-(6, 12, 4, 'asfasf', '2007-03-12 00:30:08'),
-(7, 12, 5, 'asfasf', '2007-03-12 00:30:08'),
-(8, 12, 6, 'asfasfasf', '2007-03-12 00:30:08'),
+INSERT INTO `bow_hrsurvey_questions` VALUES(1, 12, 1, 'thanks\r\n', '2007-03-12 00:27:24'), 
+(2, 12, 7, 'afasfasf', '2007-03-12 00:28:12'), 
+(3, 12, 8, 'asfasf', '2007-03-12 00:28:12'), 
+(4, 12, 2, 'asdasf', '2007-03-12 00:30:07'), 
+(5, 12, 3, 'asfasf', '2007-03-12 00:30:08'), 
+(6, 12, 4, 'asfasf', '2007-03-12 00:30:08'), 
+(7, 12, 5, 'asfasf', '2007-03-12 00:30:08'), 
+(8, 12, 6, 'asfasfasf', '2007-03-12 00:30:08'), 
 (9, 12, 9, 'asgasg', '2007-03-12 00:30:08');
 
 -- --------------------------------------------------------
@@ -120,21 +89,20 @@ INSERT INTO `bow_hrsurvey_questions` (`ID`, `user_ID`, `question`, `answer`, `fe
 --
 
 DROP TABLE IF EXISTS `bow_user`;
-CREATE TABLE `bow_user` (
-  `ID` int(11) NOT NULL auto_increment,
-  `fname` varchar(30) NOT NULL default '',
-  `lname` varchar(30) NOT NULL default '',
-  `org` int(3) NOT NULL default '0',
-  `fecha` datetime NOT NULL default '0000-00-00 00:00:00',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+CREATE TABLE "bow_user" (
+  "ID" int(11) NOT NULL auto_increment,
+  "fname" varchar(30) NOT NULL default '',
+  "lname" varchar(30) NOT NULL default '',
+  "org" int(3) NOT NULL default '0',
+  "fecha" datetime NOT NULL default '0000-00-00 00:00:00',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `bow_user`
 --
 
-INSERT INTO `bow_user` (`ID`, `fname`, `lname`, `org`, `fecha`) VALUES
-(1, 'alex', 'alex', 0, '2007-03-10 11:10:57'),
+INSERT INTO `bow_user` VALUES(1, 'alex', 'alex', 0, '2007-03-10 11:10:57'),
 (2, 'alex', 'alex', 0, '2007-03-10 11:13:08'),
 (3, 'alex', 'alex', 0, '2007-03-10 11:14:01'),
 (4, 'alex', 'alex', 0, '2007-03-10 11:17:48'),
@@ -155,20 +123,19 @@ INSERT INTO `bow_user` (`ID`, `fname`, `lname`, `org`, `fecha`) VALUES
 --
 
 DROP TABLE IF EXISTS `class_students`;
-CREATE TABLE `class_students` (
-  `id` int(25) NOT NULL auto_increment,
-  `user_id` int(11) NOT NULL,
-  `class_id` int(11) NOT NULL,
-  `waiting` int(25) NOT NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=155 ;
+CREATE TABLE "class_students" (
+  "id" int(25) NOT NULL auto_increment,
+  "user_id" int(11) NOT NULL,
+  "class_id" int(11) NOT NULL,
+  "waiting" int(25) NOT NULL,
+  PRIMARY KEY  ("id")
+) AUTO_INCREMENT=155 ;
 
 --
 -- Dumping data for table `class_students`
 --
 
-INSERT INTO `class_students` (`id`, `user_id`, `class_id`, `waiting`) VALUES
-(1, 69, 25, 0),
+INSERT INTO `class_students` VALUES(1, 69, 25, 0),
 (2, 70, 25, 0),
 (3, 71, 25, 0),
 (4, 72, 25, 0),
@@ -307,56 +274,55 @@ INSERT INTO `class_students` (`id`, `user_id`, `class_id`, `waiting`) VALUES
 --
 
 DROP TABLE IF EXISTS `course`;
-CREATE TABLE `course` (
-  `ID` int(20) NOT NULL auto_increment,
-  `created` varchar(255) NOT NULL default '',
-  `name` varchar(500) NOT NULL,
-  `type` varchar(255) NOT NULL default '',
-  `course_type` varchar(255) NOT NULL default '',
-  `folder_name` varchar(255) NOT NULL default '',
-  `course_id` varchar(255) NOT NULL default '',
-  `category_id` int(10) NOT NULL,
-  `status` enum('active','not active') default 'active',
-  `description` blob,
-  `cmi_credit` varchar(255) NOT NULL default '',
-  `link` varchar(255) default 'http://davidealytechnologies.com',
-  `sco_version` varchar(255) default NULL,
-  `description2` varchar(255) default NULL,
-  `keyword` varchar(255) default NULL,
-  `catalog_name` varchar(255) default NULL,
-  `catalog_entry` varchar(255) default NULL,
-  `c_description` varchar(255) NOT NULL,
-  `purpose` varchar(255) NOT NULL,
-  `contribute` varchar(255) NOT NULL,
-  `entity` varchar(255) NOT NULL,
-  `classifiedkeyword` varchar(255) NOT NULL,
-  `role` varchar(255) NOT NULL,
-  `date` varchar(100) NOT NULL,
-  `structure` varchar(255) NOT NULL,
-  `format` varchar(255) NOT NULL,
-  `size` varchar(255) NOT NULL,
-  `md_scheme` varchar(255) NOT NULL,
-  `md_catalog` varchar(255) NOT NULL,
-  `md_entry` varchar(255) NOT NULL,
-  `learning_resource_type` varchar(255) NOT NULL,
-  `cost` varchar(100) NOT NULL,
-  `copyright` varchar(150) NOT NULL,
-  `right_description` varchar(255) NOT NULL,
-  `interactive_type` varchar(255) NOT NULL,
-  `interactive_level` varchar(100) NOT NULL,
-  `typical_learning_time` varchar(100) NOT NULL,
-  `location` varchar(255) NOT NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+CREATE TABLE "course" (
+  "ID" int(20) NOT NULL auto_increment,
+  "created" varchar(255) NOT NULL default '',
+  "name" varchar(500) NOT NULL,
+  "type" varchar(255) NOT NULL default '',
+  "course_type" varchar(255) NOT NULL default '',
+  "folder_name" varchar(255) NOT NULL default '',
+  "course_id" varchar(255) NOT NULL default '',
+  "category_id" int(10) NOT NULL,
+  "status" enum('active','not active') default 'active',
+  "description" blob,
+  "cmi_credit" varchar(255) NOT NULL default '',
+  "link" varchar(255) default 'http://davidealytechnologies.com',
+  "sco_version" varchar(255) default NULL,
+  "description2" varchar(255) default NULL,
+  "keyword" varchar(1000) default NULL,
+  "catalog_name" varchar(255) default NULL,
+  "catalog_entry" varchar(255) default NULL,
+  "c_description" varchar(255) NOT NULL default '',
+  "purpose" varchar(255) NOT NULL default '',
+  "contribute" varchar(255) NOT NULL default '',
+  "entity" varchar(255) NOT NULL default '',
+  "classifiedkeyword" varchar(255) NOT NULL default '',
+  "role" varchar(255) NOT NULL default '',
+  "date" varchar(100) NOT NULL default '',
+  "structure" varchar(255) NOT NULL default '',
+  "format" varchar(255) NOT NULL default '',
+  "size" varchar(255) NOT NULL default '',
+  "md_scheme" varchar(255) NOT NULL default '',
+  "md_catalog" varchar(255) NOT NULL default '',
+  "md_entry" varchar(255) NOT NULL default '',
+  "learning_resource_type" varchar(255) NOT NULL default '',
+  "cost" varchar(100) NOT NULL default '',
+  "copyright" varchar(150) NOT NULL default '',
+  "right_description" varchar(255) NOT NULL default '',
+  "interactive_type" varchar(255) NOT NULL default '',
+  "interactive_level" varchar(100) NOT NULL default '',
+  "typical_learning_time" varchar(100) NOT NULL default '',
+  "location" varchar(255) NOT NULL default '',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `course`
 --
 
-INSERT INTO `course` (`ID`, `created`, `name`, `type`, `course_type`, `folder_name`, `course_id`, `category_id`, `status`, `description`, `cmi_credit`, `link`, `sco_version`, `description2`, `keyword`, `catalog_name`, `catalog_entry`, `c_description`, `purpose`, `contribute`, `entity`, `classifiedkeyword`, `role`, `date`, `structure`, `format`, `size`, `md_scheme`, `md_catalog`, `md_entry`, `learning_resource_type`, `cost`, `copyright`, `right_description`, `interactive_type`, `interactive_level`, `typical_learning_time`, `location`) VALUES
-(2, '11/15/11', 'Showers and Eye Washes: Lab', 'wbt', 'Scorm 1.2', '/LMS/uploadfiles/course-1', 'course-1', 5, 'active', NULL, 'credit', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+INSERT INTO `course` VALUES(2, '11/15/11', 'Showers and Eye Washes: Lab', 'wbt', 'Scorm 1.2', '/LMS/uploadfiles/course-1', 'course-1', 5, 'active', NULL, 'credit', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (4, '01/09/2012', 'Drugs and alcohol managers', 'wbt', 'Scorm 1.2', '/LMS/uploadfiles/course-3', 'course-3', 2, 'active', NULL, 'credit', 'http://davidealytechnologies.com', NULL, NULL, NULL, NULL, NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-(5, '01/09/2012', 'Cons eye safety_en', 'wbt', 'Scorm 1.2', '/LMS/uploadfiles/course-4', 'course-4', 3, 'active', NULL, 'credit', 'http://davidealytechnologies.com', '', '', 'fgdfg', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+(5, '01/09/2012', 'Cons eye safety_en', 'wbt', 'Scorm 1.2', '/LMS/uploadfiles/course-4', 'course-4', 3, 'active', NULL, 'credit', 'http://davidealytechnologies.com', '', '', '4543', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (6, '01/09/2012', 'Emergency response plan', 'wbt', 'Scorm 1.2', '/LMS/uploadfiles/course-5', 'course-5', 4, 'active', NULL, 'credit', 'http://davidealytechnologies.com', NULL, NULL, NULL, NULL, NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (7, '01/09/2012', 'Hand and power tool safety', 'wbt', 'Scorm 1.2', '/LMS/uploadfiles/course-6', 'course-6', 10, 'active', NULL, 'credit', 'http://davidealytechnologies.com', NULL, NULL, NULL, NULL, NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (8, '01/09/2012', 'Site safety & health plan', 'wbt', 'Scorm 1.2', '/LMS/uploadfiles/course-7', 'course-7', 11, 'active', NULL, 'credit', '', NULL, NULL, NULL, NULL, NULL, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
@@ -369,17 +335,17 @@ INSERT INTO `course` (`ID`, `created`, `name`, `type`, `course_type`, `folder_na
 --
 
 DROP TABLE IF EXISTS `course-backup`;
-CREATE TABLE `course-backup` (
-  `modified` date default '0000-00-00',
-  `created` date default '0000-00-00',
-  `name` varchar(50) NOT NULL default '',
-  `type` varchar(20) NOT NULL default '',
-  `ID` int(11) NOT NULL auto_increment,
-  `status` enum('active','not active') default 'not active',
-  `description` blob,
-  `link` varchar(255) default 'http://davidealytechnologies.com',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+CREATE TABLE "course-backup" (
+  "modified" date default '0000-00-00',
+  "created" date default '0000-00-00',
+  "name" varchar(50) NOT NULL default '',
+  "type" varchar(20) NOT NULL default '',
+  "ID" int(11) NOT NULL auto_increment,
+  "status" enum('active','not active') default 'not active',
+  "description" blob,
+  "link" varchar(255) default 'http://davidealytechnologies.com',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `course-backup`
@@ -393,15 +359,15 @@ CREATE TABLE `course-backup` (
 --
 
 DROP TABLE IF EXISTS `courses_r`;
-CREATE TABLE `courses_r` (
-  `course_name` varchar(50) NOT NULL default '',
-  `course_ID` int(11) NOT NULL default '0',
-  `lesson_name` varchar(50) NOT NULL default '',
-  `lesson_ID` int(11) NOT NULL default '0',
-  `ID` int(11) NOT NULL auto_increment,
-  `lesson_order` int(11) NOT NULL default '0',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE TABLE "courses_r" (
+  "course_name" varchar(50) NOT NULL default '',
+  "course_ID" int(11) NOT NULL default '0',
+  "lesson_name" varchar(50) NOT NULL default '',
+  "lesson_ID" int(11) NOT NULL default '0',
+  "ID" int(11) NOT NULL auto_increment,
+  "lesson_order" int(11) NOT NULL default '0',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `courses_r`
@@ -415,18 +381,17 @@ CREATE TABLE `courses_r` (
 --
 
 DROP TABLE IF EXISTS `course_categories`;
-CREATE TABLE `course_categories` (
-  `category_id` int(10) NOT NULL auto_increment,
-  `category_name` varchar(100) NOT NULL default '',
-  PRIMARY KEY  (`category_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+CREATE TABLE "course_categories" (
+  "category_id" int(10) NOT NULL auto_increment,
+  "category_name" varchar(100) NOT NULL default '',
+  PRIMARY KEY  ("category_id")
+) AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `course_categories`
 --
 
-INSERT INTO `course_categories` (`category_id`, `category_name`) VALUES
-(1, 'OSHA'),
+INSERT INTO `course_categories` VALUES(1, 'OSHA'),
 (2, 'General Industry'),
 (3, 'Construction Safety'),
 (4, 'Hazardous Materials'),
@@ -450,33 +415,32 @@ INSERT INTO `course_categories` (`category_id`, `category_name`) VALUES
 --
 
 DROP TABLE IF EXISTS `course_history`;
-CREATE TABLE `course_history` (
-  `last_usage` date default '0000-00-00',
-  `start_date` date default '0000-00-00',
-  `course_status` varchar(40) NOT NULL default 'Incomplete',
-  `course_ID` int(4) NOT NULL default '0',
-  `lesson` int(4) NOT NULL default '0',
-  `topic` int(4) NOT NULL default '0',
-  `last_au` int(15) NOT NULL default '0',
-  `completed_aus` varchar(250) NOT NULL default '',
-  `custom_inf` text NOT NULL,
-  `user_ID` int(15) NOT NULL default '0',
-  `total_time` varchar(50) NOT NULL default '',
-  `total_score` int(3) NOT NULL default '0',
-  `start_time` varchar(50) NOT NULL default '',
-  `ID` int(11) NOT NULL auto_increment,
-  `lesson_location` varchar(250) NOT NULL default '',
-  `core_exit` varchar(20) NOT NULL default '',
-  `score_raw` float(10,2) NOT NULL default '0.00',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+CREATE TABLE "course_history" (
+  "last_usage" date default '0000-00-00',
+  "start_date" date default '0000-00-00',
+  "course_status" varchar(40) NOT NULL default 'Incomplete',
+  "course_ID" int(4) NOT NULL default '0',
+  "lesson" int(4) NOT NULL default '0',
+  "topic" int(4) NOT NULL default '0',
+  "last_au" int(15) NOT NULL default '0',
+  "completed_aus" varchar(250) NOT NULL default '',
+  "custom_inf" text NOT NULL,
+  "user_ID" int(15) NOT NULL default '0',
+  "total_time" varchar(50) NOT NULL default '',
+  "total_score" int(3) NOT NULL default '0',
+  "start_time" varchar(50) NOT NULL default '',
+  "ID" int(11) NOT NULL auto_increment,
+  "lesson_location" varchar(250) NOT NULL default '',
+  "core_exit" varchar(20) NOT NULL default '',
+  "score_raw" float(10,2) NOT NULL default '0.00',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `course_history`
 --
 
-INSERT INTO `course_history` (`last_usage`, `start_date`, `course_status`, `course_ID`, `lesson`, `topic`, `last_au`, `completed_aus`, `custom_inf`, `user_ID`, `total_time`, `total_score`, `start_time`, `ID`, `lesson_location`, `core_exit`, `score_raw`) VALUES
-('0000-00-00', '0000-00-00', 'Not Attempted', 2, 1, 1, 1, '1', '1_1-', 1, '00:00:00.00', 0, '0', 1, '', '', 0.00),
+INSERT INTO `course_history` VALUES('0000-00-00', '0000-00-00', 'Not Attempted', 2, 1, 1, 1, '1', '1_1-', 1, '00:00:00.00', 0, '0', 1, '', '', 0.00),
 ('0000-00-00', '0000-00-00', 'Not Attempted', 2, 1, 1, 1, '1', '1_1-', 38, '00:00:00.00', 0, '0', 2, '', '', 0.00),
 ('0000-00-00', '0000-00-00', 'Not Attempted', 3, 1, 1, 1, '1', '1_1-', 1, '00:00:00.00', 0, '0', 3, '', '', 0.00),
 ('0000-00-00', '0000-00-00', 'Not Attempted', 4, 1, 1, 1, '1', '1_1-', 1, '00:00:00.00', 0, '0', 4, '', '', 0.00),
@@ -484,7 +448,9 @@ INSERT INTO `course_history` (`last_usage`, `start_date`, `course_status`, `cour
 ('2012-01-12', '2012-01-12', 'Incomplete', 0, 1, 1, 1, '1', '1_1-', 0, '02:46:29', 0, '0', 6, '', '', 0.00),
 ('0000-00-00', '0000-00-00', 'Not Attempted', 0, 1, 1, 1, '1', '1_1-', 1, '00:00:00.00', 0, '0', 7, '', '', 0.00),
 ('0000-00-00', '0000-00-00', 'Not Attempted', 7, 1, 1, 1, '1', '1_1-', 1, '00:00:00.00', 0, '0', 8, '', '', 0.00),
-('2012-01-24', '2012-01-24', 'Incomplete', 8, 1, 1, 1, '1', '1_1-', 1, '02:42:37', 0, '0', 9, '', '', 0.00);
+('2012-01-24', '2012-01-24', 'Incomplete', 8, 1, 1, 1, '1', '1_1-', 1, '02:42:37', 0, '0', 9, '', '', 0.00),
+('2012-01-26', '2012-01-26', 'Incomplete', 9, 1, 1, 1, '1', '1_1-', 1, '12:37:42', 0, '0', 10, '', '', 0.00),
+('2012-01-26', '2012-01-26', 'Incomplete', 6, 1, 1, 1, '1', '1_1-', 1, '12:38:52', 0, '0', 11, '', '', 0.00);
 
 -- --------------------------------------------------------
 
@@ -493,24 +459,23 @@ INSERT INTO `course_history` (`last_usage`, `start_date`, `course_status`, `cour
 --
 
 DROP TABLE IF EXISTS `course_metdata_info`;
-CREATE TABLE `course_metdata_info` (
-  `course_id` varchar(255) NOT NULL default '',
-  `row_id` int(11) NOT NULL auto_increment,
-  `version` varchar(255) NOT NULL default '',
-  `title` varchar(255) NOT NULL default '',
-  `description` text NOT NULL,
-  `catalogentry` varchar(255) NOT NULL default '',
-  `catalogname` varchar(255) NOT NULL default '',
-  `keywords` varchar(255) NOT NULL default '',
-  PRIMARY KEY  (`row_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+CREATE TABLE "course_metdata_info" (
+  "course_id" varchar(255) NOT NULL default '',
+  "row_id" int(11) NOT NULL auto_increment,
+  "version" varchar(255) NOT NULL default '',
+  "title" varchar(255) NOT NULL default '',
+  "description" text NOT NULL,
+  "catalogentry" varchar(255) NOT NULL default '',
+  "catalogname" varchar(255) NOT NULL default '',
+  "keywords" varchar(1000) default NULL,
+  PRIMARY KEY  ("row_id")
+) AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `course_metdata_info`
 --
 
-INSERT INTO `course_metdata_info` (`course_id`, `row_id`, `version`, `title`, `description`, `catalogentry`, `catalogname`, `keywords`) VALUES
-('course-3', 1, '1.2', 'TotalLMS Enrollment Specialist Course', 'Course with Revisions from 1/19/11.', 'CourseID', 'Trivantis Courses Catalog', 'TotalLMS Enrollment Specialist Course'),
+INSERT INTO `course_metdata_info` VALUES('course-3', 1, '1.2', 'TotalLMS Enrollment Specialist Course', 'Course with Revisions from 1/19/11.', 'CourseID', 'Trivantis Courses Catalog', 'TotalLMS Enrollment Specialist Course'),
 ('course-4', 2, '1.2', 'Captivate E-learning Course', '', 'Course_ID1', 'Adobe Captivate Course', '');
 
 -- --------------------------------------------------------
@@ -520,22 +485,21 @@ INSERT INTO `course_metdata_info` (`course_id`, `row_id`, `version`, `title`, `d
 --
 
 DROP TABLE IF EXISTS `crab_lessons`;
-CREATE TABLE `crab_lessons` (
-  `id` int(32) unsigned NOT NULL auto_increment,
-  `course_id` int(32) NOT NULL default '0',
-  `lesson_name` varchar(255) NOT NULL default '',
-  `folder_name` varchar(255) NOT NULL default '',
-  `file_name` varchar(255) NOT NULL default '',
-  `date_of_creation` date NOT NULL default '0000-00-00',
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+CREATE TABLE "crab_lessons" (
+  "id" int(32) unsigned NOT NULL auto_increment,
+  "course_id" int(32) NOT NULL default '0',
+  "lesson_name" varchar(255) NOT NULL default '',
+  "folder_name" varchar(255) NOT NULL default '',
+  "file_name" varchar(255) NOT NULL default '',
+  "date_of_creation" date NOT NULL default '0000-00-00',
+  PRIMARY KEY  ("id")
+) AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `crab_lessons`
 --
 
-INSERT INTO `crab_lessons` (`id`, `course_id`, `lesson_name`, `folder_name`, `file_name`, `date_of_creation`) VALUES
-(1, 12, 'reload-test', 'test/reload-test', 'index.html', '0000-00-00');
+INSERT INTO `crab_lessons` VALUES(1, 12, 'reload-test', 'test/reload-test', 'index.html', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -544,24 +508,23 @@ INSERT INTO `crab_lessons` (`id`, `course_id`, `lesson_name`, `folder_name`, `fi
 --
 
 DROP TABLE IF EXISTS `crms_comments`;
-CREATE TABLE `crms_comments` (
-  `ID` int(11) NOT NULL auto_increment,
-  `comment` varchar(255) NOT NULL,
-  `pageID` int(11) NOT NULL,
-  `userID` int(11) NOT NULL COMMENT 'user who inputs the comment',
-  `approval_userID` int(11) default '0' COMMENT 'user who aproves, 0 means not aproved',
-  `fecha` datetime NOT NULL,
-  `approval_fecha` datetime default NULL,
-  `b_local_global` tinyint(1) NOT NULL default '0',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
+CREATE TABLE "crms_comments" (
+  "ID" int(11) NOT NULL auto_increment,
+  "comment" varchar(255) NOT NULL,
+  "pageID" int(11) NOT NULL,
+  "userID" int(11) NOT NULL COMMENT 'user who inputs the comment',
+  "approval_userID" int(11) default '0' COMMENT 'user who aproves, 0 means not aproved',
+  "fecha" datetime NOT NULL,
+  "approval_fecha" datetime default NULL,
+  "b_local_global" tinyint(1) NOT NULL default '0',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=26 ;
 
 --
 -- Dumping data for table `crms_comments`
 --
 
-INSERT INTO `crms_comments` (`ID`, `comment`, `pageID`, `userID`, `approval_userID`, `fecha`, `approval_fecha`, `b_local_global`) VALUES
-(1, 'test', 2, 2, 2, '2008-04-29 01:28:00', '2008-04-29 01:28:00', 0),
+INSERT INTO `crms_comments` VALUES(1, 'test', 2, 2, 2, '2008-04-29 01:28:00', '2008-04-29 01:28:00', 0),
 (2, 'test', 2, 2, 0, '2008-04-29 01:30:00', NULL, 0),
 (3, 'test', 2, 2, 0, '2008-04-29 01:34:05', NULL, 1),
 (4, 'test', 2, 1, 0, '2008-04-29 01:35:11', NULL, 0),
@@ -594,21 +557,20 @@ INSERT INTO `crms_comments` (`ID`, `comment`, `pageID`, `userID`, `approval_user
 --
 
 DROP TABLE IF EXISTS `crms_pages`;
-CREATE TABLE `crms_pages` (
-  `ID` int(11) NOT NULL auto_increment,
-  `file` text COMMENT 'File name',
-  `title` varchar(255) default NULL COMMENT 'Page title or descriptor',
-  `description` blob COMMENT 'description',
-  `projectID` int(11) default '0',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+CREATE TABLE "crms_pages" (
+  "ID" int(11) NOT NULL auto_increment,
+  "file" text COMMENT 'File name',
+  "title" varchar(255) default NULL COMMENT 'Page title or descriptor',
+  "description" blob COMMENT 'description',
+  "projectID" int(11) default '0',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `crms_pages`
 --
 
-INSERT INTO `crms_pages` (`ID`, `file`, `title`, `description`, `projectID`) VALUES
-(1, '', NULL, NULL, 1),
+INSERT INTO `crms_pages` VALUES(1, '', NULL, NULL, 1),
 (2, 'http://127.0.0.1:800/CRMS/current/add_comment.php', NULL, NULL, 1),
 (3, 'http://127.0.0.1:800/CRMS/learningfox/', NULL, NULL, 1),
 (4, 'http://127.0.0.1:800/CRMS/course1/index.html', NULL, NULL, 1),
@@ -624,20 +586,19 @@ INSERT INTO `crms_pages` (`ID`, `file`, `title`, `description`, `projectID`) VAL
 --
 
 DROP TABLE IF EXISTS `crms_project`;
-CREATE TABLE `crms_project` (
-  `ID` int(11) NOT NULL auto_increment,
-  `name` varchar(255) NOT NULL,
-  `URL` text NOT NULL,
-  `sitemap` varchar(255) NOT NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+CREATE TABLE "crms_project" (
+  "ID" int(11) NOT NULL auto_increment,
+  "name" varchar(255) NOT NULL,
+  "URL" text NOT NULL,
+  "sitemap" varchar(255) NOT NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `crms_project`
 --
 
-INSERT INTO `crms_project` (`ID`, `name`, `URL`, `sitemap`) VALUES
-(1, 'Test', 'http://127.0.0.1:800/CRMS/learningfox', '/index.htm');
+INSERT INTO `crms_project` VALUES(1, 'Test', 'http://127.0.0.1:800/CRMS/learningfox', '/index.htm');
 
 -- --------------------------------------------------------
 
@@ -646,24 +607,23 @@ INSERT INTO `crms_project` (`ID`, `name`, `URL`, `sitemap`) VALUES
 --
 
 DROP TABLE IF EXISTS `crms_user`;
-CREATE TABLE `crms_user` (
-  `ID` int(11) NOT NULL auto_increment,
-  `user` varchar(255) NOT NULL,
-  `pass` varchar(255) default NULL,
-  `projectID` int(11) default NULL,
-  `user_typeID` int(11) default NULL,
-  `session` char(32) default NULL,
-  `ip` bit(15) default NULL,
-  `cookie` char(32) default NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+CREATE TABLE "crms_user" (
+  "ID" int(11) NOT NULL auto_increment,
+  "user" varchar(255) NOT NULL,
+  "pass" varchar(255) default NULL,
+  "projectID" int(11) default NULL,
+  "user_typeID" int(11) default NULL,
+  "session" char(32) default NULL,
+  "ip" bit(15) default NULL,
+  "cookie" char(32) default NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `crms_user`
 --
 
-INSERT INTO `crms_user` (`ID`, `user`, `pass`, `projectID`, `user_typeID`, `session`, `ip`, `cookie`) VALUES
-(2, 'alex', 'pass', 1, 1, '04260bf058a0693d31ce6e8603e8723d', 'ÿ', '669625c5cf846fb61554b309a3c93588'),
+INSERT INTO `crms_user` VALUES(2, 'alex', 'pass', 1, 1, '04260bf058a0693d31ce6e8603e8723d', 'ÿ', '669625c5cf846fb61554b309a3c93588'),
 (9, 'david1', 'david1', 1, 1, NULL, NULL, NULL),
 (4, 'david', 'david', 1, 1, NULL, NULL, NULL),
 (8, 'alex3', 'alex3', 1, 3, NULL, NULL, NULL),
@@ -676,18 +636,17 @@ INSERT INTO `crms_user` (`ID`, `user`, `pass`, `projectID`, `user_typeID`, `sess
 --
 
 DROP TABLE IF EXISTS `crms_user_type`;
-CREATE TABLE `crms_user_type` (
-  `ID` int(11) NOT NULL auto_increment,
-  `tipo` varchar(255) default NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+CREATE TABLE "crms_user_type" (
+  "ID" int(11) NOT NULL auto_increment,
+  "tipo" varchar(255) default NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `crms_user_type`
 --
 
-INSERT INTO `crms_user_type` (`ID`, `tipo`) VALUES
-(1, 'Super User'),
+INSERT INTO `crms_user_type` VALUES(1, 'Super User'),
 (2, 'Admin User'),
 (3, 'Normal User');
 
@@ -698,18 +657,17 @@ INSERT INTO `crms_user_type` (`ID`, `tipo`) VALUES
 --
 
 DROP TABLE IF EXISTS `document_category`;
-CREATE TABLE `document_category` (
-  `id` int(25) NOT NULL auto_increment,
-  `name` varchar(255) NOT NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+CREATE TABLE "document_category" (
+  "id" int(25) NOT NULL auto_increment,
+  "name" varchar(255) NOT NULL,
+  PRIMARY KEY  ("id")
+) AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `document_category`
 --
 
-INSERT INTO `document_category` (`id`, `name`) VALUES
-(1, 'sub_category1'),
+INSERT INTO `document_category` VALUES(1, 'sub_category1'),
 (2, 'sub_category2'),
 (3, 'sub_category3');
 
@@ -720,27 +678,26 @@ INSERT INTO `document_category` (`id`, `name`) VALUES
 --
 
 DROP TABLE IF EXISTS `document_details`;
-CREATE TABLE `document_details` (
-  `doc_id` int(25) NOT NULL auto_increment,
-  `doc_name` varchar(255) NOT NULL,
-  `doc_type` varchar(255) NOT NULL,
-  `doc_description` text NOT NULL,
-  `doc_keywords` varchar(255) NOT NULL,
-  `doc_active` varchar(255) NOT NULL,
-  `doc_category` varchar(255) NOT NULL,
-  `doc_path` varchar(255) NOT NULL,
-  `doc_number` varchar(255) NOT NULL,
-  `uploading_date` varchar(255) NOT NULL,
-  `sub_level` int(255) NOT NULL,
-  PRIMARY KEY  (`doc_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
+CREATE TABLE "document_details" (
+  "doc_id" int(25) NOT NULL auto_increment,
+  "doc_name" varchar(255) NOT NULL,
+  "doc_type" varchar(255) NOT NULL,
+  "doc_description" text NOT NULL,
+  "doc_keywords" varchar(255) NOT NULL,
+  "doc_active" varchar(255) NOT NULL,
+  "doc_category" varchar(255) NOT NULL,
+  "doc_path" varchar(255) NOT NULL,
+  "doc_number" varchar(255) NOT NULL,
+  "uploading_date" varchar(255) NOT NULL,
+  "sub_level" int(255) NOT NULL,
+  PRIMARY KEY  ("doc_id")
+) AUTO_INCREMENT=19 ;
 
 --
 -- Dumping data for table `document_details`
 --
 
-INSERT INTO `document_details` (`doc_id`, `doc_name`, `doc_type`, `doc_description`, `doc_keywords`, `doc_active`, `doc_category`, `doc_path`, `doc_number`, `uploading_date`, `sub_level`) VALUES
-(2, 'CMS users test doc', 'CMS Users', 'Test Document', 'Test,Test', 'yes', 'main', '/CrownDocs/Registered/CMS_Users/slide6.swf', 'CMS Users-082709-7f000001-414e-cc00', '08-27-09', 0),
+INSERT INTO `document_details` VALUES(2, 'CMS users test doc', 'CMS Users', 'Test Document', 'Test,Test', 'yes', 'main', '/CrownDocs/Registered/CMS_Users/slide6.swf', 'CMS Users-082709-7f000001-414e-cc00', '08-27-09', 0),
 (3, 'Public test doc', 'public', 'Public Test Document', 'Test,Test', 'yes', 'main', '/CrownDocs/Public/teamrooms.pdf', 'public-082709-7f000001-86cf-f400', '08-27-09', 0),
 (4, 'Cms Doc2', 'CMS Users', 'CMS doc values', 'CMS doc', 'yes', 'main', '/CrownDocs/Registered/CMS_Users/onlinecourses.pdf', 'CMS Users-082709-7f000001-88c3-e800', '08-27-09', 0),
 (5, 'DOC3', 'CMS Users', 'User name', 'CMS1', 'yes', 'main', '/CrownDocs/Registered/CMS_Users/teamrooms.pdf', 'CMS Users-082709-7f000001-88e9-1400', '08-27-09', 0),
@@ -763,19 +720,18 @@ INSERT INTO `document_details` (`doc_id`, `doc_name`, `doc_type`, `doc_descripti
 --
 
 DROP TABLE IF EXISTS `document_tree`;
-CREATE TABLE `document_tree` (
-  `id` int(25) NOT NULL auto_increment,
-  `parent_id` int(25) NOT NULL,
-  `child_id` varchar(255) NOT NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+CREATE TABLE "document_tree" (
+  "id" int(25) NOT NULL auto_increment,
+  "parent_id" int(25) NOT NULL,
+  "child_id" varchar(255) NOT NULL,
+  PRIMARY KEY  ("id")
+) AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `document_tree`
 --
 
-INSERT INTO `document_tree` (`id`, `parent_id`, `child_id`) VALUES
-(1, 5, '9'),
+INSERT INTO `document_tree` VALUES(1, 5, '9'),
 (2, 4, '10'),
 (3, 2, '11'),
 (4, 6, '12'),
@@ -793,55 +749,54 @@ INSERT INTO `document_tree` (`id`, `parent_id`, `child_id`) VALUES
 --
 
 DROP TABLE IF EXISTS `efiles`;
-CREATE TABLE `efiles` (
-  `ID` int(255) NOT NULL auto_increment,
-  `assetnum` varchar(5) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `filename` varchar(150) NOT NULL,
-  `created` datetime NOT NULL,
-  `type` varchar(255) NOT NULL,
-  `course_type` varchar(255) NOT NULL default '',
-  `folder_name` varchar(255) NOT NULL default '',
-  `course_id` varchar(255) NOT NULL default '',
-  `status` enum('active','not active') default 'active',
-  `description` blob,
-  `cmi_credit` varchar(255) NOT NULL default '',
-  `link` varchar(255) default 'http://davidealytechnologies.com',
-  `sco_version` varchar(255) default NULL,
-  `description2` varchar(255) default NULL,
-  `keyword` varchar(255) default NULL,
-  `catalog_name` varchar(255) default NULL,
-  `catalog_entry` varchar(255) default NULL,
-  `c_description` varchar(255) NOT NULL,
-  `purpose` varchar(255) NOT NULL,
-  `contribute` varchar(255) NOT NULL,
-  `entity` varchar(255) NOT NULL,
-  `classifiedkeyword` varchar(255) NOT NULL,
-  `role` varchar(255) NOT NULL,
-  `date` varchar(100) NOT NULL,
-  `structure` varchar(255) NOT NULL,
-  `format` varchar(255) NOT NULL,
-  `size` varchar(255) NOT NULL,
-  `md_scheme` varchar(255) NOT NULL,
-  `md_catalog` varchar(255) NOT NULL,
-  `md_entry` varchar(255) NOT NULL,
-  `learning_resource_type` varchar(255) NOT NULL,
-  `cost` varchar(100) NOT NULL,
-  `copyright` varchar(150) NOT NULL,
-  `right_description` varchar(255) NOT NULL,
-  `interactive_type` varchar(255) NOT NULL,
-  `interactive_level` varchar(100) NOT NULL,
-  `typical_learning_time` varchar(100) NOT NULL,
-  `location` varchar(255) NOT NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
+CREATE TABLE "efiles" (
+  "ID" int(255) NOT NULL auto_increment,
+  "assetnum" varchar(5) NOT NULL,
+  "name" varchar(100) NOT NULL,
+  "filename" varchar(150) NOT NULL,
+  "created" datetime NOT NULL,
+  "type" varchar(255) NOT NULL,
+  "course_type" varchar(255) NOT NULL default '',
+  "folder_name" varchar(255) NOT NULL default '',
+  "course_id" varchar(255) NOT NULL default '',
+  "status" enum('active','not active') default 'active',
+  "description" blob,
+  "cmi_credit" varchar(255) NOT NULL default '',
+  "link" varchar(255) default 'http://davidealytechnologies.com',
+  "sco_version" varchar(255) default NULL,
+  "description2" varchar(255) default NULL,
+  "keyword" varchar(255) default NULL,
+  "catalog_name" varchar(255) default NULL,
+  "catalog_entry" varchar(255) default NULL,
+  "c_description" varchar(255) NOT NULL,
+  "purpose" varchar(255) NOT NULL,
+  "contribute" varchar(255) NOT NULL,
+  "entity" varchar(255) NOT NULL,
+  "classifiedkeyword" varchar(255) NOT NULL,
+  "role" varchar(255) NOT NULL,
+  "date" varchar(100) NOT NULL,
+  "structure" varchar(255) NOT NULL,
+  "format" varchar(255) NOT NULL,
+  "size" varchar(255) NOT NULL,
+  "md_scheme" varchar(255) NOT NULL,
+  "md_catalog" varchar(255) NOT NULL,
+  "md_entry" varchar(255) NOT NULL,
+  "learning_resource_type" varchar(255) NOT NULL,
+  "cost" varchar(100) NOT NULL,
+  "copyright" varchar(150) NOT NULL,
+  "right_description" varchar(255) NOT NULL,
+  "interactive_type" varchar(255) NOT NULL,
+  "interactive_level" varchar(100) NOT NULL,
+  "typical_learning_time" varchar(100) NOT NULL,
+  "location" varchar(255) NOT NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=25 ;
 
 --
 -- Dumping data for table `efiles`
 --
 
-INSERT INTO `efiles` (`ID`, `assetnum`, `name`, `filename`, `created`, `type`, `course_type`, `folder_name`, `course_id`, `status`, `description`, `cmi_credit`, `link`, `sco_version`, `description2`, `keyword`, `catalog_name`, `catalog_entry`, `c_description`, `purpose`, `contribute`, `entity`, `classifiedkeyword`, `role`, `date`, `structure`, `format`, `size`, `md_scheme`, `md_catalog`, `md_entry`, `learning_resource_type`, `cost`, `copyright`, `right_description`, `interactive_type`, `interactive_level`, `typical_learning_time`, `location`) VALUES
-(3, 'a2', 'karen.pdf', 'pdf', '2008-10-23 11:00:45', '', '', '', '', 'active', NULL, '', 'http://davidealytechnologies.com', '', 'adsfasdf sdfgsdfgsdfgsdf', 'adsf', 'asdf', 'asdf', 'asdfasdf', 'asdf', 'asdfasdfasdf', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
+INSERT INTO `efiles` VALUES(3, 'a2', 'karen.pdf', 'pdf', '2008-10-23 11:00:45', '', '', '', '', 'active', NULL, '', 'http://davidealytechnologies.com', '', 'adsfasdf sdfgsdfgsdfgsdf', 'adsf', 'asdf', 'asdf', 'asdfasdf', 'asdf', 'asdfasdfasdf', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (8, 'a3', '_bcimg633569015975079487.jpg', 'jpg', '2008-10-27 14:38:54', '', '', '', '', 'active', NULL, '', 'http://davidealytechnologies.com', '', 'asasdfsdf', 'asdfasdfasdfasd', 'asdf', 'adsfasd', 'fasdf', 'asdfasdfasdf', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (10, 'a1', 'RENEREQFILMFEST.jpg', 'JPEG', '2008-11-25 14:15:34', '', '', '', '', 'active', NULL, '', 'http://davidealytechnologies.com', '', 'JPEG', 'JPEG', 'JPEG', 'JPEG', 'JPEG', 'JPEG', 'JPEG', '', '', '', '', '', 'Video', '', '', '', '', '', '', '', '', '', '', '', '');
 
@@ -852,13 +807,13 @@ INSERT INTO `efiles` (`ID`, `assetnum`, `name`, `filename`, `created`, `type`, `
 --
 
 DROP TABLE IF EXISTS `forums`;
-CREATE TABLE `forums` (
-  `orgID` varchar(24) NOT NULL default '0',
-  `maxposts` int(15) unsigned NOT NULL default '100',
-  `ID` int(15) NOT NULL auto_increment,
-  PRIMARY KEY  (`ID`),
-  KEY `orgID` (`orgID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE TABLE "forums" (
+  "orgID" varchar(24) NOT NULL default '0',
+  "maxposts" int(15) unsigned NOT NULL default '100',
+  "ID" int(15) NOT NULL auto_increment,
+  PRIMARY KEY  ("ID"),
+  KEY "orgID" ("orgID")
+) AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `forums`
@@ -872,17 +827,17 @@ CREATE TABLE `forums` (
 --
 
 DROP TABLE IF EXISTS `forum_messages`;
-CREATE TABLE `forum_messages` (
-  `created` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
-  `subject` varchar(255) default '0',
-  `message` blob,
-  `replied_to` enum('yes','no') NOT NULL default 'no',
-  `userID` int(15) NOT NULL default '0',
-  `threadID` int(15) NOT NULL default '0',
-  `ID` int(15) NOT NULL auto_increment,
-  PRIMARY KEY  (`ID`),
-  KEY `userID` (`userID`,`threadID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE TABLE "forum_messages" (
+  "created" timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  "subject" varchar(255) default '0',
+  "message" blob,
+  "replied_to" enum('yes','no') NOT NULL default 'no',
+  "userID" int(15) NOT NULL default '0',
+  "threadID" int(15) NOT NULL default '0',
+  "ID" int(15) NOT NULL auto_increment,
+  PRIMARY KEY  ("ID"),
+  KEY "userID" ("userID","threadID")
+) AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `forum_messages`
@@ -896,14 +851,14 @@ CREATE TABLE `forum_messages` (
 --
 
 DROP TABLE IF EXISTS `forum_threads`;
-CREATE TABLE `forum_threads` (
-  `tokenID` int(15) unsigned NOT NULL default '0',
-  `userID` int(15) NOT NULL default '0',
-  `topicsID` int(15) NOT NULL default '0',
-  `ID` int(15) NOT NULL auto_increment,
-  PRIMARY KEY  (`ID`),
-  KEY `topicsID` (`topicsID`,`userID`,`tokenID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE TABLE "forum_threads" (
+  "tokenID" int(15) unsigned NOT NULL default '0',
+  "userID" int(15) NOT NULL default '0',
+  "topicsID" int(15) NOT NULL default '0',
+  "ID" int(15) NOT NULL auto_increment,
+  PRIMARY KEY  ("ID"),
+  KEY "topicsID" ("topicsID","userID","tokenID")
+) AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `forum_threads`
@@ -917,15 +872,15 @@ CREATE TABLE `forum_threads` (
 --
 
 DROP TABLE IF EXISTS `forum_topics`;
-CREATE TABLE `forum_topics` (
-  `title` varchar(255) NOT NULL default '0',
-  `status` enum('on','off') NOT NULL default 'off',
-  `courseID` int(15) NOT NULL default '0',
-  `forumID` int(15) NOT NULL default '0',
-  `ID` int(15) NOT NULL auto_increment,
-  PRIMARY KEY  (`ID`),
-  KEY `courseID` (`courseID`,`forumID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE TABLE "forum_topics" (
+  "title" varchar(255) NOT NULL default '0',
+  "status" enum('on','off') NOT NULL default 'off',
+  "courseID" int(15) NOT NULL default '0',
+  "forumID" int(15) NOT NULL default '0',
+  "ID" int(15) NOT NULL auto_increment,
+  PRIMARY KEY  ("ID"),
+  KEY "courseID" ("courseID","forumID")
+) AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `forum_topics`
@@ -939,19 +894,18 @@ CREATE TABLE `forum_topics` (
 --
 
 DROP TABLE IF EXISTS `groups`;
-CREATE TABLE `groups` (
-  `name` varchar(225) NOT NULL default '',
-  `sname` varchar(225) NOT NULL default '',
-  `ID` int(11) NOT NULL auto_increment,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24 ;
+CREATE TABLE "groups" (
+  "name" varchar(225) NOT NULL default '',
+  "sname" varchar(225) NOT NULL default '',
+  "ID" int(11) NOT NULL auto_increment,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=26 ;
 
 --
 -- Dumping data for table `groups`
 --
 
-INSERT INTO `groups` (`name`, `sname`, `ID`) VALUES
-('Information Tech', 'IT', 1),
+INSERT INTO `groups` VALUES('Information Tech', 'IT', 1),
 ('Nursing', 'Nurse', 2),
 ('Instructional Designers', 'isd', 3),
 ('Editors', 'ed', 4),
@@ -967,29 +921,28 @@ INSERT INTO `groups` (`name`, `sname`, `ID`) VALUES
 --
 
 DROP TABLE IF EXISTS `item_info`;
-CREATE TABLE `item_info` (
-  `id` int(20) NOT NULL auto_increment,
-  `course_id` varchar(255) NOT NULL default '',
-  `identifier` varchar(255) NOT NULL default '',
-  `type` varchar(255) NOT NULL default '',
-  `title` varchar(255) NOT NULL default '',
-  `launch` varchar(255) NOT NULL default '',
-  `data_from_lms` varchar(255) NOT NULL default '',
-  `cmi_credit` varchar(255) NOT NULL default '',
-  `prerequisites` varchar(255) NOT NULL default '',
-  `masteryscore` varchar(255) NOT NULL default '',
-  `maximumtime` varchar(255) NOT NULL default '',
-  `timelimitaction` varchar(255) NOT NULL default '',
-  `sequence` int(20) NOT NULL default '0',
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
+CREATE TABLE "item_info" (
+  "id" int(20) NOT NULL auto_increment,
+  "course_id" varchar(255) NOT NULL default '',
+  "identifier" varchar(255) NOT NULL default '',
+  "type" varchar(255) NOT NULL default '',
+  "title" varchar(255) NOT NULL default '',
+  "launch" varchar(255) NOT NULL default '',
+  "data_from_lms" varchar(255) NOT NULL default '',
+  "cmi_credit" varchar(255) NOT NULL default '',
+  "prerequisites" varchar(255) NOT NULL default '',
+  "masteryscore" varchar(255) NOT NULL default '',
+  "maximumtime" varchar(255) NOT NULL default '',
+  "timelimitaction" varchar(255) NOT NULL default '',
+  "sequence" int(20) NOT NULL default '0',
+  PRIMARY KEY  ("id")
+) AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `item_info`
 --
 
-INSERT INTO `item_info` (`id`, `course_id`, `identifier`, `type`, `title`, `launch`, `data_from_lms`, `cmi_credit`, `prerequisites`, `masteryscore`, `maximumtime`, `timelimitaction`, `sequence`) VALUES
-(1, 'course-1', 'm_120_en_id', 'sco', 'Showers and Eye Washes: Lab', 'm_120_en.htm', '', 'credit', '', '', '', '', 0),
+INSERT INTO `item_info` VALUES(1, 'course-1', 'm_120_en_id', 'sco', 'Showers and Eye Washes: Lab', 'm_120_en.htm', '', 'credit', '', '', '', '', 0),
 (2, 'course-1', 'm_120_en_id', 'sco', 'Showers and Eye Washes: Lab', 'm_120_en.htm', '', 'credit', '', '', '', '', 0),
 (13, 'course-7', 'site_safety_haz_en', 'sco', 'Site safety & health plan', 'site_safety_haz_en.htm', '', 'credit', '', '', '', '', 0),
 (12, 'course-6', 'm_044_en', 'sco', 'Hand and power tool safety', 'm_044_en.htm', '', 'credit', '', '', '', '', 0),
@@ -1010,21 +963,20 @@ INSERT INTO `item_info` (`id`, `course_id`, `identifier`, `type`, `title`, `laun
 --
 
 DROP TABLE IF EXISTS `lesson`;
-CREATE TABLE `lesson` (
-  `modified` date default '0000-00-00',
-  `created` date default '0000-00-00',
-  `name` varchar(50) NOT NULL default '',
-  `ID` int(11) NOT NULL auto_increment,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+CREATE TABLE "lesson" (
+  "modified" date default '0000-00-00',
+  "created" date default '0000-00-00',
+  "name" varchar(50) NOT NULL default '',
+  "ID" int(11) NOT NULL auto_increment,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `lesson`
 --
 
-INSERT INTO `lesson` (`modified`, `created`, `name`, `ID`) VALUES
-('2006-09-29', '2006-09-29', 'OSHA', 1),
-('2006-10-16', '2006-10-16', 'er', 2);
+INSERT INTO `lesson` VALUES('2006-09-29', '2006-09-29', 'OSHA', 1);
+INSERT INTO `lesson` VALUES('2006-10-16', '2006-10-16', 'er', 2);
 
 -- --------------------------------------------------------
 
@@ -1033,22 +985,21 @@ INSERT INTO `lesson` (`modified`, `created`, `name`, `ID`) VALUES
 --
 
 DROP TABLE IF EXISTS `lessons_r`;
-CREATE TABLE `lessons_r` (
-  `lesson_name` varchar(50) NOT NULL default '',
-  `lesson_ID` int(11) NOT NULL default '0',
-  `topic_name` varchar(50) NOT NULL default '',
-  `topic_ID` int(11) NOT NULL default '0',
-  `ID` int(11) NOT NULL auto_increment,
-  `topic_order` int(11) NOT NULL default '0',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+CREATE TABLE "lessons_r" (
+  "lesson_name" varchar(50) NOT NULL default '',
+  "lesson_ID" int(11) NOT NULL default '0',
+  "topic_name" varchar(50) NOT NULL default '',
+  "topic_ID" int(11) NOT NULL default '0',
+  "ID" int(11) NOT NULL auto_increment,
+  "topic_order" int(11) NOT NULL default '0',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `lessons_r`
 --
 
-INSERT INTO `lessons_r` (`lesson_name`, `lesson_ID`, `topic_name`, `topic_ID`, `ID`, `topic_order`) VALUES
-('OSHA', 1, '222', 1, 1, 0);
+INSERT INTO `lessons_r` VALUES('OSHA', 1, '222', 1, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -1057,27 +1008,25 @@ INSERT INTO `lessons_r` (`lesson_name`, `lesson_ID`, `topic_name`, `topic_ID`, `
 --
 
 DROP TABLE IF EXISTS `library`;
-CREATE TABLE `library` (
-  `libdocID` int(11) NOT NULL auto_increment,
-  `userID` varchar(255) NOT NULL,
-  `filename` varchar(255) NOT NULL,
-  `filetype` varchar(255) NOT NULL,
-  `img_type` varchar(20) NOT NULL,
-  `datetime` datetime NOT NULL,
-  `targetID` int(11) NOT NULL default '0',
-  PRIMARY KEY  (`libdocID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+CREATE TABLE "library" (
+  "libdocID" int(11) NOT NULL auto_increment,
+  "userID" varchar(255) NOT NULL,
+  "filename" varchar(255) NOT NULL,
+  "filetype" varchar(255) NOT NULL,
+  "img_type" varchar(20) NOT NULL,
+  "datetime" datetime NOT NULL,
+  "targetID" int(11) NOT NULL default '0',
+  PRIMARY KEY  ("libdocID")
+) AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `library`
 --
 
-INSERT INTO `library` (`libdocID`, `userID`, `filename`, `filetype`, `img_type`, `datetime`, `targetID`) VALUES
-(7, '1', 'thumbnail.jpg', 'jpeg', 'pdf-thumb', '2012-01-24 03:34:33', 22),
+INSERT INTO `library` VALUES(7, '1', 'thumbnail.jpg', 'jpeg', 'pdf-thumb', '2012-01-24 03:34:33', 22),
 (8, '1', 'medical.pdf', 'pdf', 'pdf-thumb', '2012-01-24 03:37:46', 0),
 (9, '1', 'medical.pdf', 'pdf', 'pdf-thumb', '2012-01-24 03:37:48', 22),
-(10, '1', 'mboar1.php', 'octet-stream', 'pdf-thumb', '2012-01-24 03:38:27', 0),
-(11, '1', 'functions.php', 'octet-stream', 'pdf-thumb', '2012-01-24 03:38:48', 0);
+(10, '1', 'mboar1.php', 'octet-stream', 'pdf-thumb', '2012-01-24 03:38:27', 0);
 
 -- --------------------------------------------------------
 
@@ -1086,20 +1035,19 @@ INSERT INTO `library` (`libdocID`, `userID`, `filename`, `filetype`, `img_type`,
 --
 
 DROP TABLE IF EXISTS `library_folders`;
-CREATE TABLE `library_folders` (
-  `folder_id` int(11) NOT NULL auto_increment,
-  `folder_name` varchar(100) NOT NULL,
-  `user_id` int(10) NOT NULL,
-  `created_date` datetime NOT NULL,
-  PRIMARY KEY  (`folder_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
+CREATE TABLE "library_folders" (
+  "folder_id" int(11) NOT NULL auto_increment,
+  "folder_name" varchar(100) NOT NULL,
+  "user_id" int(10) NOT NULL,
+  "created_date" datetime NOT NULL,
+  PRIMARY KEY  ("folder_id")
+) AUTO_INCREMENT=23 ;
 
 --
 -- Dumping data for table `library_folders`
 --
 
-INSERT INTO `library_folders` (`folder_id`, `folder_name`, `user_id`, `created_date`) VALUES
-(22, 'MSD', 1, '2012-01-12 07:10:20');
+INSERT INTO `library_folders` VALUES(22, 'MSD', 1, '2012-01-12 07:10:20');
 
 -- --------------------------------------------------------
 
@@ -1108,20 +1056,19 @@ INSERT INTO `library_folders` (`folder_id`, `folder_name`, `user_id`, `created_d
 --
 
 DROP TABLE IF EXISTS `library_link`;
-CREATE TABLE `library_link` (
-  `linkID` int(11) NOT NULL auto_increment,
-  `userID` varchar(150) NOT NULL,
-  `links` varchar(255) NOT NULL,
-  `datetime` datetime NOT NULL,
-  PRIMARY KEY  (`linkID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+CREATE TABLE "library_link" (
+  "linkID" int(11) NOT NULL auto_increment,
+  "userID" varchar(150) NOT NULL,
+  "links" varchar(255) NOT NULL,
+  "datetime" datetime NOT NULL,
+  PRIMARY KEY  ("linkID")
+) AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `library_link`
 --
 
-INSERT INTO `library_link` (`linkID`, `userID`, `links`, `datetime`) VALUES
-(10, '1', 'http://www.davidealytechnologies.com/anlm', '2009-10-23 16:56:07');
+INSERT INTO `library_link` VALUES(10, '1', 'http://www.davidealytechnologies.com/anlm', '2009-10-23 16:56:07');
 
 -- --------------------------------------------------------
 
@@ -1130,23 +1077,22 @@ INSERT INTO `library_link` (`linkID`, `userID`, `links`, `datetime`) VALUES
 --
 
 DROP TABLE IF EXISTS `news`;
-CREATE TABLE `news` (
-  `id` int(255) NOT NULL auto_increment,
-  `sid` varchar(255) NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `content` text NOT NULL,
-  `uid` varchar(255) NOT NULL,
-  `datetime` datetime NOT NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=45 ;
+CREATE TABLE "news" (
+  "id" int(255) NOT NULL auto_increment,
+  "sid" varchar(255) NOT NULL,
+  "title" varchar(255) NOT NULL,
+  "content" text NOT NULL,
+  "uid" varchar(255) NOT NULL,
+  "datetime" datetime NOT NULL,
+  PRIMARY KEY  ("id")
+) AUTO_INCREMENT=47 ;
 
 --
 -- Dumping data for table `news`
 --
 
-INSERT INTO `news` (`id`, `sid`, `title`, `content`, `uid`, `datetime`) VALUES
-(40, '323194d6f7f1baf7a0', 'Your news is HERE!', 'This is a sample news story...', '1', '2012-01-23 22:45:09'),
-(43, '10649334154f16824104b91', 'News', 'hi..', '1', '2012-01-18 01:33:12');
+INSERT INTO `news` VALUES(40, '323194d6f7f1baf7a0', 'Your news is HERE!', 'This is a sample news story...', '1', '2012-01-23 22:45:09');
+INSERT INTO `news` VALUES(43, '10649334154f16824104b91', 'News', 'hi..', '1', '2012-01-18 01:33:12');
 
 -- --------------------------------------------------------
 
@@ -1155,20 +1101,19 @@ INSERT INTO `news` (`id`, `sid`, `title`, `content`, `uid`, `datetime`) VALUES
 --
 
 DROP TABLE IF EXISTS `objectives`;
-CREATE TABLE `objectives` (
-  `course_ID` varchar(50) NOT NULL default '',
-  `objective` varchar(220) NOT NULL default '',
-  `link` varchar(50) NOT NULL default '',
-  `ID` int(11) NOT NULL auto_increment,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=31 ;
+CREATE TABLE "objectives" (
+  "course_ID" varchar(50) NOT NULL default '',
+  "objective" varchar(220) NOT NULL default '',
+  "link" varchar(50) NOT NULL default '',
+  "ID" int(11) NOT NULL auto_increment,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=33 ;
 
 --
 -- Dumping data for table `objectives`
 --
 
-INSERT INTO `objectives` (`course_ID`, `objective`, `link`, `ID`) VALUES
-('9', 'play with the course please', '', 1),
+INSERT INTO `objectives` VALUES('9', 'play with the course please', '', 1),
 ('10', 'aloa', '', 3),
 ('7', 'Increase productivity', '', 4),
 ('12', 'asdfasdfasdf', '', 5),
@@ -1183,12 +1128,12 @@ INSERT INTO `objectives` (`course_ID`, `objective`, `link`, `ID`) VALUES
 ('63', '', '', 17),
 ('75', '', '', 18),
 ('132', '', '', 19),
-('2', '', '', 20),
+('2', 'Showers and Eye Washes: Lab', '', 20),
 ('3', 'gffdgfhgfh', '', 21),
 ('3', '', '', 26),
 ('3', '', '', 27),
 ('3', '', '', 28),
-('5', 'Medical Allowance', '', 30);
+('5', '', '', 32);
 
 -- --------------------------------------------------------
 
@@ -1197,29 +1142,28 @@ INSERT INTO `objectives` (`course_ID`, `objective`, `link`, `ID`) VALUES
 --
 
 DROP TABLE IF EXISTS `orgs`;
-CREATE TABLE `orgs` (
-  `name` varchar(100) default NULL,
-  `org_ID` varchar(24) NOT NULL default '',
-  `seats` int(10) default NULL,
-  `address` varchar(255) default '0',
-  `city` varchar(75) default NULL,
-  `state` varchar(6) default NULL,
-  `contact` varchar(100) default NULL,
-  `phone` varchar(14) default NULL,
-  `fax` varchar(14) default NULL,
-  `url` varchar(100) default NULL,
-  `ID` int(15) NOT NULL auto_increment,
-  PRIMARY KEY  (`ID`),
-  KEY `org_ID` (`org_ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+CREATE TABLE "orgs" (
+  "name" varchar(100) default NULL,
+  "org_ID" varchar(24) NOT NULL default '',
+  "seats" int(10) default NULL,
+  "address" varchar(255) default '0',
+  "city" varchar(75) default NULL,
+  "state" varchar(6) default NULL,
+  "contact" varchar(100) default NULL,
+  "phone" varchar(14) default NULL,
+  "fax" varchar(14) default NULL,
+  "url" varchar(100) default NULL,
+  "ID" int(15) NOT NULL auto_increment,
+  PRIMARY KEY  ("ID"),
+  KEY "org_ID" ("org_ID")
+) AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `orgs`
 --
 
-INSERT INTO `orgs` (`name`, `org_ID`, `seats`, `address`, `city`, `state`, `contact`, `phone`, `fax`, `url`, `ID`) VALUES
-('Learning Touch Inc', 'LT711', 5, 'NA', 'NA', 'VA', 'David Ealy', 'NA', 'NA', 'http://www.learningtouch.com', 1),
-('All Users', 'ALL', 100, 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 2);
+INSERT INTO `orgs` VALUES('Learning Touch Inc', 'LT711', 5, 'NA', 'NA', 'VA', 'David Ealy', 'NA', 'NA', 'http://www.learningtouch.com', 1);
+INSERT INTO `orgs` VALUES('All Users', 'ALL', 100, 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 2);
 
 -- --------------------------------------------------------
 
@@ -1228,19 +1172,18 @@ INSERT INTO `orgs` (`name`, `org_ID`, `seats`, `address`, `city`, `state`, `cont
 --
 
 DROP TABLE IF EXISTS `poll`;
-CREATE TABLE `poll` (
-  `PID` mediumint(9) NOT NULL auto_increment,
-  `Question` varchar(255) default NULL,
-  `FECHA` date default NULL,
-  PRIMARY KEY  (`PID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=42 ;
+CREATE TABLE "poll" (
+  "PID" mediumint(9) NOT NULL auto_increment,
+  "Question" varchar(255) default NULL,
+  "FECHA" date default NULL,
+  PRIMARY KEY  ("PID")
+) AUTO_INCREMENT=42 ;
 
 --
 -- Dumping data for table `poll`
 --
 
-INSERT INTO `poll` (`PID`, `Question`, `FECHA`) VALUES
-(1, 'Has the inflation in energy prices reached its peak?', '2006-05-01'),
+INSERT INTO `poll` VALUES(1, 'Has the inflation in energy prices reached its peak?', '2006-05-01'),
 (2, 'Should the U.S. give Iraq a timetable for the withdrawal of troops?', '2008-07-19'),
 (3, 'Have the high gas prices discouraged your family from attending a sporting event this summer?', '2008-07-19'),
 (11, 'What local TV Programs would you like to see more of:', '2008-10-02'),
@@ -1265,25 +1208,24 @@ INSERT INTO `poll` (`PID`, `Question`, `FECHA`) VALUES
 --
 
 DROP TABLE IF EXISTS `questions`;
-CREATE TABLE `questions` (
-  `question` blob NOT NULL,
-  `qname` varchar(225) NOT NULL default '',
-  `question_type` enum('TF','MC','SA') NOT NULL default 'MC',
-  `choice_1` varchar(225) NOT NULL default '',
-  `choice_2` varchar(225) NOT NULL default '',
-  `choice_3` varchar(225) NOT NULL default '',
-  `choice_4` varchar(225) NOT NULL default '',
-  `correct_answ` varchar(225) NOT NULL default '',
-  `ID` int(11) NOT NULL auto_increment,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
+CREATE TABLE "questions" (
+  "question" blob NOT NULL,
+  "qname" varchar(225) NOT NULL default '',
+  "question_type" enum('TF','MC','SA') NOT NULL default 'MC',
+  "choice_1" varchar(225) NOT NULL default '',
+  "choice_2" varchar(225) NOT NULL default '',
+  "choice_3" varchar(225) NOT NULL default '',
+  "choice_4" varchar(225) NOT NULL default '',
+  "correct_answ" varchar(225) NOT NULL default '',
+  "ID" int(11) NOT NULL auto_increment,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=28 ;
 
 --
 -- Dumping data for table `questions`
 --
 
-INSERT INTO `questions` (`question`, `qname`, `question_type`, `choice_1`, `choice_2`, `choice_3`, `choice_4`, `correct_answ`, `ID`) VALUES
-(0x7768617420697320616c657827732066756c6c206e616d65, 'q123', 'MC', 'alex', 'alexs', 'alexo', 'asssassas', 'A', 1),
+INSERT INTO `questions` VALUES(0x7768617420697320616c657827732066756c6c206e616d65, 'q123', 'MC', 'alex', 'alexs', 'alexo', 'asssassas', 'A', 1),
 (0x61736466617364, 'tr false', 'MC', 'asdfasdf', 'asdfasdfs', '', '', 'A', 2),
 (0x4120736369656e746973742069732074657374696e67206d696c6b20666f72207468652070726573656e6365206f662062616374657269612e2045786163746c79203235206d696c6c696c6974657273206f662061207465737420736f6c7574696f6e206d75737420626520616464656420746f2065616368206d696c6b2073616d706c652e205768696368206f6620746865736520696e737472756d656e747320776f756c64206d6f73742061636375726174656c79206d6561737572652074686520766f6c756d65206f6620746865207465737420736f6c7574696f6e3f, 'Q 01', 'MC', 'a beaker', 'a test tube', 'a measuring cup', 'a graduated cylinder', 'D', 4),
 (0x412063656c6c206d656173757265732035206d6963726f6d657465727320696e206469616d657465722e205768696368206f6620746865736520697320746865206469616d6574657220696e206d696c6c696d65746572733f, 'Q 02', 'MC', '5 x 10^(-3) mm', '5 x 10^(3) mm', '5 x 10^(-6) mm', '5 x 10^(6) mm', 'A', 5),
@@ -1317,22 +1259,21 @@ INSERT INTO `questions` (`question`, `qname`, `question_type`, `choice_1`, `choi
 --
 
 DROP TABLE IF EXISTS `ref`;
-CREATE TABLE `ref` (
-  `course_ID` varchar(50) NOT NULL default '',
-  `rname` varchar(255) default NULL,
-  `filename` varchar(220) default NULL,
-  `description` varchar(200) default NULL,
-  `ID` int(11) NOT NULL auto_increment,
-  PRIMARY KEY  (`ID`),
-  KEY `cid` (`course_ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
+CREATE TABLE "ref" (
+  "course_ID" varchar(50) NOT NULL default '',
+  "rname" varchar(255) default NULL,
+  "filename" varchar(220) default NULL,
+  "description" varchar(200) default NULL,
+  "ID" int(11) NOT NULL auto_increment,
+  PRIMARY KEY  ("ID"),
+  KEY "cid" ("course_ID")
+) AUTO_INCREMENT=27 ;
 
 --
 -- Dumping data for table `ref`
 --
 
-INSERT INTO `ref` (`course_ID`, `rname`, `filename`, `description`, `ID`) VALUES
-('12', '', 'kids in alley3.jpg', '', 4),
+INSERT INTO `ref` VALUES('12', '', 'kids in alley3.jpg', '', 4),
 ('7', '', '', '', 5),
 ('7', 'learningfox', 'foxlogo.gif', '', 6),
 ('53', '', '', '', 7),
@@ -1355,22 +1296,21 @@ INSERT INTO `ref` (`course_ID`, `rname`, `filename`, `description`, `ID`) VALUES
 --
 
 DROP TABLE IF EXISTS `reg_form`;
-CREATE TABLE `reg_form` (
-  `field_name` varchar(50) NOT NULL default '',
-  `status` varchar(10) NOT NULL default '',
-  `forder` int(5) NOT NULL default '0',
-  `stored` enum('y','n') NOT NULL default 'n',
-  `ID` int(11) NOT NULL auto_increment,
-  `display` varchar(50) NOT NULL default '',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
+CREATE TABLE "reg_form" (
+  "field_name" varchar(50) NOT NULL default '',
+  "status" varchar(10) NOT NULL default '',
+  "forder" int(5) NOT NULL default '0',
+  "stored" enum('y','n') NOT NULL default 'n',
+  "ID" int(11) NOT NULL auto_increment,
+  "display" varchar(50) NOT NULL default '',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=22 ;
 
 --
 -- Dumping data for table `reg_form`
 --
 
-INSERT INTO `reg_form` (`field_name`, `status`, `forder`, `stored`, `ID`, `display`) VALUES
-('fname', 'on', 1, 'y', 1, 'First Name'),
+INSERT INTO `reg_form` VALUES('fname', 'on', 1, 'y', 1, 'First Name'),
 ('mname', 'off', 8, 'y', 2, 'SSN'),
 ('lname', 'on', 2, 'y', 3, 'Last Name'),
 ('sex', 'off', 0, 'y', 4, ''),
@@ -1399,22 +1339,21 @@ INSERT INTO `reg_form` (`field_name`, `status`, `forder`, `stored`, `ID`, `displ
 --
 
 DROP TABLE IF EXISTS `reg_form-old`;
-CREATE TABLE `reg_form-old` (
-  `field_name` varchar(50) NOT NULL default '',
-  `status` varchar(10) NOT NULL default '',
-  `forder` int(5) NOT NULL default '0',
-  `stored` enum('y','n') NOT NULL default 'n',
-  `ID` int(11) NOT NULL auto_increment,
-  `display` varchar(50) NOT NULL default '',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+CREATE TABLE "reg_form-old" (
+  "field_name" varchar(50) NOT NULL default '',
+  "status" varchar(10) NOT NULL default '',
+  "forder" int(5) NOT NULL default '0',
+  "stored" enum('y','n') NOT NULL default 'n',
+  "ID" int(11) NOT NULL auto_increment,
+  "display" varchar(50) NOT NULL default '',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `reg_form-old`
 --
 
-INSERT INTO `reg_form-old` (`field_name`, `status`, `forder`, `stored`, `ID`, `display`) VALUES
-('fname', 'on', 1, 'y', 1, 'First Name'),
+INSERT INTO `reg_form-old` VALUES('fname', 'on', 1, 'y', 1, 'First Name'),
 ('mname', 'on', 8, 'y', 2, 'SSN'),
 ('lname', 'on', 2, 'y', 3, 'Last Name'),
 ('sex', 'off', 0, 'y', 4, ''),
@@ -1438,20 +1377,19 @@ INSERT INTO `reg_form-old` (`field_name`, `status`, `forder`, `stored`, `ID`, `d
 --
 
 DROP TABLE IF EXISTS `responces`;
-CREATE TABLE `responces` (
-  `OID` mediumint(9) NOT NULL auto_increment,
-  `PID` mediumint(9) default NULL,
-  `responce` varchar(255) default NULL,
-  `Count` mediumint(9) default '0',
-  PRIMARY KEY  (`OID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=160 ;
+CREATE TABLE "responces" (
+  "OID" mediumint(9) NOT NULL auto_increment,
+  "PID" mediumint(9) default NULL,
+  "responce" varchar(255) default NULL,
+  "Count" mediumint(9) default '0',
+  PRIMARY KEY  ("OID")
+) AUTO_INCREMENT=160 ;
 
 --
 -- Dumping data for table `responces`
 --
 
-INSERT INTO `responces` (`OID`, `PID`, `responce`, `Count`) VALUES
-(1, 1, 'Yes', 0),
+INSERT INTO `responces` VALUES(1, 1, 'Yes', 0),
 (2, 1, 'No', 0),
 (3, 2, 'Yes', 0),
 (4, 2, 'No', 0),
@@ -1547,21 +1485,20 @@ INSERT INTO `responces` (`OID`, `PID`, `responce`, `Count`) VALUES
 --
 
 DROP TABLE IF EXISTS `save_form_fields`;
-CREATE TABLE `save_form_fields` (
-  `ID` int(11) NOT NULL auto_increment,
-  `project` varchar(255) default NULL,
-  `field_name` varchar(255) default NULL,
-  `information` blob,
-  `fecha` datetime default NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=762 ;
+CREATE TABLE "save_form_fields" (
+  "ID" int(11) NOT NULL auto_increment,
+  "project" varchar(255) default NULL,
+  "field_name" varchar(255) default NULL,
+  "information" blob,
+  "fecha" datetime default NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=762 ;
 
 --
 -- Dumping data for table `save_form_fields`
 --
 
-INSERT INTO `save_form_fields` (`ID`, `project`, `field_name`, `information`, `fecha`) VALUES
-(641, 'TFRC_01', 'item_list6', 0x412e2046697265205375706572696f7269747920617320612074726561746d656e74206f626a6563746976650d0a422e204361726520556e64657220466972650d0a432e2043617375616c7479204669656c6420436172650d0a442e2043617375616c74792045766163756174696f6e2043617265202843415345564143290d0a452e20446566696e6974696f6e73206f6620656163682073746167650d0a462e2054726561746d656e74204f626a6563746976657320617420656163682073746167650d0a, '2008-08-15 12:38:47'),
+INSERT INTO `save_form_fields` VALUES(641, 'TFRC_01', 'item_list6', 0x412e2046697265205375706572696f7269747920617320612074726561746d656e74206f626a6563746976650d0a422e204361726520556e64657220466972650d0a432e2043617375616c7479204669656c6420436172650d0a442e2043617375616c74792045766163756174696f6e2043617265202843415345564143290d0a452e20446566696e6974696f6e73206f6620656163682073746167650d0a462e2054726561746d656e74204f626a6563746976657320617420656163682073746167650d0a, '2008-08-15 12:38:47'),
 (642, 'TFRC_01', 'item_list10', 0x412e20486561642d54696c742c204368696e2d4c6966740d0a422e204d6f646966696564204a6177205468727573740d0a432e204e6173616c2050686172796e6765616c204169727761790d0a442e204f72616c2050686172796e6765616c204169727761790d0a452e2044656d6f206f6e204d616e6e657175696e0d0a462e2048756d616e2050726163746963616c20666f7220616c6c20657863657074204f5020616972776179, '2008-08-14 09:58:04'),
 (698, 'TFRC_01', 'item_list62', 0x322e20204964656e7469667920686f7720746f20696e636f72706f72617465206d65646963616c20746872656174206173736573736d656e7420706c616e6e696e6720616e64205443434320696e746f2070726f74656374696f6e2064657461696c7320616e64206f74686572206c617720656e666f7263656d656e74206f7065726174696f6e7320636f6e64756374656420696e20626f746820434f4e555320616e64204f434f4e5553207468656174657273, '2008-09-15 22:43:08'),
 (640, 'TFRC_01', 'item_list5', 0x412e204c6162656c20746865204d6f7274616c697479204375727665207769746820746865204d4152434820616c676f726974686d2e0d0a422e204d6173736976652048656d6f727268616765200d0a432e204169727761790d0a442e205265737069726174696f6e730d0a452e2043697263756c6174696f6e0d0a462e20486561642f4879706f746865726d6961, '2008-07-13 16:55:42'),
@@ -1696,22 +1633,21 @@ INSERT INTO `save_form_fields` (`ID`, `project`, `field_name`, `information`, `f
 --
 
 DROP TABLE IF EXISTS `sb_answers`;
-CREATE TABLE `sb_answers` (
-  `ID` int(11) NOT NULL auto_increment,
-  `answer` text,
-  `order` int(11) default '1',
-  `questionID` int(11) default NULL,
-  `correct` char(1) character set latin1 collate latin1_bin default '1',
-  `feedback` text,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=44 ;
+CREATE TABLE "sb_answers" (
+  "ID" int(11) NOT NULL auto_increment,
+  "answer" text,
+  "order" int(11) default '1',
+  "questionID" int(11) default NULL,
+  "correct" char(1) character set latin1 collate latin1_bin default '1',
+  "feedback" text,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=44 ;
 
 --
 -- Dumping data for table `sb_answers`
 --
 
-INSERT INTO `sb_answers` (`ID`, `answer`, `order`, `questionID`, `correct`, `feedback`) VALUES
-(1, 'True', 1, 1, '1', 'Yes, that''s right. Click the Next button to continue'),
+INSERT INTO `sb_answers` VALUES(1, 'True', 1, 1, '1', 'Yes, that''s right. Click the Next button to continue'),
 (2, 'False', 2, 1, '0', 'I''m sorry, the correct answer is TRUE.  Click the Next button to continue.'),
 (3, 'True', 1, 2, '1', 'Yes, that''s right. Click the Next button to continue'),
 (4, 'False', 2, 2, '0', 'I''m sorry, the correct answer is TRUE.  \r\nClick the Next button to continue.\r\n'),
@@ -1762,21 +1698,20 @@ INSERT INTO `sb_answers` (`ID`, `answer`, `order`, `questionID`, `correct`, `fee
 --
 
 DROP TABLE IF EXISTS `sb_backlink`;
-CREATE TABLE `sb_backlink` (
-  `ID` int(11) NOT NULL auto_increment,
-  `text` varchar(255) NOT NULL default 'Back',
-  `alt` varchar(255) default 'Back',
-  `link_id` int(11) NOT NULL default '1',
-  `page_id` int(11) NOT NULL default '0',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=156 ;
+CREATE TABLE "sb_backlink" (
+  "ID" int(11) NOT NULL auto_increment,
+  "text" varchar(255) NOT NULL default 'Back',
+  "alt" varchar(255) default 'Back',
+  "link_id" int(11) NOT NULL default '1',
+  "page_id" int(11) NOT NULL default '0',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=156 ;
 
 --
 -- Dumping data for table `sb_backlink`
 --
 
-INSERT INTO `sb_backlink` (`ID`, `text`, `alt`, `link_id`, `page_id`) VALUES
-(1, 'Back', 'Back', 1, 2),
+INSERT INTO `sb_backlink` VALUES(1, 'Back', 'Back', 1, 2),
 (2, 'Back', 'Back', 2, 3),
 (3, 'Back', 'Back', 3, 4),
 (4, 'Back', 'Back', 4, 5),
@@ -1932,14 +1867,14 @@ INSERT INTO `sb_backlink` (`ID`, `text`, `alt`, `link_id`, `page_id`) VALUES
 --
 
 DROP TABLE IF EXISTS `sb_comment`;
-CREATE TABLE `sb_comment` (
-  `ID` bigint(20) NOT NULL auto_increment,
-  `name` longtext,
-  `comment` longblob,
-  `date_in` date default NULL,
-  `idrepresent` varchar(10) default NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE TABLE "sb_comment" (
+  "ID" bigint(20) NOT NULL auto_increment,
+  "name" longtext,
+  "comment" longblob,
+  "date_in" date default NULL,
+  "idrepresent" varchar(10) default NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `sb_comment`
@@ -1953,19 +1888,18 @@ CREATE TABLE `sb_comment` (
 --
 
 DROP TABLE IF EXISTS `sb_course_r`;
-CREATE TABLE `sb_course_r` (
-  `ID` int(11) NOT NULL auto_increment,
-  `course_id` int(5) NOT NULL default '1',
-  `page_id` int(5) NOT NULL default '1',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=49 ;
+CREATE TABLE "sb_course_r" (
+  "ID" int(11) NOT NULL auto_increment,
+  "course_id" int(5) NOT NULL default '1',
+  "page_id" int(5) NOT NULL default '1',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=49 ;
 
 --
 -- Dumping data for table `sb_course_r`
 --
 
-INSERT INTO `sb_course_r` (`ID`, `course_id`, `page_id`) VALUES
-(1, 1, 1),
+INSERT INTO `sb_course_r` VALUES(1, 1, 1),
 (2, 1, 2),
 (3, 1, 3),
 (4, 1, 4),
@@ -2014,19 +1948,18 @@ INSERT INTO `sb_course_r` (`ID`, `course_id`, `page_id`) VALUES
 --
 
 DROP TABLE IF EXISTS `sb_login_log`;
-CREATE TABLE `sb_login_log` (
-  `ID` bigint(11) NOT NULL auto_increment,
-  `fecha` datetime default NULL,
-  `userid` varchar(10) default NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=10 ;
+CREATE TABLE "sb_login_log" (
+  "ID" bigint(11) NOT NULL auto_increment,
+  "fecha" datetime default NULL,
+  "userid" varchar(10) default NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `sb_login_log`
 --
 
-INSERT INTO `sb_login_log` (`ID`, `fecha`, `userid`) VALUES
-(1, '2007-01-31 02:02:55', '1'),
+INSERT INTO `sb_login_log` VALUES(1, '2007-01-31 02:02:55', '1'),
 (2, '2007-01-31 02:30:10', '2'),
 (3, '2007-01-31 02:30:52', '3'),
 (4, '2007-01-31 02:32:34', '3'),
@@ -2043,21 +1976,20 @@ INSERT INTO `sb_login_log` (`ID`, `fecha`, `userid`) VALUES
 --
 
 DROP TABLE IF EXISTS `sb_nextlink`;
-CREATE TABLE `sb_nextlink` (
-  `ID` int(11) NOT NULL auto_increment,
-  `text` varchar(255) NOT NULL default 'Next',
-  `alt` varchar(255) default 'Next',
-  `link_id` int(11) NOT NULL default '1',
-  `page_id` int(11) NOT NULL default '0',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=150 ;
+CREATE TABLE "sb_nextlink" (
+  "ID" int(11) NOT NULL auto_increment,
+  "text" varchar(255) NOT NULL default 'Next',
+  "alt" varchar(255) default 'Next',
+  "link_id" int(11) NOT NULL default '1',
+  "page_id" int(11) NOT NULL default '0',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=150 ;
 
 --
 -- Dumping data for table `sb_nextlink`
 --
 
-INSERT INTO `sb_nextlink` (`ID`, `text`, `alt`, `link_id`, `page_id`) VALUES
-(1, 'Start', 'Next', 2, 1),
+INSERT INTO `sb_nextlink` VALUES(1, 'Start', 'Next', 2, 1),
 (2, 'Next', 'Next', 3, 2),
 (3, 'Next', 'Next', 4, 3),
 (4, 'Next', 'Next', 5, 4),
@@ -2213,23 +2145,22 @@ INSERT INTO `sb_nextlink` (`ID`, `text`, `alt`, `link_id`, `page_id`) VALUES
 --
 
 DROP TABLE IF EXISTS `sb_page`;
-CREATE TABLE `sb_page` (
-  `ID` int(11) NOT NULL auto_increment,
-  `chapter` varchar(30) default '1',
-  `title` text,
-  `body` text,
-  `visual_notes` text,
-  `programing_notes` text,
-  PRIMARY KEY  (`ID`),
-  FULLTEXT KEY `title_body` (`title`,`body`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=179 ;
+CREATE TABLE "sb_page" (
+  "ID" int(11) NOT NULL auto_increment,
+  "chapter" varchar(30) default '1',
+  "title" text,
+  "body" text,
+  "visual_notes" text,
+  "programing_notes" text,
+  PRIMARY KEY  ("ID"),
+  FULLTEXT KEY "title_body" ("title","body")
+) AUTO_INCREMENT=179 ;
 
 --
 -- Dumping data for table `sb_page`
 --
 
-INSERT INTO `sb_page` (`ID`, `chapter`, `title`, `body`, `visual_notes`, `programing_notes`) VALUES
-(1, '0', 'Orientation', '<object classid=\\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\\" codebase=\\"http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0\\" width=\\"395\\" height=\\"370\\" id=\\"audios\\" align=\\"middle\\">\r\n<param name=\\"allowScriptAccess\\" value=\\"sameDomain\\" />\r\n<param name=\\"movie\\" value=\\"images/audios.swf\\" /><param name=\\"quality\\" value=\\"high\\" /><param name=\\"bgcolor\\" value=\\"#ffffff\\" /><embed src=\\"images/audios.swf\\" quality=\\"high\\" bgcolor=\\"#ffffff\\" width=\\"395\\" height=\\"370\\" name=\\"audios\\" align=\\"middle\\" allowScriptAccess=\\"sameDomain\\" type=\\"application/x-shockwave-flash\\" pluginspage=\\"http://www.macromedia.com/go/getflashplayer\\" />\r\n</object>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>You can review this <a href=\\"#\\" onClick=\\"document.audios.SetVariable(''restart'', ''xx'');\\">Orientation</a> here</p>\r\n<p>Description of audio <a href=''page.php?pageid=177''>here</a></p>\r\n<p>&nbsp;</p>\r\n<p align="center"><strong>Let&rsquo;s get started. </strong></p>\r\n\r\n\r\n<p><strong>Go ahead and click the START button to begin.</strong></p>', NULL, NULL),
+INSERT INTO `sb_page` VALUES(1, '0', 'Orientation', '<object classid=\\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\\" codebase=\\"http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0\\" width=\\"395\\" height=\\"370\\" id=\\"audios\\" align=\\"middle\\">\r\n<param name=\\"allowScriptAccess\\" value=\\"sameDomain\\" />\r\n<param name=\\"movie\\" value=\\"images/audios.swf\\" /><param name=\\"quality\\" value=\\"high\\" /><param name=\\"bgcolor\\" value=\\"#ffffff\\" /><embed src=\\"images/audios.swf\\" quality=\\"high\\" bgcolor=\\"#ffffff\\" width=\\"395\\" height=\\"370\\" name=\\"audios\\" align=\\"middle\\" allowScriptAccess=\\"sameDomain\\" type=\\"application/x-shockwave-flash\\" pluginspage=\\"http://www.macromedia.com/go/getflashplayer\\" />\r\n</object>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>You can review this <a href=\\"#\\" onClick=\\"document.audios.SetVariable(''restart'', ''xx'');\\">Orientation</a> here</p>\r\n<p>Description of audio <a href=''page.php?pageid=177''>here</a></p>\r\n<p>&nbsp;</p>\r\n<p align="center"><strong>Let&rsquo;s get started. </strong></p>\r\n\r\n\r\n<p><strong>Go ahead and click the START button to begin.</strong></p>', NULL, NULL),
 (2, '1', 'Chapter 1: Federal Employees'' Compensation Act (FECA)', '\r\n<P >&nbsp;</P>\r\n<p>Many federal employees do not recognize the workers?  compensation program as a benefit of federal employment, <strong>but it is!</strong> </p>\r\n<p>The program should be mentioned when new employees are  oriented as they join the judiciary. </p>\r\n\r\n<P >&nbsp;</P>\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click the Next button to continue.</p>', NULL, NULL),
 (3, '1.1', 'Overview', '<P>&nbsp;</P>\r\n<P>Unlike several other federal employee benefits, an employee is eligible immediately for compensation benefits on his or her first day of work for the judiciary.</P>\r\n<P>&nbsp;</P>\r\n<P>The program costs nothing to the employee and does not require him or her to fill out an enrollment form in order to be covered.&nbsp; Moreover, all judiciary employees are covered immediately by the FECA, regardless of whether they are permanent or temporary, full-time or part-time.</P>', NULL, NULL),
 (4, '1.2', 'Purpose', '<P><B></B>&nbsp;</P>\r\n<P><B>Purpose</B></P>\r\n<P>&nbsp;</P>\r\n<P>The purpose of the FECA is to provide compensation benefits to federal employees of the United States for disability due to personal injury or disease sustained while in the performance of duty.&nbsp; It also provides for the payment of benefits to dependents if a work-related injury or disease causes an employee?s death.</P>', NULL, NULL),
@@ -2282,8 +2213,7 @@ INSERT INTO `sb_page` (`ID`, `chapter`, `title`, `body`, `visual_notes`, `progra
 (59, '2.a.4.3', 'Counting COP', '<P class=MsoNormal>&nbsp;</P>\r\n<P class=MsoNormal>If the employee uses only 2 hours of <B>COP</B> it is counted against the 45 days as a whole day.<SPAN>&nbsp; </SPAN><B>COP</B> is calculated by days not by hours.<?xml:namespace prefix = o /><o:p></o:p></P>\r\n<P class=MsoNormal><SPAN style=\\"FONT-SIZE: 14pt\\"><o:p>&nbsp;</o:p></SPAN></P>\r\n', NULL, NULL),
 (61, '2.a.4.3.1', 'Counting COP', '\r\n<p>&nbsp;</p>\r\n    <p>If the employee does not lose time immediately after their injury, they have 45 calendar days to claim <a href=''#''\r\n onmouseover=\\"getObj(''r1'').style.visibility=''visible'';\\" \r\n onmouseout=\\"getObj(''r1'').style.visibility=''hidden'';\\">COP</a>.</p>\r\n\r\n<p>&nbsp;</p>\r\n    <p>(Rollover COP for another calculation sample)</p>\r\n<div id=''r1'' style=''visibility:hidden;''>The employee was injured on May 2nd, returned to duty May 3rd.  The employee would have 45 calendar days from the date of injury to claim COP.  After the 45 days ends their entitlement to COP will also end.</div>', NULL, NULL),
 (62, '2.a.4.3.2', 'Counting COP', '\r\n<p>&nbsp;</p>\r\n    <p>If the employee lost time immediately after their injury and  then returned to duty shortly thereafter, he or she would have 45 days from  their first return to duty date to use the remainder of their COP. </p>\r\n    <p>&nbsp;</p>\r\n      <p>Rollover <a href="javascript:void();" onmouseover="getObj(''r1'').innerHTML = ''The employee was injured on May 2nd, then stopped work on May  2nd and did not return to duty until May 10th.&nbsp;  The employee would have until June   23, 45 days from their return to duty date, to use the remainder of  their COP.'';" onmouseout="getObj(''r1'').innerHTML = '''';">here</a> for an example:</p>\r\n      <p><div id="r1"></div></p>', NULL, NULL),
-(63, '2.a.4.3.3', 'Counting COP', '\r\n<p>&nbsp;</p>\r\n    <p>The injury occurs before the employee&rsquo;s tour of duty, the  lost time should be recorded as COP.</p>\r\n    <p>&nbsp;</p>\r\n      <p>Rollover <a href="javascript:void();" onmouseover="getObj(''r1'').innerHTML = ''The employee was injured 30 minutes before their scheduled work shift while on government property.  Because the injury occurred before the employee?s work shift, the time and attendance should be recorded as COP for any time loss.'';" onmouseout="getObj(''r1'').innerHTML = '''';">here</a> for an example:</p>\r\n      <p><div id="r1"></div></p>\r\n', NULL, NULL);
-INSERT INTO `sb_page` (`ID`, `chapter`, `title`, `body`, `visual_notes`, `programing_notes`) VALUES
+(63, '2.a.4.3.3', 'Counting COP', '\r\n<p>&nbsp;</p>\r\n    <p>The injury occurs before the employee&rsquo;s tour of duty, the  lost time should be recorded as COP.</p>\r\n    <p>&nbsp;</p>\r\n      <p>Rollover <a href="javascript:void();" onmouseover="getObj(''r1'').innerHTML = ''The employee was injured 30 minutes before their scheduled work shift while on government property.  Because the injury occurred before the employee?s work shift, the time and attendance should be recorded as COP for any time loss.'';" onmouseout="getObj(''r1'').innerHTML = '''';">here</a> for an example:</p>\r\n      <p><div id="r1"></div></p>\r\n', NULL, NULL),
 (64, '2.a.4.3.4', 'Counting COP', '\r\n<p>&nbsp;</p>\r\n    <p>If the day of injury occurs during the work shift, the lost  time should be recorded as administrative leave.</p>\r\n    <p>&nbsp;</p>\r\n      <p>Rollover <a href="javascript:void();" onmouseover="getObj(''r1'').innerHTML = ''The employee was injured 4 hours into their work shift.  He or she sought medical treatment that same day during working hours. Because the employee left work to seek treatment the day of the injury, the time and attendance should be recorded as administrative leave.'';" onmouseout="getObj(''r1'').innerHTML = '''';">here</a> for an example:</p>\r\n      <p><div id="r1"></div></p>\r\n', NULL, NULL),
 (65, '2.a.4.4', 'The 45 Day Time Period For Entitlement To COP', '\r\n<p>&nbsp;</p>\r\n    <p>When an employee returns to work for the first  time after using traumatic leave, he or she has 45 calendar days from their  first return to duty date to use the remainder of their COP.</p>\r\n\r\n<p>&nbsp;</p>\r\n      <p>Rollover <a href="javascript:void();" onmouseover="getObj(''r1'').innerHTML = ''The employee  was injured May 2nd and also stopped work on May 2nd then  returned May 5th.&nbsp; The employee would  have 45 calendar days from the first return to duty date to use the remainder  of their COP.&nbsp; The employee&rsquo;s last day of  entitlement would be June 18th.'';" onmouseout="getObj(''r1'').innerHTML = '''';">here</a> for an example:</p>\r\n\r\n<blockquote>\r\n      <p><div id="r1"></div></p>\r\n</blockquote>', NULL, NULL),
 (66, '2.a.4.4.1', 'The 45 Day Time Period For Entitlement To COP', '\r\n<p>&nbsp;</p>\r\n<p>If the employee sustains no lost time due to the injury, he\r\nor she would have 45 calendar days from the date of the injury to use their\r\nCOP.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Rollover <a href=\\"javascript:void();\\" onmouseover=\\"getObj(''r1'').innerHTML = ''The employee was injured May 2nd and lost no time from work due to the injury.&nbsp; Because there was no lost time immediately after the injury, the employee has 45 calendar days from the date of the injury to use their COP.&nbsp; The employee\\\\\\''s last day of entitlement would be June 15<sup>th</sup>.'';\\" onmouseout=\\"getObj(''r1'').innerHTML = '''';\\">here</a> for an example:</p>\r\n\r\n<p><div id=\\"r1\\"></div></p>\r\n', NULL, NULL),
@@ -2337,8 +2267,7 @@ INSERT INTO `sb_page` (`ID`, `chapter`, `title`, `body`, `visual_notes`, `progra
 (114, '3.b.2.6', 'Benefits Coordinator/HR  Specialist?s Responsibility', '<P>&nbsp;</P>\r\n<P>The following example illustrates how leave buy-back works:</P>\r\n<P>&nbsp;</P>\r\n<UL>\r\n<LI>Date of Injury: April 1, 2005 (traumatic injury) <br>&nbsp;</li>\r\n<LI>Entitlement to 45 days of continuation of pay expires on May 16, 2005 <br />&nbsp;</li>\r\n<LI>The employee elects to use sick leave until he is released to work effective May 31, 2005 <br />&nbsp;</li>\r\n<LI>The employee?s weekly pay rate on the date of injury was $546 per week <br />&nbsp;</li>\r\n<LI>Employee has a wife and two children (compensation entitlement is at 75%) <br />&nbsp;</li>\r\n<LI>OWCP calculates the weekly pay rate at $409.50 ($546 x 75%).&nbsp; For the two-week period claimed, total compensation entitlement is $819 <br />&nbsp;</li>\r\n<LI>The court unit has paid leave at 100% ($546 x 2 weeks = $1,092 <br />&nbsp;</li>\r\n<LI>The difference is $273</LI>\r\n</UL>\r\n<P>&nbsp;</P>\r\n<P><STRONG><EM>Please Note: All monies must be refunded to the Administrative Office before leave is restored.&nbsp; (OWCP?s portion plus the amount the employee owes).</EM></STRONG></P>', NULL, NULL),
 (115, '3.b.2.7', 'Benefits Coordinator/HR  Specialist?s Responsibility', '<P>&nbsp;</P>\r\n<P>It is the responsibility of the employee to arrange with the agency repayment of the difference.</P>\r\n<P>&nbsp;</P>\r\n<P>The benefits to the employee of proceeding with leave buy back is realized at tax time.<SPAN>&nbsp; </SPAN>Compensation is not taxable.<SPAN>&nbsp; </SPAN>The taxes that had been deducted from the employee?s leave are recovered when the employee files his/her tax return.<SPAN>&nbsp; </SPAN>Some basic criteria which must be met to warrant restoration of leave include:</P>\r\n<P>Medical support for all periods of disability claimed.</P>\r\n<P>All entitlement to continuation of pay must have been exhausted in traumatic injury claims. </P>\r\n<P>Three waiting days are applicable unless disability claimed is more than 14 calendar days.</P>\r\n<P>&nbsp;</P>\r\n<P>A leave buy-back cannot be processed at the same time an employee is receiving a schedule award, this would be considered a double payment.<SPAN>&nbsp; </SPAN>Once the schedule award ends the employee may request leave buy-back for dates of medical treatment. </P>', NULL, NULL),
 (116, '3.b.2.8', 'Benefits Coordinator/HR  Specialist?s Responsibility', '<P class=MsoNormal>&nbsp;</P>\r\n<P class=MsoNormal>Health Benefits and optional life insurance are not made by OWCP when the employee requests leave buy-back.<SPAN>&nbsp; </SPAN>The reason for this is because the court unit made the deductions when the employee was in a leave status.<SPAN>&nbsp; </SPAN>As leave buy back is an agency? s discretion, a primary factor is whether the court unit is willing and able to change the employee?s leave records from leave with pay to LWOP.<SPAN>&nbsp; </SPAN>If this is possible, leave buy-back can be processed by OWCP.<?xml:namespace prefix = o /><o:p></o:p></P>', NULL, NULL),
-(117, '3.b.2.9', 'Points to Remember Regarding a Leave Buy-Back', '<P><SPAN dir=ltr></SPAN>&nbsp;</P>\r\n<UL>\r\n<LI><SPAN dir=ltr>A leave buy-back permits the employee to reinstate leave used due to a work-related injury or disease.</SPAN> </LI></UL>\r\n<P>&nbsp;</P>\r\n<UL>\r\n<LI><SPAN dir=ltr>The forms used are Forms CA-7 (Claim for Compensation On Account of Traumatic Injury or Occupational Disease), CA-7a (Time Analysis Form) and CA-7b (Leave Buy Back (LBB) Worksheet/Certificate and Election).</SPAN> </LI></UL>\r\n<P>&nbsp;</P>\r\n<UL>\r\n<LI><SPAN dir=ltr>The employee must be in some form of work status before attempting to buy back leave.&nbsp; (Full time and part time)</SPAN> </LI></UL>\r\n<P>&nbsp;</P>\r\n<UL>\r\n<LI><SPAN dir=ltr>A buy-back cannot be processed by OWCP until the injury/illness claim has been accepted.</SPAN> </LI></UL>\r\n<P>&nbsp;</P>\r\n<UL>\r\n<LI><SPAN dir=ltr>The employee must have medical documentation prior to the forms being submitted to OWCP.</SPAN> </LI></UL>', NULL, NULL);
-INSERT INTO `sb_page` (`ID`, `chapter`, `title`, `body`, `visual_notes`, `programing_notes`) VALUES
+(117, '3.b.2.9', 'Points to Remember Regarding a Leave Buy-Back', '<P><SPAN dir=ltr></SPAN>&nbsp;</P>\r\n<UL>\r\n<LI><SPAN dir=ltr>A leave buy-back permits the employee to reinstate leave used due to a work-related injury or disease.</SPAN> </LI></UL>\r\n<P>&nbsp;</P>\r\n<UL>\r\n<LI><SPAN dir=ltr>The forms used are Forms CA-7 (Claim for Compensation On Account of Traumatic Injury or Occupational Disease), CA-7a (Time Analysis Form) and CA-7b (Leave Buy Back (LBB) Worksheet/Certificate and Election).</SPAN> </LI></UL>\r\n<P>&nbsp;</P>\r\n<UL>\r\n<LI><SPAN dir=ltr>The employee must be in some form of work status before attempting to buy back leave.&nbsp; (Full time and part time)</SPAN> </LI></UL>\r\n<P>&nbsp;</P>\r\n<UL>\r\n<LI><SPAN dir=ltr>A buy-back cannot be processed by OWCP until the injury/illness claim has been accepted.</SPAN> </LI></UL>\r\n<P>&nbsp;</P>\r\n<UL>\r\n<LI><SPAN dir=ltr>The employee must have medical documentation prior to the forms being submitted to OWCP.</SPAN> </LI></UL>', NULL, NULL),
 (118, '3.b.2.10', 'Points to Remember Regarding a Leave Buy-Back', '<p>&nbsp;</p>\r\n<ul>\r\n<li>If the employee is on LWOP the&nbsp; last hour of the day before a holiday and at the beginning of the business day&nbsp; after a holiday, the holiday must be included in the buy-back period.<br />&nbsp;</li>\r\n<li>There is a ?three day waiting&nbsp; period? for any employee filing for continued compensation (leave buy-back&nbsp; and/or lost wages) if the requested amount of days is under 14 days.&nbsp; For example, if the employee elects to buy&nbsp; back only 10 days of sick or annual leave, that employee will only be entitled&nbsp;\r\n to have 7 of those days restored to their leave balance.&nbsp; If the employee eventually does need to buy-back&nbsp; more than 14 days after the initial process has begun, the employee will be&nbsp; compensated for the three days initially deducted.&nbsp;<br />&nbsp;</li>\r\n<li>All monies must be in place before&nbsp; any leave is restored to the employee.&nbsp; OWCP?s check and the injured employee?s check must be received by the&nbsp; Administrative Office before leave is restored.<br />&nbsp;</li>\r\n<li>OWCP will pay based on the employee?s salary at the rate earned at the time the leave was used.&nbsp; Compensation is also paid at 66 2/3; or 75 percent of the employee''s salary based on the dependent status.<br />&nbsp;</li>\r\n</ul>', NULL, NULL),
 (119, '3.b.3', 'Schedule Award', '<P class=MsoNormal>&nbsp;</P>\r\n<P class=MsoNormal>A schedule award is a compensation benefit paid to the injured employee for a specified period of time for a permanent loss, or the loss of use, of certain parts and functions of the body.<?xml:namespace prefix = o /><o:p></o:p></P>\r\n<P class=MsoNormal><o:p>&nbsp;</o:p></P>\r\n<P>&nbsp;</P>', NULL, NULL),
 (120, '3.b.3.1', 'Instructions for Filing a Schedule Award', '<P>&nbsp;</P>\r\n<UL>\r\n<LI>The Form CA-7 (Claim for Compensation) and CA-20 (Physician?s Report) are used when the employee is filing for a schedule award. </LI></UL>\r\n<P>&nbsp;</P>\r\n<UL>\r\n<LI>The attending physician must affirm that the employee has a permanent loss or loss of function of one of the members of the body or organs enumerated in the regulations (20 CFR 10.304).<SPAN>&nbsp; </SPAN>Also, the attending physician must affirm that maximum medical improvement of the condition has been reached.<SPAN>&nbsp; </SPAN>Functional loss of the member and the resulting impairment in accordance with the American Medical Association Guides of the Evaluation of Permanent impairment must be clearly stated.<SPAN>&nbsp; </SPAN>See the Compensation Schedule for specified periods of time for the permanent loss, or loss of use, of certain parts and functions of the body. </LI></UL>', NULL, NULL),
@@ -2387,8 +2316,7 @@ INSERT INTO `sb_page` (`ID`, `chapter`, `title`, `body`, `visual_notes`, `progra
 (163, 'x', 'Instructions Regarding the CA-20', '<p>On the back of the CA-20, there is a clearly marked set of instructions for the \r\n physician to follow.  The physician should read these instructions and understand \r\nwhat is being asked before completing his or her portion of the form.</p>\r\n', NULL, NULL),
 (164, '5.0.1', 'Benefits Coordinator/HR Specialist?s Responsibilities Checklist', '\r\n<ul>\r\n<li>Upon receipt of claim form from supervisor, review for accuracy and completeness.</li>\r\n\r\n<li>Contact employee?s supervisor to discuss specifics of case: possibility of controversion/challenge, employee duty status, receipt of medical evidence, supervisor responsibilities, etc.</li>\r\n\r\n<li>Review case file at regularly scheduled intervals.  Contact supervisor, employee, and OWCP where appropriate to determine duty status, current medical documentation, pending adjudicative and case management issues, etc.  In conjunction with the supervisor, send Form CA-17, Duty Status Report, to employee?s physician if no current medical evidence is received stating anticipated return to work date and current work tolerance limitations.</li>\r\n\r\n<li>If COP is to be terminated, advise timekeeper to convert timecards.</li>\r\n\r\n<li>If employee enters LWOP status, review CA-7 for accuracy and completeness and immediately submit to OWCP for processing. </li>\r\n\r\n<li>Track case status, payment of medical bills and compensation payments, and other important case information in AQS.</li>\r\n\r\n\r\n<li>If medical evidence shows employee is capable of working in a limited duty capacity, contact supervisor to determine if a transitional work assignment (light duty) can be provided.  If not, contact OWCP and request vocational rehabilitation services.  If medical evidence is missing or insufficient to establish ongoing disability from employment, contact OWCP and request a second opinion evaluation. </li>\r\n\r\n<li>Maintain contact with supervisor, employee, and OWCP until such as employee returns to duty, or OWCP determines that employee is not expected to return.</li>\r\n\r\n<li>Send copies of CA-1 and CA-2 to the Benefits Division.</li>\r\n\r\n</ul>\r\n<p>H.        Employee?s Responsibilities Checklist</p>\r\n\r\n\r\n<ul>\r\n<li>Report all injuries promptly to supervisor.</li>\r\n\r\n\r\n<li>File Form CA-1 if employee wishes to file a traumatic injury claim.  (If employee wants to claim Continuation of Pay (COP), employee must file Form CA-1 within 30 days of the date of injury and must provide supportive medical evidence to his or her supervisor within the first 10 days of receiving COP.)</li>\r\n\r\n\r\n<li>File Form CA-2 if employee wishes to file an occupational disease claim.</li>\r\n\r\n<li>Provide evidence to support his or her claim.</li>\r\n\r\n<li>Inquire with attending physician about possibility to work in a light duty capacity (transitional work assignment).</li>\r\n\r\n <li>Keep supervisor informed about medical status with regular reports from attending physician.</li>\r\n\r\n<li>Return to work within medical restrictions when possible.</li>\r\n</ul>\r\n', NULL, NULL),
 (165, '5.1.1', 'Points to Remember Regarding a CA-16', '<ul>\r\n<li>Special care must be exercised in issuing this form since ?authorization? guarantees payment of medical bills for up to 60 days.</li>\r\n\r\n<li>The CA-16 must be made available to the employee for treatment if requested.  The authorizing official should not issue a CA-16 if more than a week has passed since the injury.  In cases of emergency medical where there was no time to issue a CA-16, the form should be completed by the designated official and mailed within 48 hours to the facility providing care.  No CA-16 should be issued retroactive for treatment except in emergency situations.</li>\r\n</ul>\r\n\r\n', NULL, NULL),
-(166, '5.1.2', 'Instructions for the CA-17', '<p><b>Instructions Regarding the CA-17:</B></p>\r\n\r\n \r\n\r\n<p>On the back of the CA-17, there is a clearly marked set of instructions for the \r\n\r\n \r\n\r\nsupervisor and for the physician.  Each party should read these instructions and\r\n\r\n \r\n\r\nunderstand what is being asked before completing his or her portion of the claim\r\n\r\n \r\n\r\nform.</p>\r\n\r\n \r\n\r\n \r\n\r\n<p>The Court Unit should use Form CA-17, Duty Status Report to obtain interim\r\n\r\n\r\n\r\nmedical reports concerning the employee?s fitness for duty.  It may be issued \r\n\r\n \r\n\r\ninitially with Form CA-16.\r\n</p>\r\n', NULL, NULL);
-INSERT INTO `sb_page` (`ID`, `chapter`, `title`, `body`, `visual_notes`, `programing_notes`) VALUES
+(166, '5.1.2', 'Instructions for the CA-17', '<p><b>Instructions Regarding the CA-17:</B></p>\r\n\r\n \r\n\r\n<p>On the back of the CA-17, there is a clearly marked set of instructions for the \r\n\r\n \r\n\r\nsupervisor and for the physician.  Each party should read these instructions and\r\n\r\n \r\n\r\nunderstand what is being asked before completing his or her portion of the claim\r\n\r\n \r\n\r\nform.</p>\r\n\r\n \r\n\r\n \r\n\r\n<p>The Court Unit should use Form CA-17, Duty Status Report to obtain interim\r\n\r\n\r\n\r\nmedical reports concerning the employee?s fitness for duty.  It may be issued \r\n\r\n \r\n\r\ninitially with Form CA-16.\r\n</p>\r\n', NULL, NULL),
 (167, '5.1.3', 'Points to Remember Regarding a CA-17 ', '<p><b>Points to Remember Regarding a CA-17</b></p>\r\n\r\n \r\n\r\n<ul>\r\n<li>The supervisor may send Form CA-17 to the physician at reasonable\r\n\r\nintervals (but not more than once every two weeks) to monitor the employee?s medical status and ability to return to light or full duty.</li>\r\n\r\n \r\n\r\n<li>It is not necessary to use this form with every injured employee.  In most \r\n\r\ncases Form CA-20 is sufficient.  Form Ca-17is most useful and effective when returning an employee back to work.</li>\r\n</ul>\r\n\r\n', NULL, NULL),
 (168, '2.c.1', 'Instructions for the CA-2a', '\r\n<p>&nbsp;</p>\r\n<P><STRONG>Recurrence</STRONG></P>\r\n<p>&nbsp;</p>\r\n<P><STRONG>Employee (or person acting on the employee?s behalf):</STRONG></P>\r\n<UL>\r\n<LI>Review the definition of recurrence on the instruction part of the form.&nbsp; If the circumstances meet the ?spontaneous return? or ?medical treatment? definition, then complete the CA-2a.&nbsp; If a new incident or injury occurs which precipitates the disability, even if the injury is to the same part of the body previously injured or is new exposure to the same cause (s) of a previously suffered occupational disease, this constitutes a new injury and Form CA-1 or CA-2 should be filed accordingly. \r\n<LI>Complete the Employee?s portion of the CA-2a (part A) completely. \r\n<LI>Give the original date of injury and claim number assigned by the Office of Workers? Compensation Programs (OWCP). \r\n<LI>Provide detailed information and bridging medical evidence regarding the recurrence.&nbsp; Detailed information may be written on a separate sheet of paper if necessary, explaining why you believe your present condition is related to the original injury. &nbsp; Provide bridging medical evidence that shows the relationship between the original injury and your current medical status. \r\n<LI>Describe all injuries and illnesses which you suffered between the date you returned to work following the original injury, and the date of the recurrence. &nbsp; Arrange for the submission of all relevant medical records.&nbsp; In the details, note if you have changed your place of residence or treating physicians since the original injury. \r\n<LI>Provide dates of medical treatment following recurrence.&nbsp; If treated by other physicians after returning to work following the original injury, similar medical reports should be obtained from each treating physician. \r\n<', NULL, NULL),
 (169, '5.1.4', 'Instructions for the CA-915 ', '<p><b>Instructions Regarding the CA-915</b></p>\r\n\r\n \r\n<ol type=''1''>\r\n\r\n<li>Pharmacy?s name, address and tax identification number.</li>\r\n<li>Claimant?s name, address and OWCP claim number.</li>\r\n<li>Name of physician who prescribed the drug.</li>\r\n<li>Eleven digit national drug code.</li>\r\n<li>Date filled.</li>\r\n<li>Name of drug and strength.</li>\r\n<li>Quantity.</li>\r\n<li>New prescription or refill number.</li>\r\n<li>Amount paid by claimant.</li>\r\n</ol>\r\n \r\n\r\n<p><b>Prescription Bills</b></p>\r\n\r\n \r\n\r\n<p>Prescription receipts must include the name of the drug, name of physician, price of the prescription, and the date the prescription was filled.  </p>\r\n \r\n\r\n<p><b>Instructions Regarding Prescription Bills</b></p>\r\n\r\n \r\n<ol type=''1''>\r\n\r\n<li>Tape the prescription receipt and cash register receipt to an 8 ? x 11 sheet of paper.</li>\r\n<li>Type outgoing letter and franked envelope to the appropriate OWCP office.   Type the statement: ?A prescription receipt in the total amount of $_____________ is enclosed.  Please reimburse employee for this amount.? </li>\r\n<li>Mail the Form CA-915 (Claimant Medical Reimbursement Form) along with \r\nthe prescription receipts securely attached to the U.S. Department of Labor<br>\r\n\r\n       DFEC Central Mailroom<br>\r\n\r\n       P.O. Box 8300         <br>\r\n\r\n       London, KY 40742-8300</li>\r\n<ol>\r\n\r\n', NULL, NULL),
@@ -2408,19 +2336,18 @@ INSERT INTO `sb_page` (`ID`, `chapter`, `title`, `body`, `visual_notes`, `progra
 --
 
 DROP TABLE IF EXISTS `sb_question`;
-CREATE TABLE `sb_question` (
-  `ID` int(11) NOT NULL auto_increment,
-  `question` text,
-  `pageID` int(11) default NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+CREATE TABLE "sb_question" (
+  "ID" int(11) NOT NULL auto_increment,
+  "question" text,
+  "pageID" int(11) default NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=18 ;
 
 --
 -- Dumping data for table `sb_question`
 --
 
-INSERT INTO `sb_question` (`ID`, `question`, `pageID`) VALUES
-(1, '<p><b><i>Question 1:</i></b></p>\r\n\r\n<p>One of the benefits of FECA is payment of your medical bills resulting from your injury.</P>\r\n', 18),
+INSERT INTO `sb_question` VALUES(1, '<p><b><i>Question 1:</i></b></p>\r\n\r\n<p>One of the benefits of FECA is payment of your medical bills resulting from your injury.</P>\r\n', 18),
 (2, '<BR>\r\n<p><b><i>Question 2:</i></b></p>\r\n\r\n<p>All judiciary employees are covered immediately by the FECA, regardless of whether they are permanent or temporary, full-time or part-time.</p>\r\n', 19),
 (3, '<br>\r\n<p><i><b>Question 3:</b></i></p>\r\n\r\n<p>Employees are eligible for coverage by FECA:</p>\r\n', 20),
 (4, '<p><b><i>Question 1:</i></b></p>\r\n\r\n<p>A Benefits Coordinator for the 4th Circuit sustains a fractured left middle finger when she closes the office door on her left hand.  What type of claim should she file and what form should be issued to initiate a claim?</p>\r\n<p>CA-1, Traumatic injury. The injury happened as the result of a single event in a single day. Is this answer, True or False?</p>', 73),
@@ -2445,23 +2372,22 @@ INSERT INTO `sb_question` (`ID`, `question`, `pageID`) VALUES
 --
 
 DROP TABLE IF EXISTS `sb_user`;
-CREATE TABLE `sb_user` (
-  `ID` int(11) NOT NULL auto_increment,
-  `user` varchar(15) character set ascii collate ascii_bin NOT NULL default '123456',
-  `password` varchar(15) default NULL,
-  `date` datetime default NULL,
-  `organization` varchar(5) default '1',
-  `project` int(2) default '1',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=4 ;
+CREATE TABLE "sb_user" (
+  "ID" int(11) NOT NULL auto_increment,
+  "user" varchar(15) character set ascii collate ascii_bin NOT NULL default '123456',
+  "password" varchar(15) default NULL,
+  "date" datetime default NULL,
+  "organization" varchar(5) default '1',
+  "project" int(2) default '1',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `sb_user`
 --
 
-INSERT INTO `sb_user` (`ID`, `user`, `password`, `date`, `organization`, `project`) VALUES
-(2, 'beacon123', '1pass', '2001-01-06 00:00:00', '0', 1),
-(3, '989898', 'pass123', '2007-01-03 00:00:00', '1', 1);
+INSERT INTO `sb_user` VALUES(2, 'beacon123', '1pass', '2001-01-06 00:00:00', '0', 1);
+INSERT INTO `sb_user` VALUES(3, '989898', 'pass123', '2007-01-03 00:00:00', '1', 1);
 
 -- --------------------------------------------------------
 
@@ -2470,20 +2396,19 @@ INSERT INTO `sb_user` (`ID`, `user`, `password`, `date`, `organization`, `projec
 --
 
 DROP TABLE IF EXISTS `sb_user_responce`;
-CREATE TABLE `sb_user_responce` (
-  `ID` int(11) NOT NULL auto_increment,
-  `uid` varchar(6) default '123456',
-  `qid` int(11) default NULL,
-  `ansid` int(11) default NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=40475 ;
+CREATE TABLE "sb_user_responce" (
+  "ID" int(11) NOT NULL auto_increment,
+  "uid" varchar(6) default '123456',
+  "qid" int(11) default NULL,
+  "ansid" int(11) default NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=40475 ;
 
 --
 -- Dumping data for table `sb_user_responce`
 --
 
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
-(1, '123456', 1, 2),
+INSERT INTO `sb_user_responce` VALUES(1, '123456', 1, 2),
 (2, '123456', 1, 2),
 (3, '1', 2001, 1),
 (4, '1', 2001, 1),
@@ -4857,8 +4782,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (2373, '94', 12002, 1),
 (2374, '94', 12003, 0),
 (2375, '94', 12003, 2),
-(2376, '94', 12004, 1);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(2376, '94', 12004, 1),
 (2377, '94', 12005, 1),
 (2378, '94', 12006, 0),
 (2379, '94', 12007, 2),
@@ -7089,8 +7013,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (4604, '159', 12020, 1),
 (4605, '159', 12021, 1),
 (4606, '159', 12022, 2),
-(4607, '159', 12023, 0);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(4607, '159', 12023, 0),
 (4608, '159', 12024, 1),
 (4609, '158', 8001, 1),
 (4610, '158', 8002, 1),
@@ -9313,8 +9236,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (6827, '211', 12020, 3),
 (6828, '211', 12021, 0),
 (6829, '211', 12022, 2),
-(6830, '211', 12023, 0);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(6830, '211', 12023, 0),
 (6831, '211', 12024, 0),
 (6832, '211', 12024, 1),
 (6833, '211', 12025, 2),
@@ -11541,8 +11463,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (9054, '291', 12020, 3),
 (9055, '293', 6004, 0),
 (9056, '294', 4002, 3),
-(9057, '278', 12022, 2);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(9057, '278', 12022, 2),
 (9058, '291', 12020, 3),
 (9059, '293', 6005, 0),
 (9060, '291', 12021, 0),
@@ -13706,8 +13627,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (11218, '342', 11003, 0),
 (11219, '342', 12001, 2),
 (11220, '342', 12002, 1),
-(11221, '342', 12003, 2);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(11221, '342', 12003, 2),
 (11222, '342', 12004, 1),
 (11223, '342', 12005, 1),
 (11224, '342', 12006, 0),
@@ -15832,8 +15752,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (13343, '381', 12009, 1),
 (13344, '381', 12010, 1),
 (13345, '382', 12016, 2),
-(13346, '382', 12017, 1);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(13346, '382', 12017, 1),
 (13347, '382', 12018, 2),
 (13348, '381', 12011, 1),
 (13349, '381', 12012, 1),
@@ -17964,8 +17883,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (15474, '425', 12016, 2),
 (15475, '425', 12017, 1),
 (15476, '419', 12014, 2),
-(15477, '425', 12018, 2);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(15477, '425', 12018, 2),
 (15478, '425', 12019, 0),
 (15479, '419', 12015, 0),
 (15480, '419', 12016, 2),
@@ -20089,8 +20007,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (17598, '486', 4003, 1),
 (17599, '486', 4004, 0),
 (17600, '487', 3001, 0),
-(17601, '486', 4005, 1);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(17601, '486', 4005, 1),
 (17602, '487', 3002, 1),
 (17603, '487', 3003, 0),
 (17604, '487', 3004, 1),
@@ -22217,8 +22134,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (19725, '536', 2003, 0),
 (19726, '536', 3001, 0),
 (19727, '536', 3002, 1),
-(19728, '536', 3003, 0);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(19728, '536', 3003, 0),
 (19729, '536', 3004, 1),
 (19730, '536', 4001, 1),
 (19731, '536', 4001, 1),
@@ -24345,8 +24261,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (21852, '577', 9002, 0),
 (21853, '577', 9003, 1),
 (21854, '577', 9003, 0),
-(21855, '577', 10001, 1);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(21855, '577', 10001, 1),
 (21856, '577', 10002, 1),
 (21857, '577', 10003, 0),
 (21858, '577', 10004, 0),
@@ -26475,8 +26390,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (23981, '628', 3003, 0),
 (23982, '627', 11001, 1),
 (23983, '627', 11002, 1),
-(23984, '628', 3004, 1);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(23984, '628', 3004, 1),
 (23985, '627', 11003, 0),
 (23986, '627', 12001, 0),
 (23987, '627', 12002, 1),
@@ -28605,8 +28519,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (26110, '661', 12021, 0),
 (26111, '666', 2001, 1),
 (26112, '661', 12022, 2),
-(26113, '661', 12023, 0);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(26113, '661', 12023, 0),
 (26114, '661', 12024, 1),
 (26115, '666', 2002, 1),
 (26116, '661', 12025, 0),
@@ -30736,8 +30649,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (28240, '710', 9002, 1),
 (28241, '710', 9003, 0),
 (28242, '710', 10001, 1),
-(28243, '710', 10002, 1);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(28243, '710', 10002, 1),
 (28244, '710', 10003, 0),
 (28245, '710', 10004, 0),
 (28246, '710', 11001, 1),
@@ -32862,8 +32774,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (30365, '768', 4002, 0),
 (30366, '768', 4003, 1),
 (30367, '768', 4004, 0),
-(30368, '768', 4005, 0);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(30368, '768', 4005, 0),
 (30369, '768', 4006, 1),
 (30370, '768', 4007, 2),
 (30371, '768', 4008, 0),
@@ -34990,8 +34901,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (32492, '812', 4001, 1),
 (32493, '812', 4001, 1),
 (32494, '812', 4002, 0),
-(32495, '812', 4002, 3);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(32495, '812', 4002, 3),
 (32496, '812', 4003, 0),
 (32497, '812', 4003, 1),
 (32498, '812', 4004, 0),
@@ -37120,8 +37030,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (34621, '851', 2003, 0),
 (34622, '851', 3001, 0),
 (34623, '851', 3002, 1),
-(34624, '851', 3003, 0);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(34624, '851', 3003, 0),
 (34625, '851', 3004, 1),
 (34626, '851', 4001, 2),
 (34627, '851', 4002, 0),
@@ -39246,8 +39155,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (36746, '921', 6007, 0),
 (36747, '921', 7002, 0),
 (36748, '921', 7003, 1),
-(36749, '921', 7004, 0);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(36749, '921', 7004, 0),
 (36750, '921', 8001, 1),
 (36751, '921', 8002, 1),
 (36752, '921', 8003, 0),
@@ -41372,8 +41280,7 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 (38871, '988', 12023, 2),
 (38872, '988', 12024, 1),
 (38873, '987', 9001, 0),
-(38874, '988', 12025, 1);
-INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
+(38874, '988', 12025, 1),
 (38875, '988', 12026, 2),
 (38876, '988', 12027, 1),
 (38877, '987', 9002, 1),
@@ -42982,57 +42889,56 @@ INSERT INTO `sb_user_responce` (`ID`, `uid`, `qid`, `ansid`) VALUES
 --
 
 DROP TABLE IF EXISTS `students`;
-CREATE TABLE `students` (
-  `date_of_reg` date default '0000-00-00',
-  `date_of_mod` date default '0000-00-00',
-  `date_of_hire` date default '0000-00-00',
-  `fname` varchar(50) NOT NULL default '',
-  `lname` varchar(50) NOT NULL default '',
-  `mname` varchar(10) NOT NULL default '',
-  `orgID` varchar(50) default '00000000',
-  `user_group` varchar(70) NOT NULL default '',
-  `user_subgroup` varchar(50) NOT NULL default '',
-  `date_of_birth` varchar(10) NOT NULL default '00000000',
-  `sex` enum('m','f','na') NOT NULL default 'na',
-  `phone` varchar(15) NOT NULL default '0000000000',
-  `email` varchar(50) NOT NULL default '',
-  `address` varchar(100) default NULL,
-  `city` varchar(50) default NULL,
-  `state` varchar(5) default NULL,
-  `zip` varchar(20) default NULL,
-  `username` varchar(50) NOT NULL default '',
-  `password` varchar(50) NOT NULL default '',
-  `userlevel` int(3) NOT NULL default '0',
-  `ID` int(11) NOT NULL auto_increment,
-  `cookie` varchar(32) NOT NULL default '',
-  `session` varchar(32) NOT NULL default '',
-  `ip` int(4) unsigned NOT NULL default '0',
-  `ssn` varchar(255) NOT NULL default '',
-  `security_question` varchar(255) default '',
-  `security_answer` varchar(255) default NULL,
-  `buisness_type` varchar(255) default NULL,
-  `active` varchar(255) default NULL,
-  `provider_number` varchar(255) default NULL,
-  `confirmation_number` varchar(255) NOT NULL,
-  `organization_name` varchar(255) NOT NULL,
-  `last_login` varchar(255) NOT NULL,
-  `reg_date` varchar(255) NOT NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=43 ;
+CREATE TABLE "students" (
+  "date_of_reg" date default '0000-00-00',
+  "date_of_mod" date default '0000-00-00',
+  "date_of_hire" date default '0000-00-00',
+  "fname" varchar(50) NOT NULL default '',
+  "lname" varchar(50) NOT NULL default '',
+  "mname" varchar(10) NOT NULL default '',
+  "orgID" varchar(50) default '00000000',
+  "user_group" varchar(70) NOT NULL default '',
+  "user_subgroup" varchar(50) NOT NULL default '',
+  "date_of_birth" varchar(10) NOT NULL default '00000000',
+  "sex" enum('m','f','na') NOT NULL default 'na',
+  "phone" varchar(15) NOT NULL default '0000000000',
+  "email" varchar(50) NOT NULL default '',
+  "address" varchar(100) default NULL,
+  "city" varchar(50) default NULL,
+  "state" varchar(5) default NULL,
+  "zip" varchar(20) default NULL,
+  "username" varchar(50) NOT NULL default '',
+  "password" varchar(50) NOT NULL default '',
+  "userlevel" int(3) NOT NULL default '0',
+  "ID" int(11) NOT NULL auto_increment,
+  "cookie" varchar(32) NOT NULL default '',
+  "session" varchar(32) NOT NULL default '',
+  "ip" int(4) unsigned NOT NULL default '0',
+  "ssn" varchar(255) NOT NULL default '',
+  "security_question" varchar(255) default '',
+  "security_answer" varchar(255) default NULL,
+  "buisness_type" varchar(255) default NULL,
+  "active" varchar(255) default NULL,
+  "provider_number" varchar(255) default NULL,
+  "confirmation_number" varchar(255) NOT NULL default '',
+  "organization_name" varchar(255) NOT NULL default '',
+  "last_login" varchar(255) NOT NULL default '',
+  "reg_date" varchar(255) NOT NULL default '',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=51 ;
 
 --
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`date_of_reg`, `date_of_mod`, `date_of_hire`, `fname`, `lname`, `mname`, `orgID`, `user_group`, `user_subgroup`, `date_of_birth`, `sex`, `phone`, `email`, `address`, `city`, `state`, `zip`, `username`, `password`, `userlevel`, `ID`, `cookie`, `session`, `ip`, `ssn`, `security_question`, `security_answer`, `buisness_type`, `active`, `provider_number`, `confirmation_number`, `organization_name`, `last_login`, `reg_date`) VALUES
-('2002-02-22', '2002-02-22', '0000-00-00', 'davey', 'davey', '', '', '1', '1', '', 'm', '', '', '', '', '', '', 'davey', 'davey', 4, 1, 'e9523fdd23efccf9838000bbd61a3cf4', 'f28bcd35be15e98d08fb95b49245539d', 1173557168, '', 'What', '', 'Corporate', '', '', '', '', '', ''),
-('2010-03-19', '0000-00-00', '0000-00-00', 'Brian', 'Chavarin', '', '', '1', '3', '00000000', 'na', '0000000000', 'brian@californiaeducationconnection.com', NULL, NULL, NULL, NULL, 'brian', 'brian', 4, 33, '', '', 4294967295, '', '', NULL, NULL, NULL, NULL, '', '', '', ''),
-('0000-00-00', '0000-00-00', '0000-00-00', 'Guru', 'Siva', '', '00000000', '0', '0', '00000000', 'na', '0000000000', '', NULL, NULL, NULL, NULL, 'guru', 'guru', 2, 34, '', '', 0, '', '', NULL, NULL, NULL, NULL, '', '', '', ''),
-('0000-00-00', '2011-11-30', '0000-00-00', 'Test', 'User', '', '', '', '', '00000000', 'na', '', 'buyer_1322572299_per@ammonsdatasolutions.com', '1 Main St ', 'San Jose', 'CA', '95131', 'buyer_1322572299_per@ammonsdatasolutions.com', '2a8yh', 1, 36, '', '', 0, '', '', NULL, NULL, NULL, NULL, '', '', '', ''),
-('0000-00-00', '2011-11-30', '0000-00-00', '', '', '', '', '', '', '00000000', 'na', '', '', ' ', '', '', '', '', '', 0, 37, '', '', 0, '', '', NULL, NULL, NULL, '', '', '', '', ''),
-('0000-00-00', '2011-12-01', '0000-00-00', 'Ryan', 'Ammons', '', '', '', '', '00000000', 'na', '', 'ryan@rammons.net', '5606 Bloomfield Dr #201 ', 'Alexandria', 'VA', '22312', 'ryan@rammons.net', '7a3yz', 1, 38, '', '', 0, '', '', NULL, NULL, NULL, NULL, '', '', '', ''),
-('0000-00-00', '2011-12-09', '0000-00-00', 'dave', 'ealy', '', '', '', '', '00000000', 'na', '', 'dealy@davidealytechnologies.com', '9302 prescott ave ', 'manassas', 'VA', '20110', 'dealy@davidealytechnologies.com', 'yqevu', 1, 39, '', '', 0, '', '', NULL, NULL, NULL, NULL, '', '', '', ''),
-('2012-01-18', '0000-00-00', '0000-00-00', 'Elmer', 'Fudd', '', '', '', '', '00000000', 'na', '0000000000', 'charles.calvert@celticwolf.com', NULL, NULL, NULL, NULL, 'efudd', 'elmer', 1, 40, '', '', 726612329, '', '', NULL, NULL, NULL, NULL, '', '', '', '');
+INSERT INTO `students` VALUES('2002-02-22', '2002-02-22', '0000-00-00', 'davey', 'davey', '', '', '1', '1', '', 'm', '', '', '', '', '', '', 'davey', 'davey', 4, 1, 'e9523fdd23efccf9838000bbd61a3cf4', 'f28bcd35be15e98d08fb95b49245539d', 1173557168, '', 'What', '', 'Corporate', '', '', '', '', '', '');
+INSERT INTO `students` VALUES('2010-03-19', '0000-00-00', '0000-00-00', 'Brian', 'Chavarin', '', '', '1', '3', '00000000', 'na', '0000000000', 'brian@californiaeducationconnection.com', NULL, NULL, NULL, NULL, 'brian', 'brian', 4, 33, '', '', 4294967295, '', '', NULL, NULL, NULL, NULL, '', '', '', '');
+INSERT INTO `students` VALUES('0000-00-00', '0000-00-00', '0000-00-00', 'Guru', 'Siva', '', '00000000', '0', '0', '00000000', 'na', '0000000000', '  ', NULL, NULL, NULL, NULL, 'guru', 'guru', 2, 34, '', '', 0, '', '', NULL, NULL, NULL, '', '', '', '', '');
+INSERT INTO `students` VALUES('0000-00-00', '2011-11-30', '0000-00-00', 'Test', 'User', '', '', '', '', '00000000', 'na', '', 'buyer_1322572299_per@ammonsdatasolutions.com', '1 Main St ', 'San Jose', 'CA', '95131', 'buyer_1322572299_per@ammonsdatasolutions.com', '2a8yh', 1, 36, '', '', 0, '', '', NULL, NULL, NULL, NULL, '', '', '', '');
+INSERT INTO `students` VALUES('0000-00-00', '2011-12-01', '0000-00-00', 'Ryan', 'Ammons', '', '', '', '', '00000000', 'na', '', 'ryan@rammons.net', '5606 Bloomfield Dr #201 ', 'Alexandria', 'VA', '22312', 'ryan@rammons.net', '7a3yz', 1, 38, '', '', 0, '', '', NULL, NULL, NULL, NULL, '', '', '', '');
+INSERT INTO `students` VALUES('0000-00-00', '2011-12-09', '0000-00-00', 'dave', 'ealy', '', '', '', '', '00000000', 'na', '', 'dealy@davidealytechnologies.com', '9302 prescott ave ', 'manassas', 'VA', '20110', 'dealy@davidealytechnologies.com', 'yqevu', 1, 39, '', '', 0, '', '', NULL, NULL, NULL, NULL, '', '', '', '');
+INSERT INTO `students` VALUES('2012-01-18', '0000-00-00', '0000-00-00', 'Elmer', 'Fudd', '', '', '', '', '00000000', 'na', '0000000000', 'charles.calvert@celticwolf.com', NULL, NULL, NULL, NULL, 'efudd', 'elmer', 1, 40, '', '', 726612329, '', '', NULL, NULL, NULL, NULL, '', '', '', '');
+INSERT INTO `students` VALUES('2012-01-25', '0000-00-00', '0000-00-00', 'Thinesh', 'Ananth', '', '', '', '', '00000000', 'na', '882-566-1168', '   thineshananth12@gmail.com', NULL, NULL, NULL, NULL, 'Thinesh', '1234', 1, 44, '', '', 4294967295, '', '', NULL, NULL, NULL, '12345', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -43041,44 +42947,43 @@ INSERT INTO `students` (`date_of_reg`, `date_of_mod`, `date_of_hire`, `fname`, `
 --
 
 DROP TABLE IF EXISTS `subgroups`;
-CREATE TABLE `subgroups` (
-  `sub_name` varchar(225) NOT NULL default '',
-  `sub_sname` varchar(225) NOT NULL default '',
-  `ID` int(11) NOT NULL auto_increment,
-  `group_ID` int(15) default NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=48 ;
+CREATE TABLE "subgroups" (
+  "sub_name" varchar(225) NOT NULL default '',
+  "sub_sname" varchar(225) NOT NULL default '',
+  "ID" int(11) NOT NULL auto_increment,
+  "group_ID" int(15) default NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=48 ;
 
 --
 -- Dumping data for table `subgroups`
 --
 
-INSERT INTO `subgroups` (`sub_name`, `sub_sname`, `ID`, `group_ID`) VALUES
-('Vice President', 'VP', 1, 1),
-('Web Developer', 'WDev', 3, 1),
-('Web Designer', 'WDes', 4, 1),
-('Intern', 'Intern', 5, 1),
-('ward', 'w', 7, 2),
-('steph', 's', 12, 2),
-('mike', 'f1', 14, 1),
-('sadfasd', 'sdaf', 15, 8),
-('Admin for Demo', 'AD', 17, 10),
-('IE', 'IE', 18, 11),
-('craig', 'craig', 19, 12),
-('hoafeng tang', 'f', 20, 1),
-('Amit', 'a', 25, 6),
-('Kelly Smith', 'ks', 26, 5),
-('Doug Graben', 'dg', 27, 5),
-('Bobby Tschappat', 'bt', 28, 3),
-('Jim Shook', 'js', 29, 3),
-('Reviewer 1', 'BBDO1', 30, 9),
-('amit', '', 31, 3),
-('sdfegadfg', 'asdfa', 33, 6),
-('aaa', 'aa', 37, 13),
-('hello lisa lange', 'hll', 39, 3),
-('', '', 41, 14),
-('', '', 42, 0),
-('', '', 43, 15);
+INSERT INTO `subgroups` VALUES('Vice President', 'VP', 1, 1);
+INSERT INTO `subgroups` VALUES('Web Developer', 'WDev', 3, 1);
+INSERT INTO `subgroups` VALUES('Web Designer', 'WDes', 4, 1);
+INSERT INTO `subgroups` VALUES('Intern', 'Intern', 5, 1);
+INSERT INTO `subgroups` VALUES('ward', 'w', 7, 2);
+INSERT INTO `subgroups` VALUES('steph', 's', 12, 2);
+INSERT INTO `subgroups` VALUES('mike', 'f1', 14, 1);
+INSERT INTO `subgroups` VALUES('sadfasd', 'sdaf', 15, 8);
+INSERT INTO `subgroups` VALUES('Admin for Demo', 'AD', 17, 10);
+INSERT INTO `subgroups` VALUES('IE', 'IE', 18, 11);
+INSERT INTO `subgroups` VALUES('craig', 'craig', 19, 12);
+INSERT INTO `subgroups` VALUES('hoafeng tang', 'f', 20, 1);
+INSERT INTO `subgroups` VALUES('Amit', 'a', 25, 6);
+INSERT INTO `subgroups` VALUES('Kelly Smith', 'ks', 26, 5);
+INSERT INTO `subgroups` VALUES('Doug Graben', 'dg', 27, 5);
+INSERT INTO `subgroups` VALUES('Bobby Tschappat', 'bt', 28, 3);
+INSERT INTO `subgroups` VALUES('Jim Shook', 'js', 29, 3);
+INSERT INTO `subgroups` VALUES('Reviewer 1', 'BBDO1', 30, 9);
+INSERT INTO `subgroups` VALUES('amit', '', 31, 3);
+INSERT INTO `subgroups` VALUES('sdfegadfg', 'asdfa', 33, 6);
+INSERT INTO `subgroups` VALUES('aaa', 'aa', 37, 13);
+INSERT INTO `subgroups` VALUES('hello lisa lange', 'hll', 39, 3);
+INSERT INTO `subgroups` VALUES('', '', 41, 14);
+INSERT INTO `subgroups` VALUES('', '', 42, 0);
+INSERT INTO `subgroups` VALUES('', '', 43, 15);
 
 -- --------------------------------------------------------
 
@@ -43087,15 +42992,15 @@ INSERT INTO `subgroups` (`sub_name`, `sub_sname`, `ID`, `group_ID`) VALUES
 --
 
 DROP TABLE IF EXISTS `temp_wtest`;
-CREATE TABLE `temp_wtest` (
-  `user_ID` int(11) unsigned NOT NULL default '0',
-  `test_ID` int(11) unsigned NOT NULL default '0',
-  `date_taken` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
-  `answers` blob,
-  `ID` int(11) unsigned NOT NULL auto_increment,
-  PRIMARY KEY  (`ID`),
-  KEY `user_ID` (`user_ID`,`test_ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE TABLE "temp_wtest" (
+  "user_ID" int(11) unsigned NOT NULL default '0',
+  "test_ID" int(11) unsigned NOT NULL default '0',
+  "date_taken" timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  "answers" blob,
+  "ID" int(11) unsigned NOT NULL auto_increment,
+  PRIMARY KEY  ("ID"),
+  KEY "user_ID" ("user_ID","test_ID")
+) AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `temp_wtest`
@@ -43109,22 +43014,21 @@ CREATE TABLE `temp_wtest` (
 --
 
 DROP TABLE IF EXISTS `temp_wtest2`;
-CREATE TABLE `temp_wtest2` (
-  `user_ID` int(11) unsigned NOT NULL default '0',
-  `test_ID` int(11) unsigned NOT NULL default '0',
-  `date_taken` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
-  `answers` blob,
-  `ID` int(11) unsigned NOT NULL auto_increment,
-  PRIMARY KEY  (`ID`),
-  KEY `user_ID` (`user_ID`,`test_ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+CREATE TABLE "temp_wtest2" (
+  "user_ID" int(11) unsigned NOT NULL default '0',
+  "test_ID" int(11) unsigned NOT NULL default '0',
+  "date_taken" timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  "answers" blob,
+  "ID" int(11) unsigned NOT NULL auto_increment,
+  PRIMARY KEY  ("ID"),
+  KEY "user_ID" ("user_ID","test_ID")
+) AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `temp_wtest2`
 --
 
-INSERT INTO `temp_wtest2` (`user_ID`, `test_ID`, `date_taken`, `answers`, `ID`) VALUES
-(1, 6, '2007-08-15 16:34:41', 0x61206265616b65722c207269626f736f6d65732c20666f726d2063656c6c206d656d6272616e65732c20636c6f6e696e672c206e657720737065636965732c2077617465722c20746f206b6565702070617469656e74732066726f6d206265636f6d696e6720616e6772792c2073706563696174696f6e2c203520782031305e282d3329206d6d2c2063656c6c206469766973696f6e, 1);
+INSERT INTO `temp_wtest2` VALUES(1, 6, '2007-08-15 16:34:41', 0x61206265616b65722c207269626f736f6d65732c20666f726d2063656c6c206d656d6272616e65732c20636c6f6e696e672c206e657720737065636965732c2077617465722c20746f206b6565702070617469656e74732066726f6d206265636f6d696e6720616e6772792c2073706563696174696f6e2c203520782031305e282d3329206d6d2c2063656c6c206469766973696f6e, 1);
 
 -- --------------------------------------------------------
 
@@ -43133,9 +43037,9 @@ INSERT INTO `temp_wtest2` (`user_ID`, `test_ID`, `date_taken`, `answers`, `ID`) 
 --
 
 DROP TABLE IF EXISTS `test`;
-CREATE TABLE `test` (
-  `test` char(128) default 'test'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE "test" (
+  "test" char(128) default 'test'
+);
 
 --
 -- Dumping data for table `test`
@@ -43149,23 +43053,22 @@ CREATE TABLE `test` (
 --
 
 DROP TABLE IF EXISTS `tests`;
-CREATE TABLE `tests` (
-  `name` varchar(225) NOT NULL default '',
-  `type` varchar(30) NOT NULL default '',
-  `randomize` enum('Y','N') NOT NULL default 'N',
-  `ID` int(11) NOT NULL auto_increment,
-  `status` enum('active','not active') NOT NULL default 'active',
-  `description` blob,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24 ;
+CREATE TABLE "tests" (
+  "name" varchar(225) NOT NULL default '',
+  "type" varchar(30) NOT NULL default '',
+  "randomize" enum('Y','N') NOT NULL default 'N',
+  "ID" int(11) NOT NULL auto_increment,
+  "status" enum('active','not active') NOT NULL default 'active',
+  "description" blob,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=28 ;
 
 --
 -- Dumping data for table `tests`
 --
 
-INSERT INTO `tests` (`name`, `type`, `randomize`, `ID`, `status`, `description`) VALUES
-('SAT', 'normal', 'N', 6, 'active', NULL),
-('Sample', 'wireless survey', '', 22, 'active', NULL);
+INSERT INTO `tests` VALUES('SAT', 'normal', 'N', 6, 'active', NULL);
+INSERT INTO `tests` VALUES('sample1', 'normal', 'N', 27, 'active', NULL);
 
 -- --------------------------------------------------------
 
@@ -43174,65 +43077,64 @@ INSERT INTO `tests` (`name`, `type`, `randomize`, `ID`, `status`, `description`)
 --
 
 DROP TABLE IF EXISTS `tests_r`;
-CREATE TABLE `tests_r` (
-  `test_ID` int(11) NOT NULL default '0',
-  `question_ID` int(11) NOT NULL default '0',
-  `question_order` int(11) NOT NULL default '1',
-  `ID` int(11) NOT NULL auto_increment,
-  `resource_l` varchar(100) NOT NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=61 ;
+CREATE TABLE "tests_r" (
+  "test_ID" int(11) NOT NULL default '0',
+  "question_ID" int(11) NOT NULL default '0',
+  "question_order" int(11) NOT NULL default '1',
+  "ID" int(11) NOT NULL auto_increment,
+  "resource_l" varchar(100) NOT NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=61 ;
 
 --
 -- Dumping data for table `tests_r`
 --
 
-INSERT INTO `tests_r` (`test_ID`, `question_ID`, `question_order`, `ID`, `resource_l`) VALUES
-(3, 1, 1, 1, ''),
-(3, 2, 3, 2, ''),
-(6, 4, 1, 3, ''),
-(6, 5, 9, 4, ''),
-(6, 6, 8, 5, ''),
-(6, 7, 7, 6, ''),
-(6, 8, 6, 7, ''),
-(6, 9, 5, 8, ''),
-(6, 10, 4, 9, ''),
-(6, 11, 3, 10, ''),
-(6, 12, 2, 11, ''),
-(6, 13, 10, 12, ''),
-(8, 4, 0, 13, ''),
-(8, 5, 1, 14, ''),
-(9, 15, 2, 15, ''),
-(9, 14, 1, 16, ''),
-(9, 16, 3, 17, ''),
-(9, 17, 4, 18, ''),
-(9, 18, 5, 19, ''),
-(9, 19, 6, 20, ''),
-(9, 20, 7, 21, ''),
-(9, 21, 8, 22, ''),
-(9, 22, 9, 23, ''),
-(9, 23, 9, 24, ''),
-(9, 24, 10, 25, ''),
-(3, 25, 2, 26, ''),
-(6, 8, 11, 27, ''),
-(6, 14, 0, 28, ''),
-(6, 5, 0, 36, ''),
-(6, 5, 0, 37, ''),
-(6, 6, 0, 38, ''),
-(6, 5, 0, 40, ''),
-(6, 6, 0, 41, ''),
-(6, 11, 0, 42, ''),
-(6, 6, 0, 43, ''),
-(6, 6, 0, 44, ''),
-(6, 7, 0, 45, ''),
-(6, 6, 0, 46, ''),
-(6, 7, 0, 47, ''),
-(6, 8, 0, 48, ''),
-(6, 6, 0, 49, ''),
-(6, 7, 0, 50, ''),
-(6, 8, 0, 51, ''),
-(6, 9, 0, 52, ''),
-(3, 5, 0, 56, '');
+INSERT INTO `tests_r` VALUES(3, 1, 1, 1, '');
+INSERT INTO `tests_r` VALUES(3, 2, 3, 2, '');
+INSERT INTO `tests_r` VALUES(6, 4, 1, 3, '');
+INSERT INTO `tests_r` VALUES(6, 5, 9, 4, '');
+INSERT INTO `tests_r` VALUES(6, 6, 8, 5, '');
+INSERT INTO `tests_r` VALUES(6, 7, 7, 6, '');
+INSERT INTO `tests_r` VALUES(6, 8, 6, 7, '');
+INSERT INTO `tests_r` VALUES(6, 9, 5, 8, '');
+INSERT INTO `tests_r` VALUES(6, 10, 4, 9, '');
+INSERT INTO `tests_r` VALUES(6, 11, 3, 10, '');
+INSERT INTO `tests_r` VALUES(6, 12, 2, 11, '');
+INSERT INTO `tests_r` VALUES(6, 13, 10, 12, '');
+INSERT INTO `tests_r` VALUES(8, 4, 0, 13, '');
+INSERT INTO `tests_r` VALUES(8, 5, 1, 14, '');
+INSERT INTO `tests_r` VALUES(9, 15, 2, 15, '');
+INSERT INTO `tests_r` VALUES(9, 14, 1, 16, '');
+INSERT INTO `tests_r` VALUES(9, 16, 3, 17, '');
+INSERT INTO `tests_r` VALUES(9, 17, 4, 18, '');
+INSERT INTO `tests_r` VALUES(9, 18, 5, 19, '');
+INSERT INTO `tests_r` VALUES(9, 19, 6, 20, '');
+INSERT INTO `tests_r` VALUES(9, 20, 7, 21, '');
+INSERT INTO `tests_r` VALUES(9, 21, 8, 22, '');
+INSERT INTO `tests_r` VALUES(9, 22, 9, 23, '');
+INSERT INTO `tests_r` VALUES(9, 23, 9, 24, '');
+INSERT INTO `tests_r` VALUES(9, 24, 10, 25, '');
+INSERT INTO `tests_r` VALUES(3, 25, 2, 26, '');
+INSERT INTO `tests_r` VALUES(6, 8, 11, 27, '');
+INSERT INTO `tests_r` VALUES(6, 14, 0, 28, '');
+INSERT INTO `tests_r` VALUES(6, 5, 0, 36, '');
+INSERT INTO `tests_r` VALUES(6, 5, 0, 37, '');
+INSERT INTO `tests_r` VALUES(6, 6, 0, 38, '');
+INSERT INTO `tests_r` VALUES(6, 5, 0, 40, '');
+INSERT INTO `tests_r` VALUES(6, 6, 0, 41, '');
+INSERT INTO `tests_r` VALUES(6, 11, 0, 42, '');
+INSERT INTO `tests_r` VALUES(6, 6, 0, 43, '');
+INSERT INTO `tests_r` VALUES(6, 6, 0, 44, '');
+INSERT INTO `tests_r` VALUES(6, 7, 0, 45, '');
+INSERT INTO `tests_r` VALUES(6, 6, 0, 46, '');
+INSERT INTO `tests_r` VALUES(6, 7, 0, 47, '');
+INSERT INTO `tests_r` VALUES(6, 8, 0, 48, '');
+INSERT INTO `tests_r` VALUES(6, 6, 0, 49, '');
+INSERT INTO `tests_r` VALUES(6, 7, 0, 50, '');
+INSERT INTO `tests_r` VALUES(6, 8, 0, 51, '');
+INSERT INTO `tests_r` VALUES(6, 9, 0, 52, '');
+INSERT INTO `tests_r` VALUES(3, 5, 0, 56, '');
 
 -- --------------------------------------------------------
 
@@ -43241,33 +43143,32 @@ INSERT INTO `tests_r` (`test_ID`, `question_ID`, `question_order`, `ID`, `resour
 --
 
 DROP TABLE IF EXISTS `topic`;
-CREATE TABLE `topic` (
-  `modified` date default '0000-00-00',
-  `created` date default '0000-00-00',
-  `name` varchar(100) NOT NULL default '',
-  `time_limit` varchar(250) NOT NULL default '',
-  `time_req` varchar(50) NOT NULL default '',
-  `topic_type` varchar(50) NOT NULL default '',
-  `content_location` enum('local','remote') NOT NULL default 'local',
-  `content_link` varchar(200) NOT NULL default '',
-  `content` blob NOT NULL,
-  `test_link` int(11) NOT NULL default '0',
-  `ID` int(11) NOT NULL auto_increment,
-  `course_ID` int(11) NOT NULL default '0',
-  `prerequisites` varchar(50) NOT NULL default '0',
-  `datafromlms` varchar(100) default '',
-  `identifier` varchar(100) default '',
-  `mastery_score` float(10,2) NOT NULL default '0.00',
-  `max_time` varchar(50) NOT NULL default '0',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+CREATE TABLE "topic" (
+  "modified" date default '0000-00-00',
+  "created" date default '0000-00-00',
+  "name" varchar(100) NOT NULL default '',
+  "time_limit" varchar(250) NOT NULL default '',
+  "time_req" varchar(50) NOT NULL default '',
+  "topic_type" varchar(50) NOT NULL default '',
+  "content_location" enum('local','remote') NOT NULL default 'local',
+  "content_link" varchar(200) NOT NULL default '',
+  "content" blob NOT NULL,
+  "test_link" int(11) NOT NULL default '0',
+  "ID" int(11) NOT NULL auto_increment,
+  "course_ID" int(11) NOT NULL default '0',
+  "prerequisites" varchar(50) NOT NULL default '0',
+  "datafromlms" varchar(100) default '',
+  "identifier" varchar(100) default '',
+  "mastery_score" float(10,2) NOT NULL default '0.00',
+  "max_time" varchar(50) NOT NULL default '0',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `topic`
 --
 
-INSERT INTO `topic` (`modified`, `created`, `name`, `time_limit`, `time_req`, `topic_type`, `content_location`, `content_link`, `content`, `test_link`, `ID`, `course_ID`, `prerequisites`, `datafromlms`, `identifier`, `mastery_score`, `max_time`) VALUES
-('2006-10-16', '2006-10-16', '222', '12', '12', 'normal', 'local', '12', '', 0, 1, 0, '0', '', '', 0.00, '0');
+INSERT INTO `topic` VALUES('2006-10-16', '2006-10-16', '222', '12', '12', 'normal', 'local', '12', '', 0, 1, 0, '0', '', '', 0.00, '0');
 
 -- --------------------------------------------------------
 
@@ -43276,21 +43177,20 @@ INSERT INTO `topic` (`modified`, `created`, `name`, `time_limit`, `time_req`, `t
 --
 
 DROP TABLE IF EXISTS `user`;
-CREATE TABLE `user` (
-  `ID` int(11) NOT NULL auto_increment,
-  `fname` varchar(30) NOT NULL default '',
-  `lname` varchar(30) NOT NULL default '',
-  `org` int(3) NOT NULL default '0',
-  `fecha` datetime NOT NULL default '0000-00-00 00:00:00',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=1035 ;
+CREATE TABLE "user" (
+  "ID" int(11) NOT NULL auto_increment,
+  "fname" varchar(30) NOT NULL default '',
+  "lname" varchar(30) NOT NULL default '',
+  "org" int(3) NOT NULL default '0',
+  "fecha" datetime NOT NULL default '0000-00-00 00:00:00',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=1035 ;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`ID`, `fname`, `lname`, `org`, `fecha`) VALUES
-(36, 'ann', 'Van Houten', 0, '2007-04-10 11:40:01'),
+INSERT INTO `user` VALUES(36, 'ann', 'Van Houten', 0, '2007-04-10 11:40:01'),
 (37, 'Chris', 'Irick', 12, '2007-04-10 13:28:30'),
 (38, 'Amy', 'Pfaff', 0, '2007-04-12 10:47:19'),
 (39, 'A', 'P', 0, '2007-04-19 12:46:41'),
@@ -44246,8 +44146,7 @@ INSERT INTO `user` (`ID`, `fname`, `lname`, `org`, `fecha`) VALUES
 (989, 'Enid', 'McKeithan', 1, '2009-02-24 11:04:04'),
 (990, 'Enid ', 'McKeithan', 1, '2009-02-25 08:25:15'),
 (991, 'enid', 'mckeithan', 1, '2009-02-25 13:56:41'),
-(992, 'Justina', 'Waid', 12, '2009-02-25 15:32:35');
-INSERT INTO `user` (`ID`, `fname`, `lname`, `org`, `fecha`) VALUES
+(992, 'Justina', 'Waid', 12, '2009-02-25 15:32:35'),
 (993, 'cherri', 'roemeling', 1, '2009-02-26 17:37:46'),
 (994, 'Charles', 'Richardson', 1, '2009-02-27 14:30:09'),
 (995, 'Barry', 'Masters', 19, '2009-03-03 09:10:16'),
@@ -44298,31 +44197,31 @@ INSERT INTO `user` (`ID`, `fname`, `lname`, `org`, `fecha`) VALUES
 --
 
 DROP TABLE IF EXISTS `usersco_history`;
-CREATE TABLE `usersco_history` (
-  `ID` int(11) NOT NULL auto_increment,
-  `sco_id` int(11) NOT NULL default '0',
-  `user_id` int(11) NOT NULL default '0',
-  `sco_status` varchar(50) NOT NULL default 'Incomplete',
-  `sco_exit` varchar(50) NOT NULL default '',
-  `sco_sess_time` varchar(50) NOT NULL default '',
-  `course_id` int(11) NOT NULL default '0',
-  `suspand_data` text,
-  `score_raw` float(10,2) NOT NULL default '0.00',
-  `lesson_location` varchar(50) NOT NULL default '',
-  `score_max` float(10,2) NOT NULL default '0.00',
-  `prerequisites` varchar(100) NOT NULL default '',
-  `identifier` varchar(100) NOT NULL default '',
-  `score_min` float(10,2) NOT NULL default '0.00',
-  `pref_audio` int(3) NOT NULL default '0',
-  `pref_lang` varchar(50) NOT NULL default '',
-  `pref_speed` int(3) NOT NULL default '0',
-  `pref_text` int(3) NOT NULL default '0',
-  `mastery_score` float(10,2) NOT NULL default '0.00',
-  `max_time` varchar(50) NOT NULL default '',
-  `time_limit` varchar(250) NOT NULL default '',
-  `datafromlms` varchar(100) NOT NULL default '',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE TABLE "usersco_history" (
+  "ID" int(11) NOT NULL auto_increment,
+  "sco_id" int(11) NOT NULL default '0',
+  "user_id" int(11) NOT NULL default '0',
+  "sco_status" varchar(50) NOT NULL default 'Incomplete',
+  "sco_exit" varchar(50) NOT NULL default '',
+  "sco_sess_time" varchar(50) NOT NULL default '',
+  "course_id" int(11) NOT NULL default '0',
+  "suspand_data" text,
+  "score_raw" float(10,2) NOT NULL default '0.00',
+  "lesson_location" varchar(50) NOT NULL default '',
+  "score_max" float(10,2) NOT NULL default '0.00',
+  "prerequisites" varchar(100) NOT NULL default '',
+  "identifier" varchar(100) NOT NULL default '',
+  "score_min" float(10,2) NOT NULL default '0.00',
+  "pref_audio" int(3) NOT NULL default '0',
+  "pref_lang" varchar(50) NOT NULL default '',
+  "pref_speed" int(3) NOT NULL default '0',
+  "pref_text" int(3) NOT NULL default '0',
+  "mastery_score" float(10,2) NOT NULL default '0.00',
+  "max_time" varchar(50) NOT NULL default '',
+  "time_limit" varchar(250) NOT NULL default '',
+  "datafromlms" varchar(100) NOT NULL default '',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `usersco_history`
@@ -44336,21 +44235,20 @@ CREATE TABLE `usersco_history` (
 --
 
 DROP TABLE IF EXISTS `user_messages`;
-CREATE TABLE `user_messages` (
-  `MESSAGEID` int(11) NOT NULL auto_increment,
-  `USERID` int(11) NOT NULL,
-  `CREATEDATE` datetime NOT NULL,
-  `MESSAGE` varchar(500) NOT NULL,
-  `TYPE` varchar(255) NOT NULL,
-  PRIMARY KEY  (`MESSAGEID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=76 ;
+CREATE TABLE "user_messages" (
+  "MESSAGEID" int(11) NOT NULL auto_increment,
+  "USERID" int(11) NOT NULL,
+  "CREATEDATE" datetime NOT NULL,
+  "MESSAGE" varchar(500) NOT NULL,
+  "TYPE" varchar(255) NOT NULL,
+  PRIMARY KEY  ("MESSAGEID")
+) AUTO_INCREMENT=81 ;
 
 --
 -- Dumping data for table `user_messages`
 --
 
-INSERT INTO `user_messages` (`MESSAGEID`, `USERID`, `CREATEDATE`, `MESSAGE`, `TYPE`) VALUES
-(3, 1, '2009-11-06 13:52:16', 'upload <a href=&quot;libdocs/avg.txt&quot; target=&quot;_blank&quot;>avg.txt</a>', 'Repository'),
+INSERT INTO `user_messages` VALUES(3, 1, '2009-11-06 13:52:16', 'upload <a href=&quot;libdocs/avg.txt&quot; target=&quot;_blank&quot;>avg.txt</a>', 'Repository'),
 (4, 1, '2009-11-10 07:13:54', 'Upload<a href=&quot;libdocs/test.gif&quot; target=&quot;_blank&quot;>test.gif</a>', 'Repository'),
 (5, 1, '2009-11-10 07:18:24', 'Upload<a href=&quot;libdocs/test.gif&quot; target=&quot;_blank&quot;>test.gif</a>', 'Repository'),
 (6, 1, '2009-11-10 09:04:04', 'Upload<a href=&quot;libdocs/test.gif&quot; target=&quot;_blank&quot;>test.gif</a>', 'Repository'),
@@ -44422,7 +44320,12 @@ INSERT INTO `user_messages` (`MESSAGEID`, `USERID`, `CREATEDATE`, `MESSAGE`, `TY
 (72, 1, '2012-01-23 04:49:57', 'hi responsed "Re: Re: Re: testing"', 'Reponse Message'),
 (73, 1, '2012-01-23 04:51:13', 'ramesh responsed "Re: Re: Re: testing"', 'Reponse Message'),
 (74, 1, '2012-01-23 05:45:46', 'rrajesh responsed "Re: Re: testing"', 'Reponse Message'),
-(75, 1, '2012-01-23 05:46:40', 'rajesh responsed "Re: Re: testing"', 'Reponse Message');
+(75, 1, '2012-01-23 05:46:40', 'rajesh responsed "Re: Re: testing"', 'Reponse Message'),
+(76, 1, '2012-01-26 05:40:45', 'testing2 added a message "hi"', 'New Message'),
+(77, 1, '2012-01-26 06:19:21', 'Marvin added a message "Test Topic"', 'New Message'),
+(78, 1, '2012-01-26 06:22:36', 'David Ealy added a message "Documents uploaded 1.112010"', 'New Message'),
+(79, 1, '2012-01-26 06:27:57', 'David Ealy added a message "Blogs should come through anlm.org"', 'New Message'),
+(80, 1, '2012-01-26 06:31:32', 'David Ealy added a message "Blogs should come through anlm.org"', 'New Message');
 
 -- --------------------------------------------------------
 
@@ -44431,17 +44334,16 @@ INSERT INTO `user_messages` (`MESSAGEID`, `USERID`, `CREATEDATE`, `MESSAGE`, `TY
 --
 
 DROP TABLE IF EXISTS `user_message_mapping`;
-CREATE TABLE `user_message_mapping` (
-  `USERID` int(11) NOT NULL,
-  `LASTMESSAGEID` int(11) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE "user_message_mapping" (
+  "USERID" int(11) NOT NULL,
+  "LASTMESSAGEID" int(11) NOT NULL
+);
 
 --
 -- Dumping data for table `user_message_mapping`
 --
 
-INSERT INTO `user_message_mapping` (`USERID`, `LASTMESSAGEID`) VALUES
-(5, 0),
+INSERT INTO `user_message_mapping` VALUES(5, 0),
 (1, 23),
 (4, 29);
 
@@ -44452,19 +44354,18 @@ INSERT INTO `user_message_mapping` (`USERID`, `LASTMESSAGEID`) VALUES
 --
 
 DROP TABLE IF EXISTS `user_own_messages`;
-CREATE TABLE `user_own_messages` (
-  `RECORDID` int(11) NOT NULL auto_increment,
-  `OWNERID` int(11) NOT NULL,
-  `MESSAGEID` int(11) NOT NULL,
-  PRIMARY KEY  (`RECORDID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
+CREATE TABLE "user_own_messages" (
+  "RECORDID" int(11) NOT NULL auto_increment,
+  "OWNERID" int(11) NOT NULL,
+  "MESSAGEID" int(11) NOT NULL,
+  PRIMARY KEY  ("RECORDID")
+) AUTO_INCREMENT=23 ;
 
 --
 -- Dumping data for table `user_own_messages`
 --
 
-INSERT INTO `user_own_messages` (`RECORDID`, `OWNERID`, `MESSAGEID`) VALUES
-(2, 1, 3),
+INSERT INTO `user_own_messages` VALUES(2, 1, 3),
 (5, 1, 6),
 (6, 1, 7),
 (7, 1, 8),
@@ -44491,13 +44392,13 @@ INSERT INTO `user_own_messages` (`RECORDID`, `OWNERID`, `MESSAGEID`) VALUES
 --
 
 DROP TABLE IF EXISTS `user_questions`;
-CREATE TABLE `user_questions` (
-  `ID` int(50) NOT NULL auto_increment,
-  `user` int(11) default '1',
-  `question` int(11) default '1',
-  `answer` varchar(5) default 'A',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE TABLE "user_questions" (
+  "ID" int(50) NOT NULL auto_increment,
+  "user" int(11) default '1',
+  "question" int(11) default '1',
+  "answer" varchar(5) default 'A',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `user_questions`
@@ -44511,28 +44412,27 @@ CREATE TABLE `user_questions` (
 --
 
 DROP TABLE IF EXISTS `user_regform`;
-CREATE TABLE `user_regform` (
-  `userID` int(11) NOT NULL auto_increment,
-  `username` varchar(255) collate latin1_general_ci NOT NULL,
-  `password` varchar(255) collate latin1_general_ci NOT NULL,
-  `email` varchar(50) collate latin1_general_ci NOT NULL,
-  `priority` varchar(10) collate latin1_general_ci NOT NULL,
-  `login` tinyint(2) NOT NULL,
-  `datetime` datetime NOT NULL,
-  `lastLogin` datetime NOT NULL,
-  `LastLogout` datetime NOT NULL,
-  PRIMARY KEY  (`userID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=5 ;
+CREATE TABLE "user_regform" (
+  "userID" int(11) NOT NULL auto_increment,
+  "username" varchar(255) collate latin1_general_ci NOT NULL,
+  "password" varchar(255) collate latin1_general_ci NOT NULL,
+  "email" varchar(50) collate latin1_general_ci NOT NULL,
+  "priority" varchar(10) collate latin1_general_ci NOT NULL,
+  "login" tinyint(2) NOT NULL,
+  "datetime" datetime NOT NULL,
+  "lastLogin" datetime NOT NULL,
+  "LastLogout" datetime NOT NULL,
+  PRIMARY KEY  ("userID")
+) AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `user_regform`
 --
 
-INSERT INTO `user_regform` (`userID`, `username`, `password`, `email`, `priority`, `login`, `datetime`, `lastLogin`, `LastLogout`) VALUES
-(1, 'test', '098f6bcd4621d373cade4e832627b4f6', 'test', 'user', 1, '2008-04-08 16:18:36', '2008-12-05 04:10:23', '2008-09-11 07:32:06'),
-(2, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@admin.com', 'admin', 1, '2008-04-09 12:41:26', '2008-12-04 07:02:31', '2008-12-04 00:01:41'),
-(3, 'testad', 'bf58f1fbf92896ef64cf6265a5889c42', 'testad@testad.com', 'admin', 1, '2008-04-09 12:55:01', '2008-04-09 12:55:27', '2008-04-09 12:55:29'),
-(4, 'kenneth', '0617d89c70b910c29288b11d4d84c883', 'drafkn@gmail.com', 'user', 1, '2008-08-25 21:43:56', '2008-08-28 02:43:38', '2008-08-25 21:44:18');
+INSERT INTO `user_regform` VALUES(1, 'test', '098f6bcd4621d373cade4e832627b4f6', 'test', 'user', 1, '2008-04-08 16:18:36', '2008-12-05 04:10:23', '2008-09-11 07:32:06'),
+2, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin@admin.com', 'admin', 1, '2008-04-09 12:41:26', '2008-12-04 07:02:31', '2008-12-04 00:01:41'),
+3, 'testad', 'bf58f1fbf92896ef64cf6265a5889c42', 'testad@testad.com', 'admin', 1, '2008-04-09 12:55:01', '2008-04-09 12:55:27', '2008-04-09 12:55:29'),
+4, 'kenneth', '0617d89c70b910c29288b11d4d84c883', 'drafkn@gmail.com', 'user', 1, '2008-08-25 21:43:56', '2008-08-28 02:43:38', '2008-08-25 21:44:18');
 
 -- --------------------------------------------------------
 
@@ -44541,28 +44441,28 @@ INSERT INTO `user_regform` (`userID`, `username`, `password`, `email`, `priority
 --
 
 DROP TABLE IF EXISTS `user_scorm_rte1vars`;
-CREATE TABLE `user_scorm_rte1vars` (
-  `id` int(100) NOT NULL auto_increment,
-  `cid` varchar(255) default NULL,
-  `course_ref_id` varchar(255) default NULL,
-  `uid` varchar(255) default NULL,
-  `sco_id` varchar(255) default NULL,
-  `cmi_core_children` varchar(1000) default NULL,
-  `cmi_core_student_id` varchar(255) default NULL,
-  `cmi_core_student_name` varchar(255) default NULL,
-  `cmi_core_lesson_location` varchar(255) default NULL,
-  `cmi_core_credit` varchar(255) default NULL,
-  `cmi_core_lesson_status` varchar(255) default NULL,
-  `cmi_core_entry` varchar(255) default NULL,
-  `cmi_core_score_children` varchar(300) default NULL,
-  `cmi_core_score_raw` varchar(255) default NULL,
-  `cmi_core_total_time` varchar(255) default NULL,
-  `cmi_core_exit` varchar(255) default NULL,
-  `cmi_core_session_time` varchar(255) default NULL,
-  `cmi_suspend_data` varchar(255) default NULL,
-  `cmi_launch_data` varchar(255) default NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+CREATE TABLE "user_scorm_rte1vars" (
+  "id" int(100) NOT NULL auto_increment,
+  "cid" varchar(255) default NULL,
+  "course_ref_id" varchar(255) default NULL,
+  "uid" varchar(255) default NULL,
+  "sco_id" varchar(255) default NULL,
+  "cmi_core_children" varchar(1000) default NULL,
+  "cmi_core_student_id" varchar(255) default NULL,
+  "cmi_core_student_name" varchar(255) default NULL,
+  "cmi_core_lesson_location" varchar(255) default NULL,
+  "cmi_core_credit" varchar(255) default NULL,
+  "cmi_core_lesson_status" varchar(255) default NULL,
+  "cmi_core_entry" varchar(255) default NULL,
+  "cmi_core_score_children" varchar(300) default NULL,
+  "cmi_core_score_raw" varchar(255) default NULL,
+  "cmi_core_total_time" varchar(255) default NULL,
+  "cmi_core_exit" varchar(255) default NULL,
+  "cmi_core_session_time" varchar(255) default NULL,
+  "cmi_suspend_data" varchar(255) default NULL,
+  "cmi_launch_data" varchar(255) default NULL,
+  PRIMARY KEY  ("id")
+) AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `user_scorm_rte1vars`
@@ -44576,28 +44476,28 @@ CREATE TABLE `user_scorm_rte1vars` (
 --
 
 DROP TABLE IF EXISTS `user_scorm_rte1vars1`;
-CREATE TABLE `user_scorm_rte1vars1` (
-  `id` int(100) NOT NULL auto_increment,
-  `cid` varchar(255) default NULL,
-  `course_ref_id` varchar(255) default NULL,
-  `uid` varchar(255) default NULL,
-  `sco_id` varchar(255) default NULL,
-  `cmi_core_children` varchar(1000) default NULL,
-  `cmi_core_student_id` varchar(255) default NULL,
-  `cmi_core_student_name` varchar(255) default NULL,
-  `cmi_core_lesson_location` varchar(255) default NULL,
-  `cmi_core_credit` varchar(255) default NULL,
-  `cmi_core_lesson_status` varchar(255) default NULL,
-  `cmi_core_entry` varchar(255) default NULL,
-  `cmi_core_score_children` varchar(300) default NULL,
-  `cmi_core_score_raw` varchar(255) default NULL,
-  `cmi_core_total_time` varchar(255) default NULL,
-  `cmi_core_exit` varchar(255) default NULL,
-  `cmi_core_session_time` varchar(255) default NULL,
-  `cmi_suspend_data` varchar(255) default NULL,
-  `cmi_launch_data` varchar(255) default NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+CREATE TABLE "user_scorm_rte1vars1" (
+  "id" int(100) NOT NULL auto_increment,
+  "cid" varchar(255) default NULL,
+  "course_ref_id" varchar(255) default NULL,
+  "uid" varchar(255) default NULL,
+  "sco_id" varchar(255) default NULL,
+  "cmi_core_children" varchar(1000) default NULL,
+  "cmi_core_student_id" varchar(255) default NULL,
+  "cmi_core_student_name" varchar(255) default NULL,
+  "cmi_core_lesson_location" varchar(255) default NULL,
+  "cmi_core_credit" varchar(255) default NULL,
+  "cmi_core_lesson_status" varchar(255) default NULL,
+  "cmi_core_entry" varchar(255) default NULL,
+  "cmi_core_score_children" varchar(300) default NULL,
+  "cmi_core_score_raw" varchar(255) default NULL,
+  "cmi_core_total_time" varchar(255) default NULL,
+  "cmi_core_exit" varchar(255) default NULL,
+  "cmi_core_session_time" varchar(255) default NULL,
+  "cmi_suspend_data" varchar(255) default NULL,
+  "cmi_launch_data" varchar(255) default NULL,
+  PRIMARY KEY  ("id")
+) AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `user_scorm_rte1vars1`
@@ -44611,49 +44511,49 @@ CREATE TABLE `user_scorm_rte1vars1` (
 --
 
 DROP TABLE IF EXISTS `user_scorm_rte2vars`;
-CREATE TABLE `user_scorm_rte2vars` (
-  `id` int(255) NOT NULL auto_increment,
-  `cid` varchar(255) NOT NULL,
-  `course_ref_id` varchar(255) NOT NULL,
-  `uid` varchar(255) NOT NULL,
-  `sco_id` varchar(255) NOT NULL,
-  `cmi_core_score_max` varchar(255) NOT NULL,
-  `cmi_core_score_min` varchar(255) NOT NULL,
-  `cmi_core_lesson_mode` varchar(255) NOT NULL,
-  `cmi_comments` varchar(255) NOT NULL,
-  `cmi_comments_from_lms` varchar(255) NOT NULL,
-  `cmi_objectives_children` varchar(500) NOT NULL,
-  `cmi_objectives_count` varchar(255) NOT NULL,
-  `cmi_objectives_n_id` varchar(255) NOT NULL,
-  `cmi_objectives_n_score_children` varchar(500) NOT NULL,
-  `cmi_objectives_n_score_raw` varchar(255) NOT NULL,
-  `cmi_objectives_n_score_max` varchar(255) NOT NULL,
-  `cmi_objectives_n_score_min` varchar(255) NOT NULL,
-  `cmi_objectives_n_status` varchar(255) NOT NULL,
-  `cmi_student_data_children` varchar(500) NOT NULL,
-  `cmi_student_data_mastery_score` varchar(255) NOT NULL,
-  `cmi_student_data_max_time_allowed` varchar(255) NOT NULL,
-  `cmi_student_data_time_limit_action` varchar(255) NOT NULL,
-  `cmi_student_preference_children` varchar(500) NOT NULL,
-  `cmi_student_preference_audio` varchar(255) NOT NULL,
-  `cmi_student_preference_language` varchar(255) NOT NULL,
-  `cmi_student_preference_speed` varchar(255) NOT NULL,
-  `cmi_student_preference_text` varchar(255) NOT NULL,
-  `cmi_interactions_children` varchar(500) NOT NULL,
-  `cmi_interactions_count` varchar(255) NOT NULL,
-  `cmi_interactions_n_id` varchar(255) NOT NULL,
-  `cmi_interactions_n_objectives_count` varchar(255) NOT NULL,
-  `cmi_interactions_n_objectives_n_id` varchar(255) NOT NULL,
-  `cmi_interactions_n_time` varchar(255) NOT NULL,
-  `cmi_interactions_n_type` varchar(255) NOT NULL,
-  `cmi_interactions_n_correct_responses_count` varchar(255) NOT NULL,
-  `cmi_interactions_n_correct_responses_n_pattern` varchar(255) NOT NULL,
-  `cmi_interactions_n_weighting` varchar(255) NOT NULL,
-  `cmi_interactions_n_student_response` varchar(255) NOT NULL,
-  `cmi_interactions_n_result` varchar(255) NOT NULL,
-  `cmi_interactions_n_latency` varchar(255) NOT NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+CREATE TABLE "user_scorm_rte2vars" (
+  "id" int(255) NOT NULL auto_increment,
+  "cid" varchar(255) NOT NULL,
+  "course_ref_id" varchar(255) NOT NULL,
+  "uid" varchar(255) NOT NULL,
+  "sco_id" varchar(255) NOT NULL,
+  "cmi_core_score_max" varchar(255) NOT NULL,
+  "cmi_core_score_min" varchar(255) NOT NULL,
+  "cmi_core_lesson_mode" varchar(255) NOT NULL,
+  "cmi_comments" varchar(255) NOT NULL,
+  "cmi_comments_from_lms" varchar(255) NOT NULL,
+  "cmi_objectives_children" varchar(500) NOT NULL,
+  "cmi_objectives_count" varchar(255) NOT NULL,
+  "cmi_objectives_n_id" varchar(255) NOT NULL,
+  "cmi_objectives_n_score_children" varchar(500) NOT NULL,
+  "cmi_objectives_n_score_raw" varchar(255) NOT NULL,
+  "cmi_objectives_n_score_max" varchar(255) NOT NULL,
+  "cmi_objectives_n_score_min" varchar(255) NOT NULL,
+  "cmi_objectives_n_status" varchar(255) NOT NULL,
+  "cmi_student_data_children" varchar(500) NOT NULL,
+  "cmi_student_data_mastery_score" varchar(255) NOT NULL,
+  "cmi_student_data_max_time_allowed" varchar(255) NOT NULL,
+  "cmi_student_data_time_limit_action" varchar(255) NOT NULL,
+  "cmi_student_preference_children" varchar(500) NOT NULL,
+  "cmi_student_preference_audio" varchar(255) NOT NULL,
+  "cmi_student_preference_language" varchar(255) NOT NULL,
+  "cmi_student_preference_speed" varchar(255) NOT NULL,
+  "cmi_student_preference_text" varchar(255) NOT NULL,
+  "cmi_interactions_children" varchar(500) NOT NULL,
+  "cmi_interactions_count" varchar(255) NOT NULL,
+  "cmi_interactions_n_id" varchar(255) NOT NULL,
+  "cmi_interactions_n_objectives_count" varchar(255) NOT NULL,
+  "cmi_interactions_n_objectives_n_id" varchar(255) NOT NULL,
+  "cmi_interactions_n_time" varchar(255) NOT NULL,
+  "cmi_interactions_n_type" varchar(255) NOT NULL,
+  "cmi_interactions_n_correct_responses_count" varchar(255) NOT NULL,
+  "cmi_interactions_n_correct_responses_n_pattern" varchar(255) NOT NULL,
+  "cmi_interactions_n_weighting" varchar(255) NOT NULL,
+  "cmi_interactions_n_student_response" varchar(255) NOT NULL,
+  "cmi_interactions_n_result" varchar(255) NOT NULL,
+  "cmi_interactions_n_latency" varchar(255) NOT NULL,
+  PRIMARY KEY  ("id")
+) AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `user_scorm_rte2vars`
@@ -44667,49 +44567,49 @@ CREATE TABLE `user_scorm_rte2vars` (
 --
 
 DROP TABLE IF EXISTS `user_scorm_rte3vars`;
-CREATE TABLE `user_scorm_rte3vars` (
-  `id` int(255) NOT NULL auto_increment,
-  `cid` varchar(255) NOT NULL,
-  `course_ref_id` varchar(255) NOT NULL,
-  `uid` varchar(255) NOT NULL,
-  `sco_id` varchar(255) NOT NULL,
-  `cmi_core_score_max` varchar(255) NOT NULL,
-  `cmi_core_score_min` varchar(255) NOT NULL,
-  `cmi_core_lesson_mode` varchar(255) NOT NULL,
-  `cmi_comments` varchar(255) NOT NULL,
-  `cmi_comments_from_lms` varchar(255) NOT NULL,
-  `cmi_objectives_children` varchar(500) NOT NULL,
-  `cmi_objectives_count` varchar(255) NOT NULL,
-  `cmi_objectives_n_id` varchar(255) NOT NULL,
-  `cmi_objectives_n_score_children` varchar(500) NOT NULL,
-  `cmi_objectives_n_score_raw` int(255) NOT NULL,
-  `cmi_objectives_n_score_max` int(255) NOT NULL,
-  `cmi_objectives_n_score_min` int(255) NOT NULL,
-  `cmi_objectives_n_status` varchar(255) NOT NULL,
-  `cmi_student_data_children` varchar(500) NOT NULL,
-  `cmi_student_data_mastery_score` int(255) NOT NULL,
-  `cmi_student_data_max_time_allowed` varchar(255) NOT NULL,
-  `cmi_student_data_time_limit_action` varchar(255) NOT NULL,
-  `cmi_student_preference_children` varchar(500) NOT NULL,
-  `cmi_student_preference_audio` varchar(255) NOT NULL,
-  `cmi_student_preference_language` varchar(255) NOT NULL,
-  `cmi_student_preference_speed` varchar(255) NOT NULL,
-  `cmi_student_preference_text` varchar(255) NOT NULL,
-  `cmi_interactions_children` varchar(500) NOT NULL,
-  `cmi_interactions_count` varchar(255) NOT NULL,
-  `cmi_interactions_n_id` varchar(255) NOT NULL,
-  `cmi_interactions_n_objectives_count` varchar(255) NOT NULL,
-  `cmi_interactions_n_objectives_n_id` varchar(255) NOT NULL,
-  `cmi_interactions_n_time` varchar(255) NOT NULL,
-  `cmi_interactions_n_type` varchar(255) NOT NULL,
-  `cmi_interactions_n_correct_responses_count` varchar(255) NOT NULL,
-  `cmi_interactions_n_correct_responses_n_pattern` varchar(255) NOT NULL,
-  `cmi_interactions_n_weighting` varchar(255) NOT NULL,
-  `cmi_interactions_n_student_response` varchar(255) NOT NULL,
-  `cmi_interactions_n_result` varchar(255) NOT NULL,
-  `cmi_interactions_n_latency` varchar(255) NOT NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+CREATE TABLE "user_scorm_rte3vars" (
+  "id" int(255) NOT NULL auto_increment,
+  "cid" varchar(255) NOT NULL,
+  "course_ref_id" varchar(255) NOT NULL,
+  "uid" varchar(255) NOT NULL,
+  "sco_id" varchar(255) NOT NULL,
+  "cmi_core_score_max" varchar(255) NOT NULL,
+  "cmi_core_score_min" varchar(255) NOT NULL,
+  "cmi_core_lesson_mode" varchar(255) NOT NULL,
+  "cmi_comments" varchar(255) NOT NULL,
+  "cmi_comments_from_lms" varchar(255) NOT NULL,
+  "cmi_objectives_children" varchar(500) NOT NULL,
+  "cmi_objectives_count" varchar(255) NOT NULL,
+  "cmi_objectives_n_id" varchar(255) NOT NULL,
+  "cmi_objectives_n_score_children" varchar(500) NOT NULL,
+  "cmi_objectives_n_score_raw" int(255) NOT NULL,
+  "cmi_objectives_n_score_max" int(255) NOT NULL,
+  "cmi_objectives_n_score_min" int(255) NOT NULL,
+  "cmi_objectives_n_status" varchar(255) NOT NULL,
+  "cmi_student_data_children" varchar(500) NOT NULL,
+  "cmi_student_data_mastery_score" int(255) NOT NULL,
+  "cmi_student_data_max_time_allowed" varchar(255) NOT NULL,
+  "cmi_student_data_time_limit_action" varchar(255) NOT NULL,
+  "cmi_student_preference_children" varchar(500) NOT NULL,
+  "cmi_student_preference_audio" varchar(255) NOT NULL,
+  "cmi_student_preference_language" varchar(255) NOT NULL,
+  "cmi_student_preference_speed" varchar(255) NOT NULL,
+  "cmi_student_preference_text" varchar(255) NOT NULL,
+  "cmi_interactions_children" varchar(500) NOT NULL,
+  "cmi_interactions_count" varchar(255) NOT NULL,
+  "cmi_interactions_n_id" varchar(255) NOT NULL,
+  "cmi_interactions_n_objectives_count" varchar(255) NOT NULL,
+  "cmi_interactions_n_objectives_n_id" varchar(255) NOT NULL,
+  "cmi_interactions_n_time" varchar(255) NOT NULL,
+  "cmi_interactions_n_type" varchar(255) NOT NULL,
+  "cmi_interactions_n_correct_responses_count" varchar(255) NOT NULL,
+  "cmi_interactions_n_correct_responses_n_pattern" varchar(255) NOT NULL,
+  "cmi_interactions_n_weighting" varchar(255) NOT NULL,
+  "cmi_interactions_n_student_response" varchar(255) NOT NULL,
+  "cmi_interactions_n_result" varchar(255) NOT NULL,
+  "cmi_interactions_n_latency" varchar(255) NOT NULL,
+  PRIMARY KEY  ("id")
+) AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `user_scorm_rte3vars`
@@ -44723,36 +44623,35 @@ CREATE TABLE `user_scorm_rte3vars` (
 --
 
 DROP TABLE IF EXISTS `user_sco_info`;
-CREATE TABLE `user_sco_info` (
-  `id` int(20) NOT NULL auto_increment,
-  `user_id` int(20) NOT NULL default '0',
-  `course_id` varchar(255) NOT NULL default '',
-  `sco_id` varchar(255) NOT NULL default '',
-  `launch` varchar(255) default NULL,
-  `lesson_status` varchar(255) NOT NULL default '',
-  `lesson_location` varchar(255) NOT NULL default '',
-  `prerequisite` varchar(255) NOT NULL default '',
-  `sco_exit` varchar(255) NOT NULL default '',
-  `sco_entry` varchar(255) NOT NULL default '',
-  `data_from_lms` varchar(255) NOT NULL default '',
-  `masteryscore` varchar(255) NOT NULL default '',
-  `suspend_data` longtext NOT NULL,
-  `maximumtime` varchar(255) NOT NULL default '',
-  `total_time` varchar(255) NOT NULL default '',
-  `timelimitaction` varchar(255) NOT NULL default '',
-  `sequence` int(20) NOT NULL default '0',
-  `cmi_credit` varchar(255) NOT NULL default '',
-  `score` int(10) NOT NULL default '0',
-  `type` varchar(255) default NULL,
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
+CREATE TABLE "user_sco_info" (
+  "id" int(20) NOT NULL auto_increment,
+  "user_id" int(20) NOT NULL default '0',
+  "course_id" varchar(255) NOT NULL default '',
+  "sco_id" varchar(255) NOT NULL default '',
+  "launch" varchar(255) default NULL,
+  "lesson_status" varchar(255) NOT NULL default '',
+  "lesson_location" varchar(255) NOT NULL default '',
+  "prerequisite" varchar(255) NOT NULL default '',
+  "sco_exit" varchar(255) NOT NULL default '',
+  "sco_entry" varchar(255) NOT NULL default '',
+  "data_from_lms" varchar(255) NOT NULL default '',
+  "masteryscore" varchar(255) NOT NULL default '',
+  "suspend_data" longtext NOT NULL,
+  "maximumtime" varchar(255) NOT NULL default '',
+  "total_time" varchar(255) NOT NULL default '',
+  "timelimitaction" varchar(255) NOT NULL default '',
+  "sequence" int(20) NOT NULL default '0',
+  "cmi_credit" varchar(255) NOT NULL default '',
+  "score" int(10) NOT NULL default '0',
+  "type" varchar(255) default NULL,
+  PRIMARY KEY  ("id")
+) AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `user_sco_info`
 --
 
-INSERT INTO `user_sco_info` (`id`, `user_id`, `course_id`, `sco_id`, `launch`, `lesson_status`, `lesson_location`, `prerequisite`, `sco_exit`, `sco_entry`, `data_from_lms`, `masteryscore`, `suspend_data`, `maximumtime`, `total_time`, `timelimitaction`, `sequence`, `cmi_credit`, `score`, `type`) VALUES
-(1, 1, 'course-1', 'm_120_en_id', 'm_120_en.htm', 'not attempted', '', '', '', 'ab-initio', '', '', '', '', '00:00:00.00', '', 0, 'credit', 0, 'sco'),
+INSERT INTO `user_sco_info` VALUES(1, 1, 'course-1', 'm_120_en_id', 'm_120_en.htm', 'not attempted', '', '', '', 'ab-initio', '', '', '', '', '00:00:00.00', '', 0, 'credit', 0, 'sco'),
 (2, 1, 'course-1', 'm_120_en_id', 'm_120_en.htm', 'not attempted', '', '', '', 'ab-initio', '', '', '', '', '00:00:00.00', '', 0, 'credit', 0, 'sco'),
 (3, 1, 'course-1', 'm_120_en_id', 'm_120_en.htm', 'not attempted', '', '', '', 'ab-initio', '', '', '', '', '00:00:00.00', '', 0, 'credit', 0, 'sco'),
 (4, 1, 'course-1', 'm_120_en_id', 'm_120_en.htm', 'not attempted', '', '', '', 'ab-initio', '', '', '', '', '00:00:00.00', '', 0, 'credit', 0, 'sco'),
@@ -44764,7 +44663,9 @@ INSERT INTO `user_sco_info` (`id`, `user_id`, `course_id`, `sco_id`, `launch`, `
 (11, 1, 'course-2', 'asbestos_en', 'asbestos_en.htm', 'not attempted', '', '', '', 'ab-initio', '', '', '', '', '00:00:00.00', 'continue,no message', 0, 'credit', 0, 'sco'),
 (12, 1, 'course-4', 'm_082_en', 'm_082_en', 'not attempted', '', '', '', 'ab-initio', '', '', '', '', '00:00:00.00', '', 0, 'credit', 0, 'sco'),
 (13, 1, 'course-6', 'm_044_en', 'm_044_en.htm', 'not attempted', '', '', '', 'ab-initio', '', '', '', '', '00:00:00.00', '', 0, 'credit', 0, 'sco'),
-(14, 1, 'course-7', 'site_safety_haz_en', 'site_safety_haz_en.htm', 'not attempted', '', '', '', 'ab-initio', '', '', '', '', '', '', 0, 'credit', 0, 'sco');
+(14, 1, 'course-7', 'site_safety_haz_en', 'site_safety_haz_en.htm', 'not attempted', '', '', '', 'ab-initio', '', '', '', '', '', '', 0, 'credit', 0, 'sco'),
+(15, 1, 'course-8', 'm_046_en', 'm_046_en.htm', 'not attempted', '', '', '', 'ab-initio', '', '', '', '', '', '', 0, 'credit', 0, 'sco'),
+(16, 1, 'course-5', 'emergency_response_plan_en', 'emergency_response_plan_en.htm', 'not attempted', '', '', '', 'ab-initio', '', '', '', '', '', '', 0, 'credit', 0, 'sco');
 
 -- --------------------------------------------------------
 
@@ -44773,19 +44674,18 @@ INSERT INTO `user_sco_info` (`id`, `user_id`, `course_id`, `sco_id`, `launch`, `
 --
 
 DROP TABLE IF EXISTS `user_surveys`;
-CREATE TABLE `user_surveys` (
-  `ID` int(11) NOT NULL auto_increment,
-  `student` int(5) NOT NULL default '1',
-  `survey` int(5) NOT NULL default '1',
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+CREATE TABLE "user_surveys" (
+  "ID" int(11) NOT NULL auto_increment,
+  "student" int(5) NOT NULL default '1',
+  "survey" int(5) NOT NULL default '1',
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `user_surveys`
 --
 
-INSERT INTO `user_surveys` (`ID`, `student`, `survey`) VALUES
-(1, 1, 3),
+INSERT INTO `user_surveys` VALUES(1, 1, 3),
 (2, 1, 5),
 (3, 2, 5),
 (4, 2, 3),
@@ -44801,20 +44701,19 @@ INSERT INTO `user_surveys` (`ID`, `student`, `survey`) VALUES
 --
 
 DROP TABLE IF EXISTS `user_survey_log`;
-CREATE TABLE `user_survey_log` (
-  `ID` int(11) NOT NULL auto_increment,
-  `student` int(5) NOT NULL default '1',
-  `test` int(5) NOT NULL default '1',
-  `fecha` datetime default NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=146 ;
+CREATE TABLE "user_survey_log" (
+  "ID" int(11) NOT NULL auto_increment,
+  "student" int(5) NOT NULL default '1',
+  "test" int(5) NOT NULL default '1',
+  "fecha" datetime default NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=147 ;
 
 --
 -- Dumping data for table `user_survey_log`
 --
 
-INSERT INTO `user_survey_log` (`ID`, `student`, `test`, `fecha`) VALUES
-(1, 1, 3, '2007-07-17 01:24:59'),
+INSERT INTO `user_survey_log` VALUES(1, 1, 3, '2007-07-17 01:24:59'),
 (2, 1, 3, '2007-07-17 01:25:18'),
 (3, 1, 3, '2007-07-17 01:29:58'),
 (4, 1, 3, '2007-07-17 01:31:02'),
@@ -44958,7 +44857,8 @@ INSERT INTO `user_survey_log` (`ID`, `student`, `test`, `fecha`) VALUES
 (142, 1, 6, '2012-01-17 23:20:10'),
 (143, 1, 6, '2012-01-18 00:44:31'),
 (144, 1, 6, '2012-01-18 00:45:43'),
-(145, 1, 6, '2012-01-23 22:48:34');
+(145, 1, 6, '2012-01-23 22:48:34'),
+(146, 1, 6, '2012-01-26 04:10:16');
 
 -- --------------------------------------------------------
 
@@ -44967,20 +44867,19 @@ INSERT INTO `user_survey_log` (`ID`, `student`, `test`, `fecha`) VALUES
 --
 
 DROP TABLE IF EXISTS `user_survey_question_log`;
-CREATE TABLE `user_survey_question_log` (
-  `ID` int(11) NOT NULL auto_increment,
-  `survey_log_ID` int(5) NOT NULL default '1',
-  `answer` char(2) NOT NULL default '',
-  `qid` int(11) default NULL,
-  PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=601 ;
+CREATE TABLE "user_survey_question_log" (
+  "ID" int(11) NOT NULL auto_increment,
+  "survey_log_ID" int(5) NOT NULL default '1',
+  "answer" char(2) NOT NULL default '',
+  "qid" int(11) default NULL,
+  PRIMARY KEY  ("ID")
+) AUTO_INCREMENT=629 ;
 
 --
 -- Dumping data for table `user_survey_question_log`
 --
 
-INSERT INTO `user_survey_question_log` (`ID`, `survey_log_ID`, `answer`, `qid`) VALUES
-(1, 24, 'B', 1),
+INSERT INTO `user_survey_question_log` VALUES(1, 24, 'B', 1),
 (2, 24, 'B', 2),
 (3, 25, 'B', 1),
 (4, 25, 'B', 2),
@@ -45579,4 +45478,32 @@ INSERT INTO `user_survey_question_log` (`ID`, `survey_log_ID`, `answer`, `qid`) 
 (597, 145, '', 25),
 (598, 145, '', 26),
 (599, 145, '', 27),
-(600, 145, 'B', 28);
+(600, 145, 'B', 28),
+(601, 146, '', 1),
+(602, 146, '', 2),
+(603, 146, '', 3),
+(604, 146, '', 4),
+(605, 146, '', 5),
+(606, 146, '', 6),
+(607, 146, '', 7),
+(608, 146, '', 8),
+(609, 146, '', 9),
+(610, 146, '', 10),
+(611, 146, '', 11),
+(612, 146, '', 12),
+(613, 146, '', 13),
+(614, 146, '', 14),
+(615, 146, '', 15),
+(616, 146, '', 16),
+(617, 146, '', 17),
+(618, 146, '', 18),
+(619, 146, '', 19),
+(620, 146, '', 20),
+(621, 146, '', 21),
+(622, 146, '', 22),
+(623, 146, '', 23),
+(624, 146, '', 24),
+(625, 146, '', 25),
+(626, 146, '', 26),
+(627, 146, 'B', 27),
+(628, 146, 'A', 28);

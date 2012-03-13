@@ -44,7 +44,7 @@ CREATE TABLE `abs_events` (
   `facility_phone` varchar(255) NOT NULL,
   `abrevationLoc` varchar(255) NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=31 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -61,7 +61,7 @@ CREATE TABLE `class_students` (
   `class_id` int(11) NOT NULL,
   `waiting` int(25) NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=155 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -112,7 +112,7 @@ CREATE TABLE `course` (
   `typical_learning_time` varchar(100) NOT NULL default '',
   `location` varchar(255) NOT NULL default '',
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -133,7 +133,7 @@ CREATE TABLE `course-backup` (
   `description` blob,
   `link` varchar(255) default 'http://davidealytechnologies.com',
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 
 -- --------------------------------------------------------
@@ -164,7 +164,7 @@ CREATE TABLE `course_categories` (
   `category_id` int(10) NOT NULL auto_increment,
   `category_name` varchar(100) NOT NULL default '',
   PRIMARY KEY  (`category_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -194,7 +194,7 @@ CREATE TABLE `course_history` (
   `core_exit` varchar(20) NOT NULL default '',
   `score_raw` float(10,2) NOT NULL default '0.00',
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -215,7 +215,7 @@ CREATE TABLE `course_metdata_info` (
   `catalogname` varchar(255) NOT NULL default '',
   `keywords` varchar(1000) default NULL,
   PRIMARY KEY  (`row_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=83 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -267,7 +267,7 @@ CREATE TABLE `efiles` (
   `typical_learning_time` varchar(100) NOT NULL,
   `location` varchar(255) NOT NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -370,7 +370,7 @@ CREATE TABLE `groups` (
   `sname` varchar(225) NOT NULL default '',
   `ID` int(11) NOT NULL auto_increment,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -396,7 +396,7 @@ CREATE TABLE `item_info` (
   `timelimitaction` varchar(255) NOT NULL default '',
   `sequence` int(20) NOT NULL default '0',
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=120 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -413,7 +413,7 @@ CREATE TABLE `lesson` (
   `name` varchar(50) NOT NULL default '',
   `ID` int(11) NOT NULL auto_increment,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -432,7 +432,7 @@ CREATE TABLE `lessons_r` (
   `ID` int(11) NOT NULL auto_increment,
   `topic_order` int(11) NOT NULL default '0',
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -452,7 +452,7 @@ CREATE TABLE `library` (
   `datetime` datetime NOT NULL,
   `targetID` int(11) NOT NULL default '0',
   PRIMARY KEY  (`libdocID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -469,7 +469,7 @@ CREATE TABLE `library_folders` (
   `user_id` int(10) NOT NULL,
   `created_date` datetime NOT NULL,
   PRIMARY KEY  (`folder_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -486,7 +486,7 @@ CREATE TABLE `library_link` (
   `links` varchar(255) NOT NULL,
   `datetime` datetime NOT NULL,
   PRIMARY KEY  (`linkID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -505,7 +505,7 @@ CREATE TABLE `news` (
   `uid` varchar(255) NOT NULL,
   `datetime` datetime NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=47 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -522,7 +522,7 @@ CREATE TABLE `objectives` (
   `link` varchar(50) NOT NULL default '',
   `ID` int(11) NOT NULL auto_increment,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=33 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -547,9 +547,9 @@ CREATE TABLE `orgs` (
   `ID` int(15) NOT NULL auto_increment,
   PRIMARY KEY  (`ID`),
   KEY `org_ID` (`org_ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
-INSERT INTO `orgs` VALUES('All Users', 'ALL', 100, 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 2);
+INSERT INTO `orgs` VALUES('All Users', 'ALL', 100, 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 'NA', 1);
 
 -- --------------------------------------------------------
 
@@ -563,7 +563,7 @@ CREATE TABLE `poll` (
   `Question` varchar(255) default NULL,
   `FECHA` date default NULL,
   PRIMARY KEY  (`PID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=42 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -585,7 +585,7 @@ CREATE TABLE `questions` (
   `correct_answ` varchar(225) NOT NULL default '',
   `ID` int(11) NOT NULL auto_increment,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -604,7 +604,7 @@ CREATE TABLE `ref` (
   `ID` int(11) NOT NULL auto_increment,
   PRIMARY KEY  (`ID`),
   KEY `cid` (`course_ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=27 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -694,7 +694,7 @@ CREATE TABLE `students` (
   `last_login` varchar(255) NOT NULL default '',
   `reg_date` varchar(255) NOT NULL default '',
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=55 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -711,7 +711,7 @@ CREATE TABLE `subgroups` (
   `ID` int(11) NOT NULL auto_increment,
   `group_ID` int(15) default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=48 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- This table should be empty when a new implementation is created.
 
@@ -768,7 +768,7 @@ CREATE TABLE `tests` (
   `status` enum('active','not active') NOT NULL default 'active',
   `description` blob,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 
 -- --------------------------------------------------------
@@ -785,7 +785,7 @@ CREATE TABLE `tests_r` (
   `ID` int(11) NOT NULL auto_increment,
   `resource_l` varchar(100) NOT NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=61 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -813,7 +813,7 @@ CREATE TABLE `topic` (
   `mastery_score` float(10,2) NOT NULL default '0.00',
   `max_time` varchar(50) NOT NULL default '0',
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 
 -- --------------------------------------------------------
@@ -830,7 +830,7 @@ CREATE TABLE `user` (
   `org` int(3) NOT NULL default '0',
   `fecha` datetime NOT NULL default '0000-00-00 00:00:00',
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=1035 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -884,7 +884,7 @@ CREATE TABLE `user_messages` (
   `MESSAGE` varchar(500) NOT NULL,
   `TYPE` varchar(255) NOT NULL,
   PRIMARY KEY  (`MESSAGEID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=140 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 
 -- --------------------------------------------------------
@@ -912,7 +912,7 @@ CREATE TABLE `user_own_messages` (
   `OWNERID` int(11) NOT NULL,
   `MESSAGEID` int(11) NOT NULL,
   PRIMARY KEY  (`RECORDID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -962,7 +962,7 @@ CREATE TABLE `user_scorm_rte1vars` (
   `cmi_suspend_data` varchar(255) default NULL,
   `cmi_launch_data` varchar(255) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `user_scorm_rte1vars`
@@ -1053,7 +1053,7 @@ CREATE TABLE `user_scorm_rte2vars` (
   `cmi_interactions_n_result` varchar(255) NOT NULL,
   `cmi_interactions_n_latency` varchar(255) NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `user_scorm_rte2vars`
@@ -1109,7 +1109,7 @@ CREATE TABLE `user_scorm_rte3vars` (
   `cmi_interactions_n_result` varchar(255) NOT NULL,
   `cmi_interactions_n_latency` varchar(255) NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `user_scorm_rte3vars`
@@ -1145,7 +1145,7 @@ CREATE TABLE `user_sco_info` (
   `score` int(10) NOT NULL default '0',
   `type` varchar(255) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=49 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1159,7 +1159,7 @@ CREATE TABLE `user_surveys` (
   `student` int(5) NOT NULL default '1',
   `survey` int(5) NOT NULL default '1',
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `user_surveys`
@@ -1187,7 +1187,7 @@ CREATE TABLE `user_survey_log` (
   `test` int(5) NOT NULL default '1',
   `fecha` datetime default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=147 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1202,5 +1202,5 @@ CREATE TABLE `user_survey_question_log` (
   `answer` char(2) NOT NULL default '',
   `qid` int(11) default NULL,
   PRIMARY KEY  (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=629 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
